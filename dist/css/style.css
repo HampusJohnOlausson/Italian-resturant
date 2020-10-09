@@ -131,7 +131,7 @@
 }
 
 .wrapper .footer .footer-container1 .footer-list li {
-  padding: 2rem 5rem;
+  padding: 2rem;
 }
 
 .wrapper .footer .footer-container2 {
@@ -152,14 +152,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .wrapper .footer .footer-container2 .social-media li a {
   font-size: 3rem;
+  padding: 2rem 4rem;
   color: #ffffff;
-  padding: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
