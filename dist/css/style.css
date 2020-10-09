@@ -117,6 +117,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 4rem;
 }
 
 .wrapper .footer .footer-container1 .footer-list {
@@ -128,10 +129,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wrapper .footer .footer-container1 .footer-list li {
-  padding: 2rem;
+  margin: 0rem 5rem;
 }
 
 .wrapper .footer .footer-container2 {
@@ -156,7 +160,6 @@
 
 .wrapper .footer .footer-container2 .social-media li a {
   font-size: 3rem;
-  padding: 2rem 4rem;
   color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

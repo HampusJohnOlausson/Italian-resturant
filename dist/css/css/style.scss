@@ -87,14 +87,16 @@
     .footer-container1 {
       display: flex;
       justify-content: center;
+      margin: 4rem;
 
       .footer-list {
         list-style-type: none;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
         & li {
-          padding: 2rem;
+          margin: 0rem 5rem;
         }
       }
     }
@@ -110,7 +112,6 @@
 
         & li a {
           font-size: 3rem;
-          padding: 2rem 4rem;
           color: #ffffff;
         }
       }
