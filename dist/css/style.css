@@ -5,34 +5,74 @@
           box-sizing: border-box;
 }
 
+.goBack {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .wrapper {
+  background-image: url(/Images/pizza.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
   min-height: 100vh;
-  background-color: #e82a2a;
   color: #ffffff;
+  letter-spacing: 2px;
   font-family: "Rock Salt", cursive;
   -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
           box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.wrapper .btn {
+  width: 13rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  margin: 1rem;
+  outline: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  background-color: #ffbd2d;
+  font-family: sans-serif;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .btn a {
+  text-decoration: none;
+  color: black;
 }
 
 .wrapper .header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3rem;
-  height: 12rem;
+  padding: 2rem;
+  height: 20vh;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .wrapper .header .logo {
-  font-size: 2rem;
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  padding-left: 2rem;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
 .wrapper .header .nav-list {
@@ -41,6 +81,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -48,14 +91,12 @@
 .wrapper .header .nav-list li a {
   text-decoration: none;
   color: #ffffff;
+  font-family: sans-serif;
   font-size: 1.5rem;
 }
 
 .wrapper .first-section {
-  height: 85vh;
-  background-image: url(/Images/nadya-spetnitskaya-z11dSXXlt8c-unsplash.jpg);
-  background-attachment: fixed;
-  background-size: cover;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +108,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 4rem;
+  padding: 10rem 4rem;
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .wrapper .first-section .welcome {
@@ -78,88 +120,144 @@
   font-size: 1.5rem;
 }
 
-.wrapper .first-section .meny-btn {
-  border-radius: 25px;
-  width: 13rem;
-  height: 3rem;
-  font-size: 1.5rem;
-  margin: 1rem;
-  outline: none;
-  border: none;
-  color: black;
-  background-color: #ffbd2d;
-  font-family: sans-serif;
-  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
-          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper .second-section {
-  height: 40vh;
-}
-
-.wrapper .third-section {
-  height: 60vh;
-  background-image: url(/Images/jorge-zapata-4nXkhLCrkLo-unsplash.jpg);
+/* Meny sidan */
+.wrapper-meny {
+  background-image: url(/Images/vino.jpg);
   background-attachment: fixed;
   background-size: cover;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-family: "Rock Salt", cursive;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
 }
 
-.wrapper .footer {
-  height: 30vh;
+.wrapper-meny .meny-container {
+  margin: 3rem auto 0rem;
+  width: 90%;
+  height: 90vh;
+  color: #ffffff;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.45);
   padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.wrapper .footer .footer-container1 {
+.wrapper-meny .meny-container .menyList1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper-meny .meny-container .menyList1 h4 {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.wrapper-meny .meny-container .menyList2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper-meny .meny-container .menyList2 h4 {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.wrapper-meny .meny-container ul {
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.wrapper-meny .meny-container ul li {
+  font-family: sans-serif;
+  margin: 1.5rem 0rem;
+}
+
+.wrapper-contact {
+  background-image: url(/Images/espresso.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.wrapper-contact .info-h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.wrapper-contact .info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 4rem;
 }
 
-.wrapper .footer .footer-container1 .footer-list {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.wrapper-contact .info-container .info-text {
+  font-size: 1.5rem;
+  padding: 2rem 4rem 1rem;
+  text-align: center;
+  width: 70%;
 }
 
-.wrapper .footer .footer-container1 .footer-list li {
-  margin: 0rem 5rem;
+.wrapper-contact .contact-info {
+  text-align: center;
 }
 
-.wrapper .footer .footer-container2 {
+.wrapper-contact .contact-info .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.wrapper .footer .footer-container2 .social-media {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
-.wrapper .footer .footer-container2 .social-media li a {
+.wrapper-contact .contact-info .social-media li a {
   font-size: 3rem;
   color: #ffffff;
+  padding: 0rem 1rem;
+}
+
+.wrapper-contact .contact-info .contact-list {
+  list-style-type: none;
+  font-family: sans-serif;
+  padding: 1rem 4rem 2rem;
+}
+
+.wrapper-contact .contact-info .contact-list li {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
 }
 /*# sourceMappingURL=style.css.map */

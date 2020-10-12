@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.goBack {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+.wrapper {
+  background-image: url(/Images/pizza.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-family: "Rock Salt", cursive;
+  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+
+  .btn {
+    width: 13rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    margin: 1rem;
+    outline: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: #ffbd2d;
+    font-family: sans-serif;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+    & a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 20vh;
+    background: rgba(0, 0, 0, 0.45);
+
+    .logo {
+      padding-left: 2rem;
+      transform: rotate(-5deg);
+    }
+
+    .nav-list {
+      width: 50%;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      & li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .first-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 4rem;
+    background: rgba(0, 0, 0, 0.25);
+
+    .welcome {
+      font-size: 3rem;
+    }
+    .under-text {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* Meny sidan */
+
+.wrapper-meny {
+  background-image: url(/Images/vino.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-family: "Rock Salt", cursive;
+  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+
+  .meny-container {
+    margin: 3rem auto 0rem;
+    width: 90%;
+    height: 90vh;
+    color: #ffffff;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .menyList1 {
+      display: flex;
+      justify-content: space-around;
+      h4 {
+        text-decoration: underline;
+        font-size: 2rem;
+      }
+    }
+    .menyList2 {
+      display: flex;
+      justify-content: space-around;
+      h4 {
+        text-decoration: underline;
+        font-size: 2rem;
+      }
+    }
+    ul {
+      text-align: center;
+      text-decoration: none;
+      list-style-type: none;
+      & li {
+        font-family: sans-serif;
+        margin: 1.5rem 0rem;
+      }
+    }
+  }
+}
+
+.wrapper-contact {
+  background-image: url(/Images/espresso.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 2px;
+  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+
+  .info-h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .info-container {
+    display: flex;
+    justify-content: center;
+    .info-text {
+      font-size: 1.5rem;
+      padding: 2rem 4rem 1rem;
+      text-align: center;
+      width: 70%;
+    }
+  }
+  .contact-info {
+    text-align: center;
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+
+      li a {
+        font-size: 3rem;
+        color: #ffffff;
+        padding: 0rem 1rem;
+      }
+    }
+
+    .contact-list {
+      list-style-type: none;
+      font-family: sans-serif;
+      padding: 1rem 4rem 2rem;
+
+      li {
+        font-size: 1.5rem;
+        padding: 1rem 0rem;
+      }
+    }
+  }
+}
