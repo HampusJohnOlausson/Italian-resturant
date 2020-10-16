@@ -5,44 +5,51 @@
           box-sizing: border-box;
 }
 
-.goBack {
-  font-size: 1.5rem;
-  font-family: sans-serif;
-  color: #ffffff;
-  text-decoration: none;
+body {
+  background-image: url(/Images/pizza.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
+/* colors */
 .wrapper {
   background-image: url(/Images/pizza.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background: rgba(0, 0, 0, 0.45);
   overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
   min-height: 100vh;
   color: #ffffff;
-  letter-spacing: 2px;
-  font-family: "Rock Salt", cursive;
-  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
-          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+  letter-spacing: 3px;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
 }
 
 .wrapper .btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
   width: 13rem;
-  height: 3rem;
-  font-size: 1.5rem;
+  height: 4rem;
+  font-size: 1.2rem;
   border-radius: 7px;
-  margin: 1rem;
+  font-weight: bold;
+  margin: 2rem;
   outline: none;
+  cursor: pointer;
   border: none;
   color: black;
-  cursor: pointer;
   background-color: #ffbd2d;
-  font-family: sans-serif;
   -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
           box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  position: relative;
+  z-index: 1;
 }
 
 .wrapper .btn a {
@@ -50,29 +57,42 @@
   color: black;
 }
 
+.wrapper .btn:before {
+  background: #cb3b3b;
+  content: "";
+  position: absolute;
+  border-radius: 7px;
+  left: 50%;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.wrapper .btn:hover:before {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
 .wrapper .header {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 2rem;
   height: 20vh;
-  background: rgba(0, 0, 0, 0.45);
-}
-
-.wrapper .header .logo {
-  padding-left: 2rem;
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
 }
 
 .wrapper .header .nav-list {
@@ -91,12 +111,37 @@
 .wrapper .header .nav-list li a {
   text-decoration: none;
   color: #ffffff;
-  font-family: sans-serif;
   font-size: 1.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 3rem;
+  width: 3rem;
+  transition: 0.5s;
+}
+
+.wrapper .header .nav-list a:hover {
+  color: #ffbd2d;
+}
+
+.wrapper .header .nav-list .nav-line {
+  font-size: 2rem;
+}
+
+.wrapper .header .nav-list .fab {
+  font-size: 3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper .header .fab:hover {
+  color: #ffbd2d;
+  margin-top: -1rem;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .wrapper .first-section {
-  height: 80vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,17 +152,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  padding: 10rem 4rem;
-  background: rgba(0, 0, 0, 0.25);
 }
 
 .wrapper .first-section .welcome {
+  color: #ffbd2d;
   font-size: 3rem;
+  font-family: "Yellowtail", cursive;
+}
+
+.wrapper .first-section .hero-text {
+  font-size: 4rem;
 }
 
 .wrapper .first-section .under-text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /* Meny sidan */
@@ -131,7 +183,6 @@
   min-height: 100vh;
   color: #ffffff;
   letter-spacing: 2px;
-  font-family: "Rock Salt", cursive;
   -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
           box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
@@ -189,7 +240,6 @@
 }
 
 .wrapper-meny .meny-container ul li {
-  font-family: sans-serif;
   margin: 1.5rem 0rem;
 }
 
@@ -202,7 +252,6 @@
   width: 100%;
   min-height: 100vh;
   color: #ffffff;
-  font-family: "Rock Salt", cursive;
   letter-spacing: 2px;
   -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
           box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);

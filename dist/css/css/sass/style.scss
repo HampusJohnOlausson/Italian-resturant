@@ -3,61 +3,83 @@
   margin: 0;
   box-sizing: border-box;
 }
-.goBack {
-  font-size: 1.5rem;
-  font-family: sans-serif;
-  color: #ffffff;
-  text-decoration: none;
+body {
+  background-image: url(/Images/pizza.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+/* colors */
+$primary: #ffbd2d;
+$accent: #ffffff;
+$regular: #cb3b3b;
 .wrapper {
   background-image: url(/Images/pizza.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background: rgba(0, 0, 0, 0.45);
   overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
   min-height: 100vh;
-  color: #ffffff;
-  letter-spacing: 2px;
-  font-family: "Rock Salt", cursive;
-  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+  color: $accent;
+  letter-spacing: 3px;
+  font-family: "Josefin Sans", sans-serif;
+  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
 
   .btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
     width: 13rem;
-    height: 3rem;
-    font-size: 1.5rem;
+    height: 4rem;
+    font-size: 1.2rem;
     border-radius: 7px;
-    margin: 1rem;
+    font-weight: bold;
+    margin: 2rem;
     outline: none;
+    cursor: pointer;
     border: none;
     color: black;
-    cursor: pointer;
-    background-color: #ffbd2d;
-    font-family: sans-serif;
+    background-color: $primary;
     box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
-    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: 1s all ease;
+    position: relative;
+    z-index: 1;
 
     & a {
       text-decoration: none;
       color: black;
     }
   }
+  .btn:before {
+    background: $regular;
+    content: "";
+    position: absolute;
+    border-radius: 7px;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  .btn:hover:before {
+    transition: all 0.6s ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+  }
 
   .header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
     padding: 2rem;
     height: 20vh;
-    background: rgba(0, 0, 0, 0.45);
-
-    .logo {
-      padding-left: 2rem;
-      transform: rotate(-5deg);
-    }
 
     .nav-list {
       width: 50%;
@@ -69,26 +91,51 @@
       & li a {
         text-decoration: none;
         color: #ffffff;
-        font-family: sans-serif;
         font-size: 1.5rem;
+        transition: 0.5s;
+        padding: 3rem;
+        width: 3rem;
+        transition: 0.5s;
       }
+      a:hover {
+        color: $primary;
+      }
+      .nav-line {
+        font-size: 2rem;
+      }
+      .fab {
+        font-size: 3rem;
+        transition: 0.5s;
+      }
+    }
+    .fab:hover {
+      color: #ffbd2d;
+      margin-top: -1rem;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      transition: all 0.2s linear;
     }
   }
 
   .first-section {
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 10rem 4rem;
-    background: rgba(0, 0, 0, 0.25);
 
     .welcome {
+      color: $primary;
       font-size: 3rem;
+      font-family: "Yellowtail", cursive;
+    }
+    .hero-text {
+      font-size: 4rem;
     }
     .under-text {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -105,7 +152,6 @@
   min-height: 100vh;
   color: #ffffff;
   letter-spacing: 2px;
-  font-family: "Rock Salt", cursive;
   box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
 
@@ -142,7 +188,6 @@
       text-decoration: none;
       list-style-type: none;
       & li {
-        font-family: sans-serif;
         margin: 1.5rem 0rem;
       }
     }
@@ -158,7 +203,6 @@
   width: 100%;
   min-height: 100vh;
   color: #ffffff;
-  font-family: "Rock Salt", cursive;
   letter-spacing: 2px;
   box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
