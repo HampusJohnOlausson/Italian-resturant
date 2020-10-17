@@ -1,0 +1,51 @@
+.wrapper-meny {
+    background-image: url(/Images/vino.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    min-height: 100vh;
+    color: #ffffff;
+    letter-spacing: 2px;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+  
+    .meny-container {
+      margin: 3rem auto 0rem;
+      width: 90%;
+      height: 90vh;
+      color: #ffffff;
+      border-radius: 7px;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  
+      .menyList1 {
+        display: flex;
+        justify-content: space-around;
+        h4 {
+          text-decoration: underline;
+          font-size: 2rem;
+        }
+      }
+      .menyList2 {
+        display: flex;
+        justify-content: space-around;
+        h4 {
+          text-decoration: underline;
+          font-size: 2rem;
+        }
+      }
+      ul {
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        & li {
+          margin: 1.5rem 0rem;
+        }
+      }
+    }
+  }
