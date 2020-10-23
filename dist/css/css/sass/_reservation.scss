@@ -1,0 +1,79 @@
+.wrapper.book{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+   
+
+    .header-book{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+
+        .h2-reservation{
+            font-size: 3rem;
+            color: $primary;
+        }
+    }
+
+   .form-container {
+       height: 80vh;
+       width: 60%;
+       margin: auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: 3px solid $primary;
+       border-radius: 25px;
+       
+
+       form {
+           display: flex;
+           flex-direction: column;
+           font-size: 1.5rem;
+           width: 60%;
+           
+           label {
+               margin: 0.5rem 0rem;
+
+           }
+           input{
+            border-radius: 7px;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            outline: none;
+            border: 2px solid $accent;
+
+        }
+
+           
+           .btn {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            width: 13rem;
+            height: 4rem;
+            font-size: 1.2rem;
+            border-radius: 7px;
+            font-weight: bold;
+            margin: 2rem;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            color: black;
+            background-color: $primary;
+            box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            transition: 1s all ease;
+            position: relative;
+            z-index: 1;
+            align-self: center;
+        
+            
+            & a {
+              text-decoration: none;
+              color: black;
+            }
+          }
+       }
+   }
+}
