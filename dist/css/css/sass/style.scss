@@ -23,7 +23,86 @@ $regular: #cb3b3b;
 @import "front";
 @import "reservation";
 
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
 
+.wrapper {
+   min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    color: $accent;
+    letter-spacing: 3px;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+
+     
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+  height: 20vh;
+
+  .nav-list {
+    width: 60%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & li a {
+      text-decoration: none;
+      color: $accent;
+      font-size: 1.5rem;
+      text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      transition: 0.5s;
+    }
+    & li a:hover {
+      color: $primary;
+    }
+    .nav-line {
+      font-size: 2rem;
+    }
+    .fab {
+      font-size: 3rem;
+      transition: 0.5s;
+    }
+  }
+}
+
+}
+
+  /* Button */
+  .btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 13rem;
+    height: 4rem;
+    align-self: center;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    font-weight: bold;
+    margin: 2rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: black;
+    background-color: $primary;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: 1s all ease;
+    position: relative;
+    z-index: 1;
+  
+    & a {
+      text-decoration: none;
+      color: black;
+    }
+  }
 
 
 

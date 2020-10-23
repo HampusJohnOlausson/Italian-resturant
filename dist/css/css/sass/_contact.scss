@@ -1,44 +1,32 @@
 .wrapper-contact {
-    background-image: url(/Images/espresso.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    width: 100%;
-    min-height: 100vh;
-    color: #ffffff;
-    letter-spacing: 2px;
-    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
-    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
-  
-    .info-h2 {
-      font-size: 2rem;
-      text-align: center;
-    }
+
     .info-container {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      .info-text {
-        font-size: 1.5rem;
-        padding: 2rem 4rem 1rem;
+      margin: auto;
+      width: 60%;
+
+      .info-h2 {
+        font-size: 3rem;
         text-align: center;
-        width: 70%;
+        font-family: "Yellowtail", cursive;
+        color: $primary;
+        margin-bottom: 2rem;
+        animation: leftSlide 1.5s ease;
+      }
+      .info-text {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        
       }
     }
     .contact-info {
+      height: 20vh;
       text-align: center;
   
-      .social-media {
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
   
-        li a {
-          font-size: 3rem;
-          color: #ffffff;
-          padding: 0rem 1rem;
-        }
-      }
   
       .contact-list {
         list-style-type: none;
