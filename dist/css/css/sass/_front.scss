@@ -1,10 +1,7 @@
-.wrapper-header {
-    background-image: url(/Images/pizza.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+.first-section {
 
-    .first-section {
-      height: 60vh;
+      background: rgba(0, 0, 0, 0.45);
+      height: 80vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -30,7 +27,6 @@
         animation: rightSlide 3s ease;
       }
     }
-  }
   
 
   

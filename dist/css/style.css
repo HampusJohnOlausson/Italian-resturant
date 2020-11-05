@@ -6,15 +6,31 @@
 }
 
 body {
-  background-image: url(/Images/pizza.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-/* colors */
+/* Colors */
 /*Import*/
-.wrapper-contact .info-container {
+.contact-section {
+  height: 100vh;
+  background-color: #000000;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-section .info-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,40 +41,49 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto;
   width: 60%;
 }
 
-.wrapper-contact .info-container .info-h2 {
+.contact-section .info-container .info-h2 {
   font-size: 3rem;
   text-align: center;
   font-family: "Yellowtail", cursive;
   color: #ffbd2d;
-  margin-bottom: 2rem;
   -webkit-animation: leftSlide 1.5s ease;
           animation: leftSlide 1.5s ease;
 }
 
-.wrapper-contact .info-container .info-text {
+.contact-section .info-container .info-text {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.7rem;
   text-align: center;
 }
 
-.wrapper-contact .contact-info {
-  height: 20vh;
+.contact-section .fas {
+  color: #ffbd2d;
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.contact-section .contact-info {
   text-align: center;
 }
 
-.wrapper-contact .contact-info .contact-list {
+.contact-section .contact-info .contact-list {
   list-style-type: none;
   font-family: sans-serif;
   padding: 1rem 4rem 2rem;
 }
 
-.wrapper-contact .contact-info .contact-list li {
+.contact-section .contact-info .contact-list li {
   font-size: 1.5rem;
   padding: 1rem 0rem;
+}
+
+.menu-section {
+  background-color: #000000;
+  height: 100vh;
+  text-align: center;
 }
 
 /* Social media icons */
@@ -129,14 +154,9 @@ body {
   z-index: -1;
 }
 
-.wrapper-header {
-  background-image: url(/Images/pizza.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.wrapper-header .first-section {
-  height: 60vh;
+.first-section {
+  background: rgba(0, 0, 0, 0.45);
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +173,7 @@ body {
   text-align: center;
 }
 
-.wrapper-header .first-section .welcome {
+.first-section .welcome {
   width: 100%;
   color: #ffbd2d;
   font-size: 3rem;
@@ -162,21 +182,43 @@ body {
           animation: leftSlide 1.5s ease;
 }
 
-.wrapper-header .first-section .hero-text {
+.first-section .hero-text {
   width: 100%;
   font-size: 4rem;
   -webkit-animation: rightSlide 2.5s ease;
           animation: rightSlide 2.5s ease;
 }
 
-.wrapper-header .first-section .under-text {
+.first-section .under-text {
   width: 100%;
   font-size: 1.3rem;
   -webkit-animation: rightSlide 3s ease;
           animation: rightSlide 3s ease;
 }
 
-.book .form-container {
+.reservation-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-image: url(/Images/vino.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.reservation-section .form-container {
   height: 75vh;
   width: 60%;
   margin: auto;
@@ -197,15 +239,7 @@ body {
   border-radius: 7px;
 }
 
-.book .form-container .h2-reservation {
-  font-family: "Yellowtail", cursive;
-  font-size: 2.5rem;
-  color: #ffbd2d;
-  -webkit-animation: rightSlide 1.5s ease;
-          animation: rightSlide 1.5s ease;
-}
-
-.book .form-container form {
+.reservation-section .form-container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,11 +251,11 @@ body {
   width: 60%;
 }
 
-.book .form-container form label {
+.reservation-section .form-container form label {
   margin: 0.5rem 0rem 0.5rem;
 }
 
-.book .form-container form input {
+.reservation-section .form-container form input {
   border-radius: 7px;
   padding: 0.5rem;
   font-size: 1.2rem;
@@ -229,55 +263,70 @@ body {
   border: 2px solid #ffffff;
 }
 
-@media screen and (max-width: 1050px) {
-  .wrapper {
-    overflow: hidden;
-  }
-  .wrapper .header .hamburger {
-    cursor: pointer;
-    display: block;
-  }
-  .wrapper .header .hamburger .line {
-    background-color: #ffffff;
-    width: 2rem;
-    height: 0.1rem;
-    margin: 0.3rem;
-  }
-  .wrapper .header .nav-list {
-    position: absolute;
-    z-index: 2;
-    top: 0vh;
-    right: 0rem;
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .wrapper .header .nav-list .nav-line {
-    display: none;
-  }
-  .wrapper .header .fab:hover {
-    margin-top: 0rem;
-  }
+/*
+
+@media screen and (max-width: 1050px){
+
+
+    .wrapper {
+        overflow: hidden;
+        .header{
+            
+            .hamburger {
+                cursor: pointer;
+                display: block;
+                
+                .line {
+                    background-color: $accent;
+                    width: 2rem;
+                    height: 0.1rem;
+                    margin: 0.3rem;
+                }
+            }
+            .nav-list {
+                position: absolute;
+                z-index: 2;
+                top: 0vh;
+                right: 0rem;
+                background-color: black;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .nav-line {
+                    display: none;
+                }  
+            }
+            .fab:hover {
+                margin-top: 0rem;
+              }
+        }
+
+    }
+
+
 }
 
-body {
-  font-family: "Josefin Sans", sans-serif;
+*/
+/*Flex classes*/
+/* Reusable classes */
+h2 {
+  font-family: "Yellowtail", cursive;
+  font-size: 2.5rem;
+  color: #ffbd2d;
+  -webkit-animation: rightSlide 1.5s ease;
+          animation: rightSlide 1.5s ease;
+  padding: 2rem;
 }
 
+/* --Wrapper--- */
 .wrapper {
+  background-image: url(/Images/pizza.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   min-height: 100vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.45);
   overflow: hidden;
   scroll-behavior: smooth;
   color: #ffffff;
@@ -292,14 +341,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
   height: 20vh;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .wrapper .header .nav-list {
@@ -340,12 +390,21 @@ body {
 
 /* Button */
 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   width: 13rem;
   height: 4rem;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   font-size: 1.2rem;
   border-radius: 7px;

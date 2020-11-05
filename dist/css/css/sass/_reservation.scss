@@ -1,6 +1,17 @@
-.book{
+.reservation-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      min-height: 100vh;
+      background-image: url(/Images/vino.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background: rgba(0, 0, 0, 0.45);
     
    .form-container {
+    
        height: 75vh;
        width: 60%;
        margin: auto;
@@ -11,12 +22,6 @@
        border: 3px solid $primary;
        border-radius: 7px;
 
-       .h2-reservation{
-        font-family: "Yellowtail", cursive;
-        font-size: 2.5rem;
-        color: $primary;
-        animation: rightSlide 1.5s ease;
-    }  
        form {
            display: flex;
            flex-direction: column;

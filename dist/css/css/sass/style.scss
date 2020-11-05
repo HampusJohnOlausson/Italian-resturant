@@ -4,17 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(/Images/pizza.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-/* colors */
+/* Colors */
 
 $primary: #ffbd2d;
 $accent: #ffffff;
 $regular: #cb3b3b;
+$black: #000000;
 
 /*Import*/
 @import "contact";
@@ -24,29 +22,42 @@ $regular: #cb3b3b;
 @import "reservation";
 @import "media";
 
-body {
-  font-family: "Josefin Sans", sans-serif;
-}
+/*Flex classes*/
+
+/* Reusable classes */
+
+h2{
+  font-family: "Yellowtail", cursive;
+  font-size: 2.5rem;
+  color: $primary;
+  animation: rightSlide 1.5s ease;
+  padding: 2rem;
+} 
+
+/* --Wrapper--- */
+
 
 .wrapper {
-   min-height: 100vh;
+    background-image: url(/Images/pizza.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
     width: 100%;
-    background: rgba(0, 0, 0, 0.45);
     overflow: hidden;
     scroll-behavior: smooth;
     color: $accent;
     letter-spacing: 3px;
     box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
-
      
 .header {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   height: 20vh;
+  background: rgba(0, 0, 0, 0.45);
 
   .nav-list {
     width: 60%;
@@ -79,6 +90,10 @@ body {
 
   /* Button */
   .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
     width: 13rem;
