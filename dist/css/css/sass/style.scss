@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 body {
+  background: rgba(0, 0, 0, 0.4);
   font-family: "Josefin Sans", sans-serif;
 }
+
 
 /* Colors */
 
@@ -24,6 +26,22 @@ $black: #000000;
 
 /*Flex classes*/
 
+.flex-column-center-align{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
 /* Reusable classes */
 
 h2{
@@ -38,26 +56,29 @@ h2{
 
 
 .wrapper {
-    background-image: url(/Images/pizza.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    scroll-behavior: smooth;
     color: $accent;
     letter-spacing: 3px;
+    background-image: url(/Images/pizza.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
      
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   height: 20vh;
-  background: rgba(0, 0, 0, 0.45);
+  
 
   .nav-list {
     width: 60%;

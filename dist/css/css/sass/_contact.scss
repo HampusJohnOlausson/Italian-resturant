@@ -3,29 +3,15 @@
   height: 100vh;
   background-color: $black;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
 
     .info-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       width: 60%;
 
-      .info-h2 {
-        font-size: 3rem;
-        text-align: center;
-        font-family: "Yellowtail", cursive;
-        color: $primary;
-        animation: leftSlide 1.5s ease;
-      }
       .info-text {
         font-family: "Josefin Sans", sans-serif;
         font-size: 1.7rem;
         text-align: center;
-        
       }
     }
     .fas{

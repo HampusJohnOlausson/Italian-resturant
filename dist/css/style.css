@@ -6,6 +6,7 @@
 }
 
 body {
+  background: rgba(0, 0, 0, 0.4);
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -15,42 +16,10 @@ body {
   height: 100vh;
   background-color: #000000;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contact-section .info-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 60%;
-}
-
-.contact-section .info-container .info-h2 {
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Yellowtail", cursive;
-  color: #ffbd2d;
-  -webkit-animation: leftSlide 1.5s ease;
-          animation: leftSlide 1.5s ease;
 }
 
 .contact-section .info-container .info-text {
@@ -155,25 +124,15 @@ body {
 }
 
 .first-section {
-  background: rgba(0, 0, 0, 0.45);
-  height: 80vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .first-section .welcome {
+  text-align: center;
   width: 100%;
   color: #ffbd2d;
   font-size: 3rem;
@@ -183,6 +142,7 @@ body {
 }
 
 .first-section .hero-text {
+  text-align: center;
   width: 100%;
   font-size: 4rem;
   -webkit-animation: rightSlide 2.5s ease;
@@ -190,6 +150,7 @@ body {
 }
 
 .first-section .under-text {
+  text-align: center;
   width: 100%;
   font-size: 1.3rem;
   -webkit-animation: rightSlide 3s ease;
@@ -197,70 +158,31 @@ body {
 }
 
 .reservation-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
-  min-height: 100vh;
-  background-image: url(/Images/vino.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background: rgba(0, 0, 0, 0.45);
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.reservation-section .form-container {
-  height: 75vh;
+.reservation-section .reservationContainer {
+  background-color: #000000;
+  border-radius: 15px;
+  width: 70%;
+  height: 80vh;
+  margin: auto;
+}
+
+.reservation-section .reservationContainer .form {
   width: 60%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 3px solid #ffbd2d;
-  border-radius: 7px;
-}
-
-.reservation-section .form-container form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-size: 1.2rem;
-  width: 60%;
 }
 
-.reservation-section .form-container form label {
-  margin: 0.5rem 0rem 0.5rem;
-}
-
-.reservation-section .form-container form input {
+.reservation-section .reservationContainer .form input {
+  margin: 1rem;
   border-radius: 7px;
   padding: 0.5rem;
   font-size: 1.2rem;
   outline: none;
-  border: 2px solid #ffffff;
 }
 
 /*
@@ -310,6 +232,45 @@ body {
 
 */
 /*Flex classes*/
+.flex-column-center-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-column-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* Reusable classes */
 h2 {
   font-family: "Yellowtail", cursive;
@@ -322,21 +283,24 @@ h2 {
 
 /* --Wrapper--- */
 .wrapper {
-  background-image: url(/Images/pizza.jpg);
-  background-attachment: fixed;
-  background-size: cover;
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
-  scroll-behavior: smooth;
   color: #ffffff;
   letter-spacing: 3px;
+  background-image: url(/Images/pizza.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
           box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
 }
 
 .wrapper .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,7 +313,6 @@ h2 {
           align-items: center;
   padding: 2rem;
   height: 20vh;
-  background: rgba(0, 0, 0, 0.45);
 }
 
 .wrapper .header .nav-list {

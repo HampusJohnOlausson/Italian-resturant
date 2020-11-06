@@ -1,14 +1,11 @@
 .first-section {
 
-      background: rgba(0, 0, 0, 0.45);
-      height: 80vh;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
   
       .welcome {
+        text-align: center;
         width: 100%;
         color: $primary;
         font-size: 3rem;
@@ -17,11 +14,13 @@
       }
   
       .hero-text {
+        text-align: center;
         width: 100%;
         font-size: 4rem;
         animation: rightSlide 2.5s ease;
       }
       .under-text {
+        text-align: center;
         width: 100%;
         font-size: 1.3rem;
         animation: rightSlide 3s ease;

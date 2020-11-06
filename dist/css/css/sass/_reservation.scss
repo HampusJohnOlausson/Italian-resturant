@@ -1,43 +1,29 @@
 .reservation-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-      min-height: 100vh;
-      background-image: url(/Images/vino.jpg);
-      background-attachment: fixed;
-      background-size: cover;
-      background: rgba(0, 0, 0, 0.45);
+      text-align: center;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
     
-   .form-container {
-    
-       height: 75vh;
+      .reservationContainer {
+          background-color: $black;
+          border-radius: 15px;
+          width: 70%;
+          height: 80vh;
+          
+          margin: auto;
+      
+  .form {
+      
        width: 60%;
        margin: auto;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       border: 3px solid $primary;
-       border-radius: 7px;
-
-       form {
-           display: flex;
-           flex-direction: column;
-           font-size: 1.2rem;
-           width: 60%;
-           
-           label {
-               margin: 0.5rem 0rem 0.5rem;
-           }
+       font-size: 1.2rem;
+ 
            input{
+            margin: 1rem;
             border-radius: 7px;
             padding: 0.5rem;
             font-size: 1.2rem;
             outline: none;
-            border: 2px solid $accent;
         }
        }
-    }
+    }   
 }

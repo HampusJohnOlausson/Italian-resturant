@@ -24,9 +24,10 @@
         <header class="header">
             
             <ul class="nav-list">
-                <li><a href="#">Hem</a></li>
-                <li><a href="#">Meny</a></li>
-                <li><a href="#">Om oss</a></li>
+                <li><a href="#heroSection">Hem</a></li>
+                <li><a href="#menuSection">Meny</a></li>
+                <li><a href="#reservationSection">Boka bord</a></li>
+                <li><a href="#aboutSection">Om oss</a></li>
                 <li class="nav-line">|</li>
                 <li><i class="fab fa-twitter"></i></li>
                 <li><i class="fab fa-instagram"></i></li>   
@@ -34,15 +35,15 @@
         </header>
 
         <!--Hero-->
-        <section class="first-section">
+        <section class="first-section flex-column-center-align" id="heroSection" >
             <h3 class="welcome">Välkommen till</h3>
-           <h1 class="hero-text">La Cucinca Di Romina</h1>  
+           <h1 class="hero-text">La Cucina Di Romina</h1>  
             <h3 class="under-text">Äkta tradionell Italiensk mat, lagad med kärlek.</h3>
-            <a href="#" class="btn">Boka Bord</a>
+            <a href="#reservationSection" class="btn">Boka Bord</a>
         </section>
 
         <!--menu-->
-        <section class="menu-section">
+        <section class="menu-section flex-column-center-align" id="menuSection">
             <h2>Meny</h2>
             <div class="menu-container">
 
@@ -50,37 +51,37 @@
         </section>
 
         <!--Book table-->
-        <section class="reservation-section">
-            <h2>Boka bord</h2>
+        <section class="reservation-section flex-column-center-align" id="reservationSection" >
+            
+            <div class="reservationContainer flex-column">
 
-    <form action="">
+    <form action="" class="form flex-column">
 
-        <label for="Name">Namn:</label>
+        <h2>Boka bord</h2>
+        
         <input type="text" placeholder="Namn...">
 
-        <label for="phone">Telefon:</label>
         <input type="text" placeholder="Telefon...">
 
-        <label for="">E-mail:</label>
+
         <input type="text" placeholder="E-mail...">
 
-        <label for="number">Antal pers: </label>
         <input type="number" placeholder="Antal...">
 
-        <label for="date">Datum:</label>
         <input type="date">
 
-        <label for="time">Tid:</label>
         <input type="time">
-
         <a href="#" class="btn">Skicka</a>
-    </form>
 
+    </form>
+    
+
+</div>
         </section>
 
         <!--Contact-->
-        <section class="contact-section">
-            <div class="info-container">
+        <section class="contact-section flex-column-center-align" id="aboutSection">
+            <div class="info-container flex-column-center">
 
           <h2>Om oss</h2>
 
