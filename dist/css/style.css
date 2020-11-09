@@ -51,8 +51,65 @@ body {
 
 .menu-section {
   background-color: #000000;
-  height: 100vh;
+  height: 200vh;
   text-align: center;
+}
+
+.menu-section .card {
+  margin: 6rem 2rem 2rem 2rem;
+  background-color: #cb3b3b;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.menu-section .card img {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+  margin-top: -6rem;
+}
+
+.menu-section .card h3 {
+  margin: 1rem;
+}
+
+.menu-section .card p {
+  text-align: center;
+  padding: 0rem 1rem 1rem 0rem;
+}
+
+.menu-section .card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menu-section .card .add-container {
+  margin: 2rem;
+}
+
+.menu-section .card .add-container .quantity-input {
+  outline: none;
+  width: 4rem;
+  padding: 1rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.menu-section .card .add-container .add {
+  width: 7rem;
+  height: 3rem;
+  margin: 0 0 0 1rem;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.menu-section .card .add-container .add .fa-shopping-cart {
+  margin: 0rem 0.5rem 0rem 0rem;
 }
 
 /* Social media icons */
@@ -123,15 +180,21 @@ body {
   z-index: -1;
 }
 
-.first-section {
-  height: 100vh;
+/*Front Page*/
+.hero {
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.4);
+  /* Hero Text Section*/
+}
+
+.hero .first-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: rgba(0, 0, 0, 0.4);
+  padding-top: 10rem;
 }
 
-.first-section .welcome {
+.hero .first-section .welcome {
   text-align: center;
   width: 100%;
   color: #ffbd2d;
@@ -141,7 +204,7 @@ body {
           animation: leftSlide 1.5s ease;
 }
 
-.first-section .hero-text {
+.hero .first-section .hero-text {
   text-align: center;
   width: 100%;
   font-size: 4rem;
@@ -149,7 +212,7 @@ body {
           animation: rightSlide 2.5s ease;
 }
 
-.first-section .under-text {
+.hero .first-section .under-text {
   text-align: center;
   width: 100%;
   font-size: 1.3rem;
@@ -189,43 +252,6 @@ body {
 
 @media screen and (max-width: 1050px){
 
-
-    .wrapper {
-        overflow: hidden;
-        .header{
-            
-            .hamburger {
-                cursor: pointer;
-                display: block;
-                
-                .line {
-                    background-color: $accent;
-                    width: 2rem;
-                    height: 0.1rem;
-                    margin: 0.3rem;
-                }
-            }
-            .nav-list {
-                position: absolute;
-                z-index: 2;
-                top: 0vh;
-                right: 0rem;
-                background-color: black;
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .nav-line {
-                    display: none;
-                }  
-            }
-            .fab:hover {
-                margin-top: 0rem;
-              }
-        }
-
-    }
 
 
 }
@@ -271,6 +297,22 @@ body {
           flex-direction: column;
 }
 
+.flex-row-center-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* Reusable classes */
 h2 {
   font-family: "Yellowtail", cursive;
@@ -297,10 +339,7 @@ h2 {
 }
 
 .wrapper .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 20vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,7 +351,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
-  height: 20vh;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .wrapper .header .nav-list {

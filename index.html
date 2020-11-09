@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/css/style.css">
+
     <title>Romina De Cucina</title>
+
+
+    <!--Sass-->
+    <link rel="stylesheet" href="/dist/css/style.css">
+
+    <!--AOS Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
@@ -35,19 +42,100 @@
         </header>
 
         <!--Hero-->
+        <div class="hero">
         <section class="first-section flex-column-center-align" id="heroSection" >
             <h3 class="welcome">Välkommen till</h3>
            <h1 class="hero-text">La Cucina Di Romina</h1>  
             <h3 class="under-text">Äkta tradionell Italiensk mat, lagad med kärlek.</h3>
             <a href="#reservationSection" class="btn">Boka Bord</a>
         </section>
-
+        </div>
         <!--menu-->
-        <section class="menu-section flex-column-center-align" id="menuSection">
-            <h2>Meny</h2>
-            <div class="menu-container">
+        <section class="menu-section" id="menuSection">
+            <h2 class="menuh2" data-aos="fade-up">Meny</h2>
+
+            <div class="menu-container flex-row-center-align" data-aos="fade-left">
+
+                <section class="card">
+                    <img src="/Images/carbonara.jpg" alt="carbonara">
+                    <div>
+                        <h3>Pasta Carbonara</h3>
+                        <p>Hemgjord pasta med etx jajsjsjjjnsnnaajsj</p>
+                        <span class="price">129 Kr</span>
+                        <div class="add-container flex-row-center-align">
+                            <input type="number" class="quantity-input" value="0">
+                            <button type="button" class="add btn"> <i class="fas fa-shopping-cart"></i>Köp</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="card">
+                    <img src="/Images/carbonara.jpg" alt="carbonara">
+                    <div>
+                        <h3>Pasta Carbonara</h3>
+                        <p>Hemgjord pasta med etx jajsjsjjjnsnnaajsj</p>
+                        <span class="price">129 Kr</span>
+                        <div class="add-container flex-row-center-align">
+                            <input type="number" class="quantity-input" value="0">
+                            <button type="button" class="add btn"> <i class="fas fa-shopping-cart"></i>Köp</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="card">
+                    <img src="/Images/carbonara.jpg" alt="carbonara">
+                    <div>
+                        <h3>Pasta Carbonara</h3>
+                        <p>Hemgjord pasta med etx jajsjsjjjnsnnaajsj</p>
+                        <span class="price">129 Kr</span>
+                        <div class="add-container flex-row-center-align">
+                            <input type="number" class="quantity-input" value="0">
+                            <button type="button" class="add btn"> <i class="fas fa-shopping-cart"></i>Köp</button>
+                        </div>
+                    </div>
+                </section>
+                
+               
 
         </div>
+        <div class="menu-container flex-row-center-align" data-aos="fade-right">
+
+            <section class="card">
+                <img src="/Images/carbonara.jpg" alt="carbonara">
+                <div>
+                    <h3>Pasta Carbonara</h3>
+                    <p>Hemgjord pasta med etx jajsjsjjjnsnnaajsj</p>
+                    <span class="price">129 Kr</span>
+                    <div class="add-container flex-row-center-align">
+                        <input type="number" class="quantity-input" value="0">
+                        <button type="button" class="add btn"> <i class="fas fa-shopping-cart"></i>Köp</button>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <img src="/Images/carbonara.jpg" alt="carbonara">
+                <div>
+                    <h3>Pasta Carbonara</h3>
+                    <p>Hemgjord pasta med etx jajsjsjjjnsnnaajsj</p>
+                    <span class="price">129 Kr</span>
+                    <div class="add-container flex-row-center-align">
+                        <input type="number" class="quantity-input" value="0">
+                        <button type="button" class="add btn"> <i class="fas fa-shopping-cart"></i>Köp</button>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <img src="/Images/carbonara.jpg" alt="carbonara">
+                <div>
+                    <h3>Pasta Carbonara</h3>
+                    <p>Hemgjord pasta med etx jajsjsjjjnsnnaajsj</p>
+                    <span class="price">129 Kr</span>
+                    <div class="add-container flex-row-center-align">
+                        <input type="number" class="quantity-input" value="0">
+                        <button type="button" class="add btn"> <i class="fas fa-shopping-cart"></i>Köp</button>
+                    </div>
+                </div>
+            </section>
+
+    </div>
         </section>
 
         <!--Book table-->
@@ -55,9 +143,9 @@
             
             <div class="reservationContainer flex-column">
 
-    <form action="" class="form flex-column">
+    <form action="" class="form flex-column" data-aos="fade-left">
 
-        <h2>Boka bord</h2>
+        <h2 data-aos="fade-right">Boka bord</h2>
         
         <input type="text" placeholder="Namn...">
 
@@ -83,9 +171,9 @@
         <section class="contact-section flex-column-center-align" id="aboutSection">
             <div class="info-container flex-column-center">
 
-          <h2>Om oss</h2>
+          <h2 data-aos="fade-up">Om oss</h2>
 
-          <p class="info-text">
+          <p class="info-text" data-aos="fade-right">
             "Följ med på en smakresa till Italiens hjärta som numera ligger på västkusten. 
             La Cucina di Romina är en familjeägd restaurang belägen i Göteborg, som öppnade sina dörrar 2020. 
             Vi använder oss utav färska råvaror av bästa kvalite, importerade från Tosacanas vingårdar till Amalfis kust. 
@@ -94,11 +182,11 @@
 
         </div>
 
-        <i class="fas fa-utensils"></i>
+        <i class="fas fa-utensils" data-aos="fade-down"></i>
 
         <footer class="contact-info">
 
-          <ul class="contact-list">
+          <ul class="contact-list" data-aos="fade-left">
             <li><i class="fas fa-phone-square-alt"></i> 031 - 24 33 678</li>
             <li><i class="fas fa-envelope-square"></i> cucina-romina@gmail.com</li>
             <li><i class="fas fa-home"></i> Neonstigen 44, Göteborg</li>
@@ -114,6 +202,16 @@
  
     </div>
 
+    <!--Javascript-->
     <script src="/js/app.js"></script>
+
+    <!--AOS Library-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>
 </body>
 </html>

@@ -1,8 +1,15 @@
-.first-section {
 
-      height: 100vh;
-      display: flex;
+/*Front Page*/
+.hero {
+      height: 80vh;
       background: rgba(0, 0, 0, 0.4);
+
+      /* Hero Text Section*/
+    .first-section {
+
+      display: flex;
+      padding-top: 10rem;
+      
   
       .welcome {
         text-align: center;
@@ -28,6 +35,6 @@
     }
   
 
-  
+}
   
   
