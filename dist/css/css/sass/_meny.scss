@@ -1,6 +1,6 @@
 .menu-section{
     background-color: $black;
-    height: 200vh;
+    height: 220vh;
     text-align: center;
 
     
@@ -9,7 +9,6 @@
         margin: 6rem 2rem 2rem 2rem ;
         background-color: $regular;
         border-radius: 20px;
-        padding: 1rem;
         
 
         img {
@@ -26,7 +25,7 @@
 
         p{
             text-align: center;
-            padding: 0rem 1rem 1rem 0rem;
+            padding: 0rem 1rem;
         }
 
         .price{
@@ -35,23 +34,14 @@
         }
 
         .add-container{
-            margin: 2rem;
+            margin: 1rem;
             
 
-            .quantity-input{
-                outline: none;
-                width: 4rem;
-                padding: 1rem;
-                height: 2rem;
-                border-radius: 10px;
-                border: none;
-                box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.3);
-            }
     
              .add{
+                 margin: 0.2rem;
                 width: 7rem;
                  height: 3rem;
-                 margin: 0 0 0 1rem;
                  transition: ease .5s;
 
                 .fa-shopping-cart{
@@ -60,5 +50,49 @@
                  }
             }
 }
+}
+
+.cart-container {
+    color: #ffffff;
+    max-width: 75rem;
+    border: 2px solid #ffffff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    .cart-h3{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .cartTotal{
+        margin-right: 0;
+        margin-left: auto;
+
+    }
+    table {
+        border-collapse: collapse;
+    }
+    td,th {
+        font-size: 1.2rem;
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #ffffff;
+    }
+    .empty{
+        margin: 2rem 1rem;
+        margin-left: auto;
+        background-color: $regular;
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
+    .checkout{
+        margin: 2rem 1rem;
+        margin-left: auto;
+        background-color: #26ca70;
+        color: #ffffff;
+        font-size: 1rem;
+    }
+
 }
 }

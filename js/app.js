@@ -1,5 +1,8 @@
 /*--------Smooth Scroll---------*/
 
+/**
+ * Function for smooth scrolling on page.
+ */
 const smoothScroll = () => {
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -19,3 +22,4 @@ const smoothScroll = () => {
 
     
     /*--------Add Cart----------*/
+

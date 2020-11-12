@@ -33,7 +33,7 @@
   background: $regular;
   content: "";
   position: absolute;
-  border-radius: 7px;
+  border-radius: 3rem;
   left: 50%;
   right: 50%;
   top: 0;
@@ -48,3 +48,13 @@
   opacity: 1;
   z-index: -1;
 }
+.empty:before{
+  background: $primary;
+}
+.checkout:before{
+  background: $primary;
+}
+.add:before{
+  background: #26ca70;
+}
+

@@ -51,7 +51,7 @@ body {
 
 .menu-section {
   background-color: #000000;
-  height: 200vh;
+  height: 220vh;
   text-align: center;
 }
 
@@ -59,7 +59,6 @@ body {
   margin: 6rem 2rem 2rem 2rem;
   background-color: #cb3b3b;
   border-radius: 20px;
-  padding: 1rem;
 }
 
 .menu-section .card img {
@@ -77,7 +76,7 @@ body {
 
 .menu-section .card p {
   text-align: center;
-  padding: 0rem 1rem 1rem 0rem;
+  padding: 0rem 1rem;
 }
 
 .menu-section .card .price {
@@ -86,30 +85,65 @@ body {
 }
 
 .menu-section .card .add-container {
-  margin: 2rem;
-}
-
-.menu-section .card .add-container .quantity-input {
-  outline: none;
-  width: 4rem;
-  padding: 1rem;
-  height: 2rem;
-  border-radius: 10px;
-  border: none;
-  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.3);
+  margin: 1rem;
 }
 
 .menu-section .card .add-container .add {
+  margin: 0.2rem;
   width: 7rem;
   height: 3rem;
-  margin: 0 0 0 1rem;
   -webkit-transition: ease .5s;
   transition: ease .5s;
 }
 
 .menu-section .card .add-container .add .fa-shopping-cart {
   margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.menu-section .cart-container {
+  color: #ffffff;
+  max-width: 75rem;
+  border: 2px solid #ffffff;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.menu-section .cart-container .cart-h3 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.menu-section .cart-container .cartTotal {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.menu-section .cart-container table {
+  border-collapse: collapse;
+}
+
+.menu-section .cart-container td, .menu-section .cart-container th {
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ffffff;
+}
+
+.menu-section .cart-container .empty {
+  margin: 2rem 1rem;
+  margin-left: auto;
+  background-color: #cb3b3b;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.menu-section .cart-container .checkout {
+  margin: 2rem 1rem;
+  margin-left: auto;
+  background-color: #26ca70;
+  color: #ffffff;
+  font-size: 1rem;
 }
 
 /* Social media icons */
@@ -161,7 +195,7 @@ body {
   background: #cb3b3b;
   content: "";
   position: absolute;
-  border-radius: 7px;
+  border-radius: 3rem;
   left: 50%;
   right: 50%;
   top: 0;
@@ -178,6 +212,18 @@ body {
   right: 0;
   opacity: 1;
   z-index: -1;
+}
+
+.empty:before {
+  background: #ffbd2d;
+}
+
+.checkout:before {
+  background: #ffbd2d;
+}
+
+.add:before {
+  background: #26ca70;
 }
 
 /*Front Page*/
@@ -409,7 +455,7 @@ h2 {
   -ms-flex-item-align: center;
       align-self: center;
   font-size: 1.2rem;
-  border-radius: 7px;
+  border-radius: 3rem;
   font-weight: bold;
   margin: 2rem;
   outline: none;
