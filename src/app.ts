@@ -1,30 +1,44 @@
 window.addEventListener('load', main);
 
-function main (){
 
+function main() : void {
+
+    addButton();
     removeButton();
 }
 
 
 /**
- * removes items from the cart
+ * Removes items from the cart
  */
-function removeButton() : void{
+function removeButton() : void {
 
-let removeBtn = document.getElementsByClassName('remove');
+let removeBtn = document.getElementsByClassName('remove')!;
 
 //loop through buttons
 for(let i = 0; i < removeBtn.length; i++){
 
-    let button = removeBtn[i];
+    let button: Element = removeBtn[i];
 
-    button.addEventListener('click', (event) => {
+    button.addEventListener('click', (e: Event) => {
 
-        let buttonClicked = event.target;
+        let buttonClicked: EventTarget | any = e.target;
         //targets the parents so the whole container disapears on click
         buttonClicked.parentElement.parentElement.remove();
     })
 }
 
+}
 
+/**
+ * Adds item to the cart.
+ */
+function addButton(): void {
+
+    let addBtn = document.getElementsByClassName('add')!;
+
+    for(let i = 0; i < addBtn.length; i++){
+    }
+
+     
 }
