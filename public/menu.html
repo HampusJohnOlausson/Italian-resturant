@@ -54,10 +54,10 @@
                     <img src="./Images/carbonara.jpg" alt="carbonara">
                     <div>
                         <h3>Pasta Carbonara</h3>
-                        <p>Hemgjord pasta med etx jajsjsjjjnsnnaajsj</p>
+                        <p>Hemgjord pasta med ganchalle, ägg</p>
                         <span class="price">129</span>
                         <div class="add-container flex-row-center-align">
-                        <button type="button" class="add btn"> <i class="fas fa-shopping-cart"></i>Köp</button>
+                        <button type="button" class="add btn"> <i class="fas fa-shopping-cart"></i>Lägg till</button>
                         </div>
                     </div>
                 </section>
@@ -65,14 +65,25 @@
         </div>
 
         <!--checkout cart-->
-        <div class="cartItems flex-row-center-align">
-            <div class="itemCart"></div>
-            <span class="priceCart">19:99</span>
-            <div class="quantity flex-row-center-align">
-                <input type="number" value="1" class="quantityInput">
-                <button class="remove btn" type="button">Ta bort</button>
+        <div class="checkout-container">
+            <div class="cartItems flex-row-center-end">
+                <div class="itemCart">Pasta carbonara</div>
+                <span class="priceCart">19:99</span>
+                <div class="quantity flex-row-center-align">
+                    <input type="number" value="1" class="quantityInput">
+                    <button class="remove btn" type="button">Ta bort</button>
+                </div>
+
             </div>
-    </div>
+            <div class="checkout-total flex-row-center-end">
+                <div id="total-title">Total:</div>
+                <span id="total-price">450:50</span>
+            </div>
+        </div>
+        
+        <button class="checkout btn">Gå till kassan</button>
+
+        
  
     </div>
 

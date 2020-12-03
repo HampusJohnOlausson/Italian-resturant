@@ -41,7 +41,8 @@
     
              .add{
                  margin: 0.2rem;
-                width: 7rem;
+                width: 12rem;
+                
                  height: 3rem;
                  transition: ease .5s;
 
@@ -53,47 +54,44 @@
 }
 }
 
-.cart-container {
-    color: #ffffff;
-    max-width: 75rem;
-    border: 2px solid #ffffff;
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: 1rem;
+/*----Checkout container----*/
 
-    .cart-h3{
+.checkout-container{
+    border: 0.2rem solid $accent;
+
+    .itemCart{
+        font-size: 1.4rem;
+        margin: 1rem;
+    }
+    .priceCart{
+        font-size: 1.4rem;
+        color: $primary;
+        margin: 1rem;
+    }
+
+    .quantityInput{
+        border-radius: 1rem;
+        padding: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem;
+    }
+    .remove{
+        width: 8rem;
+        height: 3rem;
+    }
+    
+    #total-title{
         font-size: 2rem;
-        padding: 1rem;
+        margin: 1rem;
     }
-    .cartTotal{
-        margin-right: 0;
-        margin-left: auto;
-
-    }
-    table {
-        border-collapse: collapse;
-    }
-    td,th {
-        font-size: 1.2rem;
-        padding: 1rem;
-        text-align: left;
-        border-bottom: 1px solid #ffffff;
-    }
-    .empty{
-        margin: 2rem 1rem;
-        margin-left: auto;
-        background-color: $regular;
-        color: #ffffff;
-        font-size: 1rem;
-    }
-
-    .checkout{
-        margin: 2rem 1rem;
-        margin-left: auto;
-        background-color: #26ca70;
-        color: #ffffff;
-        font-size: 1rem;
+    #total-price{
+        font-size: 1.6rem;
+        margin: 1rem;
+        color: $primary;
     }
 
 }
+
+
 }

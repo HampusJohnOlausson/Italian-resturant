@@ -16,6 +16,7 @@ function removeButton() {
             let buttonClicked = e.target;
             //targets the parents so the whole container disapears on click
             buttonClicked.parentElement.parentElement.remove();
+            updateCartTotal();
         });
     }
 }
@@ -26,4 +27,9 @@ function addButton() {
     let addBtn = document.getElementsByClassName('add');
     for (let i = 0; i < addBtn.length; i++) {
     }
+}
+/**
+ * Updating the cart total price
+ */
+function updateCartTotal() {
 }

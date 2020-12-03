@@ -25,6 +25,7 @@ for(let i = 0; i < removeBtn.length; i++){
         let buttonClicked: EventTarget | any = e.target;
         //targets the parents so the whole container disapears on click
         buttonClicked.parentElement.parentElement.remove();
+        updateCartTotal();
     })
 }
 
@@ -40,5 +41,13 @@ function addButton(): void {
     for(let i = 0; i < addBtn.length; i++){
     }
 
-     
 }
+
+/**
+ * Updating the cart total price
+ */
+
+ function updateCartTotal() : void {
+
+    
+ }
