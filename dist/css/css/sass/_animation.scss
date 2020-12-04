@@ -48,13 +48,21 @@
   opacity: 1;
   z-index: -1;
 }
-.empty:before{
-  background: $primary;
+.btn:hover{
+  color: #fff;
 }
-.checkout:before{
-  background: $primary;
+
+.add:hover{
+  color: #fff;
 }
 .add:before{
   background: #26ca70;
+}
+.checkout:hover{
+  color: #fff;
+}
+.checkout:before{
+  background: #26ca70;
+
 }
 
