@@ -54,8 +54,11 @@ function addButton(): void {
     const cartItems = cartItemContainer.getElementsByClassName('cartItem');
 
     for(let i = 0; i < cartItems.length; i++){
+
         let cartItem = cartItems[i];
-        let price = cartItem.getElementsByClassName('priceItem')[0];
-        let quantity = cartItem.getElementsByClassName('quantityInput');
+        let price = cartItem.getElementsByClassName('priceCart')[0];
+        let quantity = cartItem.getElementsByClassName('quantityInput')[0];
+
+        console.log(price, quantity);
     }
  }
