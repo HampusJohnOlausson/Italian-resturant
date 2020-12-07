@@ -49,5 +49,13 @@ function addButton(): void {
 
  function updateCartTotal() : void {
 
-    
+    //only want to get the first get the first element of the array of cart-items
+    const cartItemContainer = document.getElementsByClassName('cart-items')[0];
+    const cartItems = cartItemContainer.getElementsByClassName('cartItem');
+
+    for(let i = 0; i < cartItems.length; i++){
+        let cartItem = cartItems[i];
+        let price = cartItem.getElementsByClassName('priceItem')[0];
+        let quantity = cartItem.getElementsByClassName('quantityInput');
+    }
  }
