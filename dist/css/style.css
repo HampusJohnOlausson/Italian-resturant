@@ -129,12 +129,12 @@ body {
   height: 3rem;
 }
 
-.menu .menu-section .checkout-container #total-title {
+.menu .menu-section .checkout-container .total-title {
   font-size: 2rem;
   margin: 1rem;
 }
 
-.menu .menu-section .checkout-container #total-price {
+.menu .menu-section .checkout-container .total-price {
   font-size: 1.6rem;
   margin: 1rem 2rem 1rem 1rem;
   color: #ffbd2d;
