@@ -1,9 +1,9 @@
 window.addEventListener('load', main);
 
 
-function main() : void {
+function main(): void {
 
-    addButton();
+    // addButton();
     removeButton();
 }
 
@@ -11,7 +11,7 @@ function main() : void {
 /**
  * Removes items from the cart
  */
-function removeButton() : void {
+function removeButton(): void {
 
 let removeBtn = document.getElementsByClassName('remove')!;
 
@@ -34,31 +34,35 @@ for(let i = 0; i < removeBtn.length; i++){
 /**
  * Adds item to the cart.
  */
-function addButton(): void {
+// function addButton(): void {
 
-    let addBtn = document.getElementsByClassName('add')!;
+//     let addBtn = document.getElementsByClassName('add')!;
 
-    for(let i = 0; i < addBtn.length; i++){
-    }
+//     for(let i = 0; i < addBtn.length; i++){
+//     }
 
-}
+// }
 
 /**
  * Updating the cart total price
  */
 
- function updateCartTotal() : void {
+ function updateCartTotal(): void{
 
     //only want to get the first get the first element of the array of cart-items
-    const cartItemContainer = document.getElementsByClassName('cart-items')[0];
-    const cartItems = cartItemContainer.getElementsByClassName('cartItem');
+    let cartItemContainer = document.getElementsByClassName('cart-items')[0]!;
+    let cartItems = cartItemContainer.getElementsByClassName('cartItem')!;
 
     for(let i = 0; i < cartItems.length; i++){
 
         let cartItem = cartItems[i];
-        let price = cartItem.getElementsByClassName('priceCart')[0];
-        let quantity = cartItem.getElementsByClassName('quantityInput')[0];
+        let priceElement = cartItem.getElementsByClassName('priceCart')[0]!;
+        let quantityElement = cartItem.getElementsByClassName('quantityInput')[0]!;
 
-        console.log(price, quantity);
+        let price: number = parseFloat(priceElement.innerText);
+        let quantity: number = quantityElement.value;
+        let total = total + (price * quantity);
     }
+
+    document.getElementById('total-price')[0].innerText = `${total} SEK `;
  }
