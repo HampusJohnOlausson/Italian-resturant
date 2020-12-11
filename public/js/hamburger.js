@@ -1,5 +1,6 @@
 "use strict";
 const hamburgerMenu = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-list');
 hamburgerMenu.addEventListener('click', () => {
-    hamburgerMenu.classList.toggle('nav-list');
+    navLinks.classList.toggle('open');
 });

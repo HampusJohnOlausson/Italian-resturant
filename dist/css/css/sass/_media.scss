@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1050px){
 
 
     .hamburger {
@@ -26,11 +26,18 @@
         }
     }
 
+
     
     .nav-list {
+        position: absolute;
+        background: $black;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
 
         & li a{
-            display: none;
+            
         }
         .nav-line{
             display: none;
