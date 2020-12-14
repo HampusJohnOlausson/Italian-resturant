@@ -1,7 +1,8 @@
 
 
 @media screen and (max-width: 1050px){
-
+.wrapper {
+.header {
 
     .hamburger {
        
@@ -13,7 +14,7 @@
         position: absolute;
         cursor: pointer;
         right: 0%;
-        top: 5%;
+        top: 3.5%;
         transform: translate(-50%, -5%);
         z-index: 2;
 
@@ -26,27 +27,29 @@
         }
     }
 
-
-    
     .nav-list {
+        left: 5;
+        top: 0;
+        right: 0;
         position: absolute;
-        background: $black;
+        background: black;
         height: 100vh;
-        width: 100%;
         flex-direction: column;
-        justify-content: flex-end;
 
-        & li a{
-            
+        .nav-link a{
+          font-size: 2rem;
         }
         .nav-line{
             display: none;
         }
-        .fab{
-            display: none;
+        
+        .fab:hover {
+          margin-top: 0rem;
+          
         }
     }
-
+    
+  }
     /*Front Page*/
 
 
@@ -73,7 +76,11 @@
     }
   }
 
+  .reserv{
+    display: none;
+  }
 
+}
 }
 }
 

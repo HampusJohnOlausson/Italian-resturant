@@ -302,7 +302,10 @@ body {
 }
 
 @media screen and (max-width: 1050px) {
-  .hamburger {
+  .wrapper {
+    /*Front Page*/
+  }
+  .wrapper .header .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -317,12 +320,12 @@ body {
     position: absolute;
     cursor: pointer;
     right: 0%;
-    top: 5%;
+    top: 3.5%;
     -webkit-transform: translate(-50%, -5%);
             transform: translate(-50%, -5%);
     z-index: 2;
   }
-  .hamburger .line {
+  .wrapper .header .hamburger .line {
     width: 100%;
     height: 0.37em;
     border-radius: 1em;
@@ -330,41 +333,45 @@ body {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
-  .nav-list {
+  .wrapper .header .nav-list {
+    left: 5;
+    top: 0;
+    right: 0;
     position: absolute;
-    background: #000000;
+    background: black;
     height: 100vh;
-    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
   }
-  .nav-list .nav-line {
+  .wrapper .header .nav-list .nav-link a {
+    font-size: 2rem;
+  }
+  .wrapper .header .nav-list .nav-line {
     display: none;
   }
-  .nav-list .fab {
-    display: none;
+  .wrapper .header .nav-list .fab:hover {
+    margin-top: 0rem;
   }
-  /*Front Page*/
-  .hero {
+  .wrapper .hero {
     height: 85vh;
     background: rgba(0, 0, 0, 0.4);
     /* Hero Text Section*/
   }
-  .hero .first-section {
+  .wrapper .hero .first-section {
     padding-top: 12rem;
   }
-  .hero .first-section .welcome {
+  .wrapper .hero .first-section .welcome {
     font-size: 3rem;
   }
-  .hero .first-section .hero-text {
+  .wrapper .hero .first-section .hero-text {
     font-size: 2.2rem;
   }
-  .hero .first-section .under-text {
+  .wrapper .hero .first-section .under-text {
+    display: none;
+  }
+  .wrapper .hero .reserv {
     display: none;
   }
 }
@@ -483,7 +490,7 @@ h2 {
 }
 
 .wrapper .header .nav-list {
-  width: 60%;
+  width: 100%;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,15 +498,15 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .wrapper .header .nav-list li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.5rem;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

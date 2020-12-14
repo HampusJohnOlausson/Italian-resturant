@@ -90,21 +90,20 @@ h2{
   padding: 2rem; 
  
   
-
   .nav-list {
-    width: 60%;
+    width: 100%;
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
-    & li a {
+    & li a{
       text-decoration: none;
       color: $accent;
       font-size: 1.5rem;
-      text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
       transition: 0.5s;
     }
+
     & li a:hover {
       color: $primary;
     }
