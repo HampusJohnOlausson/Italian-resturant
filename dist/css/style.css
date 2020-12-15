@@ -434,9 +434,13 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
-  .first-section {
-    padding-top: 10rem;
+/*Smaller tablet*/
+@media screen and (max-width: 770px) {
+  .wrapper .first-section {
+    padding-top: 15rem;
+  }
+  .wrapper .under-text {
+    display: none;
   }
 }
 
@@ -444,20 +448,35 @@ body {
 @media screen and (max-width: 630px) {
   .hero {
     height: 85vh;
-    background: rgba(0, 0, 0, 0.4);
     /* Hero Text Section*/
   }
   .hero .first-section {
     padding-top: 12rem;
   }
   .hero .first-section .welcome {
-    font-size: 3rem;
-  }
-  .hero .first-section .hero-text {
     font-size: 2.2rem;
   }
-  .hero .first-section .under-text {
-    display: none;
+  .hero .first-section .hero-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .wrapper .hero {
+    height: 85vh;
+    /* Hero Text Section*/
+  }
+  .wrapper .hero .first-section {
+    padding-top: 7rem;
+  }
+  .wrapper .hero .first-section .welcome {
+    font-size: 2rem;
+  }
+  .wrapper .hero .first-section .hero-text {
+    font-size: 2.2rem;
+  }
+  .wrapper .hero .first-section .reserv {
+    width: 11rem;
   }
 }
 
