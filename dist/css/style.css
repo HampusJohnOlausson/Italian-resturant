@@ -69,6 +69,7 @@ body {
   font-size: 3rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .contact-section {
@@ -321,16 +322,16 @@ body {
   text-align: center;
   width: 100%;
   font-size: 4rem;
-  -webkit-animation: rightSlide 2.5s ease;
-          animation: rightSlide 2.5s ease;
+  -webkit-animation: rightSlide 2s ease;
+          animation: rightSlide 2s ease;
 }
 
 .hero .first-section .under-text {
   text-align: center;
   width: 100%;
   font-size: 1.3rem;
-  -webkit-animation: rightSlide 3s ease;
-          animation: rightSlide 3s ease;
+  -webkit-animation: leftSlide 2.5s ease;
+          animation: leftSlide 2.5s ease;
 }
 
 .reservation-section {
@@ -401,10 +402,12 @@ body {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
+  .wrapper .header .nav-list {
+    pointer-events: none;
+    opacity: 0;
+  }
   .wrapper .header .nav-list.open {
-    left: 5;
-    top: 0;
-    right: 0;
+    opacity: 1;
     position: absolute;
     background: black;
     height: 100vh;
@@ -412,7 +415,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    pointer-events: none;
+    pointer-events: all;
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
   }
@@ -424,9 +427,6 @@ body {
   }
   .wrapper .header .nav-list.open .fab:hover {
     margin-top: 0rem;
-  }
-  .wrapper .header .nav-list.open {
-    pointer-events: all;
   }
   .wrapper .hero {
     height: 85vh;
@@ -443,9 +443,6 @@ body {
     font-size: 2.2rem;
   }
   .wrapper .hero .first-section .under-text {
-    display: none;
-  }
-  .wrapper .hero .reserv {
     display: none;
   }
 }

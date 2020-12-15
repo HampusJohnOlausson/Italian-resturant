@@ -35,18 +35,18 @@
         }
     }
     .nav-list{
-      
+        pointer-events: none;
+        opacity: 0;
+        
     }
 
     .nav-list.open{
-        left: 5;
-        top: 0;
-        right: 0;
+        opacity: 1;
         position: absolute;
         background: black;
         height: 100vh;
         flex-direction: column;
-        pointer-events: none;
+        pointer-events: all;
         transition: all 1s ease-out;
 
         .nav-link a{
@@ -60,9 +60,6 @@
           margin-top: 0rem;
           
         }
-    }
-    .nav-list.open{
-      pointer-events: all;
     }
     
   }
@@ -92,9 +89,6 @@
     }
   }
 
-  .reserv{
-    display: none;
-  }
 
 }
 }
