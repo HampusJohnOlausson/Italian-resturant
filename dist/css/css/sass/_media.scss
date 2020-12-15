@@ -3,7 +3,15 @@
 @media screen and (max-width: 1050px){
 .wrapper {
 .header {
+  position: relative;
 
+  .nav-section{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+
+  }
     .hamburger {
        
         display: flex;
@@ -13,8 +21,8 @@
         height: 3.75em;
         position: absolute;
         cursor: pointer;
-        right: 0%;
-        top: 3.5%;
+        right: 3%;
+        top: 40%;
         transform: translate(-50%, -5%);
         z-index: 2;
 
@@ -26,8 +34,11 @@
             transition: all 0.8s;
         }
     }
+    .nav-list{
+      
+    }
 
-    .nav-list {
+    .nav-list.open{
         left: 5;
         top: 0;
         right: 0;
@@ -35,6 +46,8 @@
         background: black;
         height: 100vh;
         flex-direction: column;
+        pointer-events: none;
+        transition: all 1s ease-out;
 
         .nav-link a{
           font-size: 2rem;
@@ -47,6 +60,9 @@
           margin-top: 0rem;
           
         }
+    }
+    .nav-list.open{
+      pointer-events: all;
     }
     
   }
