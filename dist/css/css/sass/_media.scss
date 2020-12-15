@@ -34,21 +34,22 @@
             background-color: $accent;
             transition: all 0.8s;
         }
+        
     }
     .nav-list{
         pointer-events: none;
-        opacity: 0;
-        
+       display: none;
+       transition: all 1s ease-out;
     }
 
     .nav-list.open{
-        opacity: 1;
+        display: flex;
         position: absolute;
         background: black;
         height: 100vh;
         flex-direction: column;
         pointer-events: all;
-        transition: all 1s ease-out;
+        
 
         .nav-link a{
           font-size: 2rem;
@@ -59,8 +60,8 @@
         
         .fab:hover {
           margin-top: 0rem;
-          
         }
+       
     }
     
   }
