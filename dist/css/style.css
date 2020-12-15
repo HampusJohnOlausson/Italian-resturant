@@ -361,6 +361,7 @@ body {
   outline: none;
 }
 
+/*-----------Tablet starts-----------*/
 @media screen and (max-width: 1050px) {
   .wrapper {
     /*Front Page*/
@@ -428,21 +429,34 @@ body {
   .wrapper .header .nav-list.open .fab:hover {
     margin-top: 0rem;
   }
-  .wrapper .hero {
+  .wrapper .first-section {
+    padding-top: 22rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .first-section {
+    padding-top: 10rem;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 630px) {
+  .hero {
     height: 85vh;
     background: rgba(0, 0, 0, 0.4);
     /* Hero Text Section*/
   }
-  .wrapper .hero .first-section {
+  .hero .first-section {
     padding-top: 12rem;
   }
-  .wrapper .hero .first-section .welcome {
+  .hero .first-section .welcome {
     font-size: 3rem;
   }
-  .wrapper .hero .first-section .hero-text {
+  .hero .first-section .hero-text {
     font-size: 2.2rem;
   }
-  .wrapper .hero .first-section .under-text {
+  .hero .first-section .under-text {
     display: none;
   }
 }

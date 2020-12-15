@@ -1,5 +1,6 @@
 
 
+/*-----------Tablet starts-----------*/
 @media screen and (max-width: 1050px){
 .wrapper {
 .header {
@@ -64,32 +65,40 @@
     
   }
     /*Front Page*/
-
-
-.hero {
-    height: 85vh;
-    background: rgba(0, 0, 0, 0.4);
-
-    /* Hero Text Section*/
+    .first-section {
+      padding-top: 22rem;
+    }
+}
+}
+@media screen and (max-width: 500px){
   .first-section {
+    padding-top: 10rem;
+  }
+}
 
-    
-    padding-top: 12rem;
-    
 
-    .welcome {
-      font-size: 3rem;
-    }
 
-    .hero-text {
-      font-size: 2.2rem;
-    }
-    .under-text {
-      display: none;
-    }
+/*Mobile*/
+@media screen and (max-width: 630px){
+.hero {
+  height: 85vh;
+  background: rgba(0, 0, 0, 0.4);
+
+  /* Hero Text Section*/
+.first-section {
+  padding-top: 12rem;
+  
+
+  .welcome {
+    font-size: 3rem;
   }
 
-
+  .hero-text {
+    font-size: 2.2rem;
+  }
+  .under-text {
+    display: none;
+  }
 }
 }
 }
