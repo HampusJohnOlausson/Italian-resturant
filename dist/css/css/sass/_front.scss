@@ -19,20 +19,20 @@
         color: $primary;
         font-size: 3rem;
         font-family: "Yellowtail", cursive;
-        animation: leftSlide 1.5s ease;
+        animation: leftSlide 1s ease;
       }
   
       .hero-text {
         text-align: center;
         width: 100%;
         font-size: 4rem;
-        animation: rightSlide 2s ease;
+        animation: rightSlide 1.5s ease;
       }
       .under-text {
         text-align: center;
         width: 100%;
         font-size: 1.3rem;
-        animation: leftSlide 2.5s ease;
+        animation: leftSlide 1.7s ease;
       }
     }
   

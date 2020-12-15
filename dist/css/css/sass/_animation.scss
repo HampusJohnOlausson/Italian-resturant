@@ -39,10 +39,10 @@
   top: 0;
   bottom: 0;
   opacity: 0;
-  transition: all 0.6s ease;
+  transition: all 0.5s ease;
 }
 .btn:hover:before {
-  transition: all 0.6s ease;
+  transition: all 0.5s ease;
   left: 0;
   right: 0;
   opacity: 1;

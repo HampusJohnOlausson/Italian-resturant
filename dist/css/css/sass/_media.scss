@@ -37,14 +37,14 @@
         }
     }
         /*----animation hamburger when clicked-----*/
-         .open .line-1{
+         .open .line-1 {
           transform: translateY(1.225em) rotate(135deg);
         }
-        .open .line-2{
+        .open .line-2 {
           opacity: 0;
           transform: translateX(-60px);
         }
-        .open .line-3{
+        .open .line-3 {
           transform: translateY(-1.25em) rotate(-135deg);
         }
     .nav-list{
@@ -127,7 +127,7 @@
     
     .hamburger {
       top: 30%;
-      right: -3%;
+      right: -5%;
      
     }
   }
