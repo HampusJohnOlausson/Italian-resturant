@@ -35,17 +35,7 @@
             background-color: $accent;
             transition: all 0.8s;
         }
-        .line:nth-child(1){
-          transform: translateY(1.225em) rotate(135deg);
-        }
-        .line:nth-child(2){
-          opacity: 0;
-          transform: translateX(-60px);
-        }
-        .line:nth-child(3){
-          transform: translateY(-1.25em) rotate(-135deg);
-        }
-        
+
     }
     .nav-list{
         pointer-events: none;
@@ -142,3 +132,17 @@
   }
  }
 }
+
+
+        /*----animation hamburger when clicked-----*/
+        .open .line-1 {
+          transform: translateY(1.225em) rotate(135deg);
+        }
+        .open .line-2{
+          opacity: 0;
+          transform: translateX(-60px);
+        }
+        .open .line-3{
+          transform: translateY(-1.25em) rotate(-135deg);
+        }
+        

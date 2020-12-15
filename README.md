@@ -1,4 +1,4 @@
-# Italian-restuarant
+# Italian-restuarant Website
 
 A fictional restaurant website with an ordering function and a table reservation form. So the user can interact.
 

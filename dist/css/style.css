@@ -403,19 +403,6 @@ body {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
-  .wrapper .header .hamburger .line:nth-child(1) {
-    -webkit-transform: translateY(1.225em) rotate(135deg);
-            transform: translateY(1.225em) rotate(135deg);
-  }
-  .wrapper .header .hamburger .line:nth-child(2) {
-    opacity: 0;
-    -webkit-transform: translateX(-60px);
-            transform: translateX(-60px);
-  }
-  .wrapper .header .hamburger .line:nth-child(3) {
-    -webkit-transform: translateY(-1.25em) rotate(-135deg);
-            transform: translateY(-1.25em) rotate(-135deg);
-  }
   .wrapper .header .nav-list {
     pointer-events: none;
     display: none;
@@ -493,6 +480,23 @@ body {
   .wrapper .hero .first-section .reserv {
     width: 11rem;
   }
+}
+
+/*----animation hamburger when clicked-----*/
+.open .line-1 {
+  -webkit-transform: translateY(1.225em) rotate(135deg);
+          transform: translateY(1.225em) rotate(135deg);
+}
+
+.open .line-2 {
+  opacity: 0;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.open .line-3 {
+  -webkit-transform: translateY(-1.25em) rotate(-135deg);
+          transform: translateY(-1.25em) rotate(-135deg);
 }
 
 /*Flex classes*/
