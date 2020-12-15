@@ -17,6 +17,7 @@ $regular: #cb3b3b;
 $black: #000000;
 
 /*Import*/
+@import "header";
 @import "contact";
 @import "meny";
 @import "animation";
@@ -80,49 +81,7 @@ h2{
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
     
      
-.header {
-  background-color: black;
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem; 
 
-  .nav-section{
-    width: 70%;
-    top: 0;
-    right: 0;
-  }
- 
-  
-  .nav-list {
-    position: relative;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    & li a{
-      cursor: pointer;
-      text-decoration: none;
-      color: $accent;
-      font-size: 1.5rem;
-      transition: 0.5s;
-    }
-
-    & li a:hover {
-      color: $primary;
-    }
-    .nav-line {
-      font-size: 2rem;
-    }
-    .fab {
-      font-size: 3rem;
-      transition: 0.5s;
-    }
-  }
-}
 
 }
 
