@@ -18,20 +18,16 @@
 
         img {
             border-radius: 50%;
-            width: 10rem;
-            height: 10rem;
+            width: 7rem;
+            height: 7rem;
             box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
-            margin-top: -6rem;
+            margin-top: -3.7rem;
         }
 
         h3{
             margin: 1rem;
         }
 
-        p{
-            text-align: center;
-            padding: 0rem 1rem;
-        }
 
         .price{
             font-size: 1.2rem;
@@ -46,7 +42,7 @@
              .add{
                  margin: 0.2rem;
                 width: 12rem;
-                
+                font-size: 1.2rem;
                  height: 3rem;
                  transition: ease .5s;
 
@@ -68,6 +64,9 @@
         font-size: 1.4rem;
         margin: 1rem;
     }
+    .cart-item-title{
+        font-size: 1.4rem;
+    }
     .priceCart{
         font-size: 1.4rem;
         color: $primary;
@@ -84,6 +83,7 @@
     .remove{
         width: 8rem;
         height: 3rem;
+        transition: ease .5s;
     }
     
     .total-title{
@@ -102,6 +102,7 @@
        padding: 1rem;
        font-size: 1.2rem;
        width: 15rem;
+       transition: ease .5s;
    }
    
 

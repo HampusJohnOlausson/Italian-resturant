@@ -132,20 +132,15 @@ body {
 
 .menu .menu-section .card img {
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
           box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
-  margin-top: -6rem;
+  margin-top: -3.7rem;
 }
 
 .menu .menu-section .card h3 {
   margin: 1rem;
-}
-
-.menu .menu-section .card p {
-  text-align: center;
-  padding: 0rem 1rem;
 }
 
 .menu .menu-section .card .price {
@@ -160,6 +155,7 @@ body {
 .menu .menu-section .card .add-container .add {
   margin: 0.2rem;
   width: 12rem;
+  font-size: 1.2rem;
   height: 3rem;
   -webkit-transition: ease .5s;
   transition: ease .5s;
@@ -179,6 +175,10 @@ body {
   margin: 1rem;
 }
 
+.menu .menu-section .checkout-container .cart-item-title {
+  font-size: 1.4rem;
+}
+
 .menu .menu-section .checkout-container .priceCart {
   font-size: 1.4rem;
   color: #ffbd2d;
@@ -196,6 +196,8 @@ body {
 .menu .menu-section .checkout-container .remove {
   width: 8rem;
   height: 3rem;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
 }
 
 .menu .menu-section .checkout-container .total-title {
@@ -213,6 +215,8 @@ body {
   padding: 1rem;
   font-size: 1.2rem;
   width: 15rem;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
 }
 
 /* Social media icons */
