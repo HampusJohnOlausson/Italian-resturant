@@ -169,6 +169,11 @@ body {
   margin: 0rem 0.5rem 0rem 0rem;
 }
 
+.menu .menu-section .checkout-container {
+  position: fixed;
+  right: 0;
+}
+
 .menu .menu-section .checkout-container .cart-item {
   font-size: 1.4rem;
   margin: 1rem;

@@ -61,6 +61,8 @@
 /*----Checkout container----*/
 
 .checkout-container{
+    position: fixed;
+    right: 0;
 
     .cart-item{
         font-size: 1.4rem;
