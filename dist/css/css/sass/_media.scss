@@ -5,14 +5,12 @@
 .wrapper {
 .header {
   position: relative;
-
   .nav-section{
     z-index: 100;
     position: fixed;
     width: 100%;
     height: 10vh;
     
-
   }
     .hamburger {
        
@@ -36,21 +34,11 @@
             transition: all 0.8s;
         }
     }
-        /*----animation hamburger when clicked-----*/
-         .open .line-1 {
-          transform: translateY(1.225em) rotate(135deg);
-        }
-        .open .line-2 {
-          opacity: 0;
-          transform: translateX(-60px);
-        }
-        .open .line-3 {
-          transform: translateY(-1.25em) rotate(-135deg);
-        }
+
     .nav-list{
         pointer-events: none;
        display: none;
-       transition: all 1s ease-out;
+       
     }
 
     .nav-list.open{
@@ -61,6 +49,7 @@
         flex-direction: column;
         pointer-events: all;
         
+        
 
         .nav-link a{
           font-size: 2rem;
@@ -68,8 +57,8 @@
         .nav-line{
             display: none;
         }
-        
-        .fab:hover {
+      }  
+       .fab:hover {
           margin-top: 0rem;
         }
        
@@ -81,7 +70,7 @@
       padding-top: 22rem;
     }
 }
-}
+
 /*Smaller tablet*/
 @media screen and (max-width: 770px){
   .wrapper {

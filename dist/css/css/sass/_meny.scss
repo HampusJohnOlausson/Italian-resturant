@@ -31,19 +31,18 @@
 
         .price{
             font-size: 1.2rem;
-            font-weight: bold;
+            font-weight: 400;
         }
 
         .add-container{
             margin: 1rem;
-            
 
     
              .add{
-                 margin: 0.2rem;
+                margin: 0.2rem;
                 width: 12rem;
-                font-size: 1.2rem;
-                 height: 3rem;
+                font-size: 1rem;
+                 height: 2.5rem;
                  transition: ease .5s;
 
                 .fa-shopping-cart{
@@ -81,9 +80,16 @@
         margin: 1rem;
     }
     .remove{
-        width: 8rem;
-        height: 3rem;
+    
+        width: 10rem;
+        height: 2.5rem;
+        font-size: 1rem;
         transition: ease .5s;
+    }
+    .fa-trash-alt{
+        margin-right: 0.5rem;
+        font-size: 1rem;
+        
     }
     
     .total-title{

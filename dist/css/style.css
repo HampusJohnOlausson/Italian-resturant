@@ -145,7 +145,7 @@ body {
 
 .menu .menu-section .card .price {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .menu .menu-section .card .add-container {
@@ -155,8 +155,8 @@ body {
 .menu .menu-section .card .add-container .add {
   margin: 0.2rem;
   width: 12rem;
-  font-size: 1.2rem;
-  height: 3rem;
+  font-size: 1rem;
+  height: 2.5rem;
   -webkit-transition: ease .5s;
   transition: ease .5s;
 }
@@ -194,10 +194,16 @@ body {
 }
 
 .menu .menu-section .checkout-container .remove {
-  width: 8rem;
-  height: 3rem;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1rem;
   -webkit-transition: ease .5s;
   transition: ease .5s;
+}
+
+.menu .menu-section .checkout-container .fa-trash-alt {
+  margin-right: 0.5rem;
+  font-size: 1rem;
 }
 
 .menu .menu-section .checkout-container .total-title {
@@ -307,6 +313,23 @@ body {
   background: #26ca70;
 }
 
+/*----animation hamburger when clicked-----*/
+.open .line-1 {
+  -webkit-transform: translateY(1.225em) rotate(135deg);
+          transform: translateY(1.225em) rotate(135deg);
+}
+
+.open .line-2 {
+  opacity: 0;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.open .line-3 {
+  -webkit-transform: translateY(-1.25em) rotate(-135deg);
+          transform: translateY(-1.25em) rotate(-135deg);
+}
+
 /*Front Page*/
 .hero {
   height: 85vh;
@@ -376,12 +399,8 @@ body {
 
 /*-----------Tablet starts-----------*/
 @media screen and (max-width: 1050px) {
-  .wrapper {
-    /*Front Page*/
-  }
   .wrapper .header {
     position: relative;
-    /*----animation hamburger when clicked-----*/
   }
   .wrapper .header .nav-section {
     z-index: 100;
@@ -417,24 +436,9 @@ body {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
-  .wrapper .header .open .line-1 {
-    -webkit-transform: translateY(1.225em) rotate(135deg);
-            transform: translateY(1.225em) rotate(135deg);
-  }
-  .wrapper .header .open .line-2 {
-    opacity: 0;
-    -webkit-transform: translateX(-60px);
-            transform: translateX(-60px);
-  }
-  .wrapper .header .open .line-3 {
-    -webkit-transform: translateY(-1.25em) rotate(-135deg);
-            transform: translateY(-1.25em) rotate(-135deg);
-  }
   .wrapper .header .nav-list {
     pointer-events: none;
     display: none;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
   }
   .wrapper .header .nav-list.open {
     display: -webkit-box;
@@ -455,10 +459,11 @@ body {
   .wrapper .header .nav-list.open .nav-line {
     display: none;
   }
-  .wrapper .header .nav-list.open .fab:hover {
+  .wrapper .header .fab:hover {
     margin-top: 0rem;
   }
-  .wrapper .first-section {
+  /*Front Page*/
+  .first-section {
     padding-top: 22rem;
   }
 }
