@@ -44,11 +44,10 @@
                 font-size: 1rem;
                  height: 2.5rem;
                  transition: ease .5s;
-
-                .fa-shopping-cart{
-                    margin: 0rem 0.5rem 0rem 0rem;
-
+                 .fa-utensils{
+                    margin-right: 0.5rem;
                  }
+            
             }
 }
 }
@@ -107,9 +106,12 @@
    .checkout{
        padding: 1rem;
        font-size: 1.2rem;
-       width: 15rem;
+       width: 17rem;
        transition: ease .5s;
    }
+   .fa-shopping-cart{
+        margin-right: 0.5rem;
+    }
    
 
   }

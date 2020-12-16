@@ -161,8 +161,8 @@ body {
   transition: ease .5s;
 }
 
-.menu .menu-section .card .add-container .add .fa-shopping-cart {
-  margin: 0rem 0.5rem 0rem 0rem;
+.menu .menu-section .card .add-container .add .fa-utensils {
+  margin-right: 0.5rem;
 }
 
 .menu .menu-section .checkout-container {
@@ -220,9 +220,13 @@ body {
 .menu .menu-section .checkout {
   padding: 1rem;
   font-size: 1.2rem;
-  width: 15rem;
+  width: 17rem;
   -webkit-transition: ease .5s;
   transition: ease .5s;
+}
+
+.menu .menu-section .fa-shopping-cart {
+  margin-right: 0.5rem;
 }
 
 /* Social media icons */
