@@ -84,14 +84,18 @@ body {
 
 .contact-section .info-container .info-text {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .contact-section .fas {
   color: #ffbd2d;
-  font-size: 3rem;
+  font-size: 1em;
   padding-top: 2rem;
+}
+
+.contact-section .fa-utensils {
+  font-size: 2.5rem;
 }
 
 .contact-section .contact-info {
