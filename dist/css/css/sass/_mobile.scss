@@ -1,0 +1,59 @@
+
+
+
+/*Mobile*/
+@media screen and (max-width: 630px){
+  
+    .hero {
+      height: 85vh;
+    
+      /* Hero Text Section*/
+    .first-section {
+      padding-top: 12rem;
+      
+    
+      .welcome {
+        font-size: 2.2rem;
+      }
+      .hero-text {
+        font-size: 2.5rem;
+      }
+    
+    }
+    }
+    }
+    
+    @media screen and (max-width: 340px){
+    
+    
+      .wrapper {
+        .header {
+    
+        
+        .hamburger {
+          top: 30%;
+          right: -5%;
+         
+        }
+      }
+      .hero {
+        height: 85vh;
+      
+        /* Hero Text Section*/
+      .first-section {
+        padding-top: 7rem;
+      
+        .welcome {
+          font-size: 2rem;
+        }
+        .hero-text {
+          font-size: 2.2rem;
+        }
+        .reserv{
+          width: 11rem;
+        }
+      
+       }
+      }
+     }
+    }

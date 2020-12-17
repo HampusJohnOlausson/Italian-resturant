@@ -1,0 +1,92 @@
+
+
+/*-----------Tablet starts-----------*/
+@media screen and (max-width: 1050px){
+    .wrapper {
+    .header {
+      position: relative;
+      .nav-section{
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+      }
+        .hamburger {
+           
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 4.37em;
+            height: 3.75em;
+            position: absolute;
+            cursor: pointer;
+            right: 3%;
+            top: 40%;
+            transform: translate(-50%, -5%);
+            z-index: 2;
+    
+            .line{
+                width: 100%;
+                height: 0.37em;
+                border-radius: 1em;
+                background-color: $accent;
+                transition: all 0.8s;
+            }
+        }
+    
+        .nav-list{
+           pointer-events: none;
+           transform: translateX(20em);
+           opacity: 0;
+           height: 100vh;
+           position: relative;
+           flex-direction: column;
+           right: 0;
+           transition: all .5s ease-in-out;
+        }
+    
+        .nav-list.open{
+            position: absolute;
+            background: black;
+            height: 100vh;
+            flex-direction: column;
+            pointer-events: all;
+            transform: translateX(0);
+            opacity: 1;
+    
+            .nav-link a{
+              transition: all .25s ease;
+              font-size: 2rem;
+              
+            }
+            .nav-line{
+              transform: rotate(90deg)
+            }
+          }  
+          .fab{
+            transition: all .25s ease;
+          }
+           .fab:hover {
+              margin-top: 0rem;
+            }
+           
+        }
+        
+      }
+        /*Front Page*/
+        .first-section {
+          padding-top: 22rem;
+        }
+    }
+    
+    /*Smaller tablet*/
+    @media screen and (max-width: 770px){
+      .wrapper {
+      .first-section {
+        padding-top: 15rem;
+      }
+      .under-text {
+        display: none;
+      }
+    }
+    }
