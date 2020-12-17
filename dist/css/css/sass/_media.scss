@@ -35,15 +35,17 @@
     }
 
     .nav-list{
-        pointer-events: none;
-       
-       transform: translateX(200px);
+       pointer-events: none;
+       transform: translateX(20em);
        opacity: 0;
-       transition: all .2s ease-in-out;
+       height: 100vh;
+       position: relative;
+       flex-direction: column;
+       right: 0;
+       transition: all .5s ease-in-out;
     }
 
     .nav-list.open{
-        display: flex;
         position: absolute;
         background: black;
         height: 100vh;
@@ -53,15 +55,16 @@
         opacity: 1;
 
         .nav-link a{
-          transition: all .15s ease;
+          transition: all .25s ease;
           font-size: 2rem;
+          
         }
         .nav-line{
             display: none;
         }
       }  
       .fab{
-        transition: all .15s ease;
+        transition: all .25s ease;
       }
        .fab:hover {
           margin-top: 0rem;
