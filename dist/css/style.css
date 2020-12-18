@@ -73,9 +73,11 @@ body {
 }
 
 .contact-section {
+  background-image: url(/public/Images/vino.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   height: 85vh;
   text-align: center;
-  background-color: black;
 }
 
 .contact-section .info-container {
@@ -374,10 +376,16 @@ body {
           animation: leftSlide 1.7s ease;
 }
 
+.reservationWrapper {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .reservation-section {
+  background-image: url(/public/Images/tomato.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   text-align: center;
   height: 85vh;
-  background-color: black;
 }
 
 .reservation-section .reservationContainer {
