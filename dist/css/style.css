@@ -33,7 +33,7 @@ body {
   right: 0;
 }
 
-.header .nav-list {
+.header .nav-section .nav-list {
   position: relative;
   width: 100%;
   list-style-type: none;
@@ -48,7 +48,7 @@ body {
           justify-content: space-evenly;
 }
 
-.header .nav-list li a {
+.header .nav-section .nav-list li a {
   cursor: pointer;
   text-decoration: none;
   color: #ffffff;
@@ -57,15 +57,15 @@ body {
   transition: 0.5s;
 }
 
-.header .nav-list li a:hover {
+.header .nav-section .nav-list li a:hover {
   color: #ffbd2d;
 }
 
-.header .nav-list .nav-line {
+.header .nav-section .nav-list .nav-line {
   font-size: 2rem;
 }
 
-.header .nav-list .fab {
+.header .nav-section .nav-list .fab {
   font-size: 3rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -376,32 +376,36 @@ body {
           animation: leftSlide 1.7s ease;
 }
 
-.reservationWrapper {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.reservation-section {
+.reservation-wrapper {
+  min-height: 100vh;
   background-image: url(/public/Images/tomato.jpg);
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.reservation-wrapper .reservation-section {
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
   height: 85vh;
 }
 
-.reservation-section .reservationContainer {
+.reservation-wrapper .reservation-section .reservationContainer {
   background-color: #000000;
   border-radius: 15px;
   width: 70%;
   margin: auto;
 }
 
-.reservation-section .reservationContainer .form {
+.reservation-wrapper .reservation-section .reservationContainer .form {
   width: 60%;
   margin: auto;
   font-size: 1.2rem;
 }
 
-.reservation-section .reservationContainer .form input {
+.reservation-wrapper .reservation-section .reservationContainer .form input {
   margin: 1rem;
   border-radius: 7px;
   padding: 0.5rem;
@@ -427,40 +431,40 @@ body {
 }
 
 @media screen and (max-width: 340px) {
-  .wrapper .header .hamburger {
+  .header .hamburger {
     top: 30%;
     right: -5%;
   }
-  .wrapper .hero {
+  .hero {
     height: 85vh;
     /* Hero Text Section*/
   }
-  .wrapper .hero .first-section {
+  .hero .first-section {
     padding-top: 7rem;
   }
-  .wrapper .hero .first-section .welcome {
+  .hero .first-section .welcome {
     font-size: 2rem;
   }
-  .wrapper .hero .first-section .hero-text {
+  .hero .first-section .hero-text {
     font-size: 2.2rem;
   }
-  .wrapper .hero .first-section .reserv {
+  .hero .first-section .reserv {
     width: 11rem;
   }
 }
 
 /*-----------Tablet starts-----------*/
 @media screen and (max-width: 1050px) {
-  .wrapper .header {
+  .header {
     position: relative;
   }
-  .wrapper .header .nav-section {
+  .header .nav-section {
     z-index: 100;
     position: fixed;
     width: 100%;
     height: 10vh;
   }
-  .wrapper .header .hamburger {
+  .header .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -480,7 +484,7 @@ body {
             transform: translate(-50%, -5%);
     z-index: 2;
   }
-  .wrapper .header .hamburger .line {
+  .header .hamburger .line {
     width: 100%;
     height: 0.37em;
     border-radius: 1em;
@@ -488,7 +492,7 @@ body {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
-  .wrapper .header .nav-list {
+  .header .nav-list {
     pointer-events: none;
     -webkit-transform: translateX(20em);
             transform: translateX(20em);
@@ -503,7 +507,7 @@ body {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  .wrapper .header .nav-list.open {
+  .header .nav-list.open {
     position: absolute;
     background: black;
     height: 100vh;
@@ -516,20 +520,20 @@ body {
             transform: translateX(0);
     opacity: 1;
   }
-  .wrapper .header .nav-list.open .nav-link a {
+  .header .nav-list.open .nav-link a {
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
     font-size: 2rem;
   }
-  .wrapper .header .nav-list.open .nav-line {
+  .header .nav-list.open .nav-line {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-  .wrapper .header .fab {
+  .header .fab {
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
   }
-  .wrapper .header .fab:hover {
+  .header .fab:hover {
     margin-top: 0rem;
   }
   /*Front Page*/
@@ -540,10 +544,10 @@ body {
 
 /*Smaller tablet*/
 @media screen and (max-width: 770px) {
-  .wrapper .first-section {
+  .first-section {
     padding-top: 15rem;
   }
-  .wrapper .under-text {
+  .under-text {
     display: none;
   }
 }

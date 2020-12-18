@@ -1,15 +1,17 @@
-.reservationWrapper{
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.reservation-section{
+.reservation-wrapper{
+    min-height: 100vh;
     background-image: url(/public/Images/tomato.jpg);
     background-size: cover;
     background-attachment: fixed;
-      text-align: center;
-      height: 85vh;
-      
-      
+    width: 100%;
+    overflow: hidden;
+    color: $accent;
+
+
+.reservation-section{
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    height: 85vh;
     
       .reservationContainer {
           background-color: $black;
@@ -33,3 +35,4 @@
     }   
 }
 
+}

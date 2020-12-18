@@ -2,7 +2,7 @@
 
 /*-----------Tablet starts-----------*/
 @media screen and (max-width: 1050px){
-    .wrapper {
+    
     .header {
       position: relative;
       .nav-section{
@@ -72,7 +72,7 @@
            
         }
         
-      }
+      
         /*Front Page*/
         .first-section {
           padding-top: 22rem;
@@ -81,7 +81,7 @@
     
     /*Smaller tablet*/
     @media screen and (max-width: 770px){
-      .wrapper {
+      
       .first-section {
         padding-top: 15rem;
       }
@@ -89,4 +89,4 @@
         display: none;
       }
     }
-    }
+    
