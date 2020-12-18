@@ -72,10 +72,22 @@ body {
   cursor: pointer;
 }
 
-.contact-section {
-  background-image: url(/public/Images/vino.jpg);
+.info-wrapper {
+  min-height: 100vh;
+  background-image: url(/public/Images/wino.jpg);
   background-size: cover;
   background-attachment: fixed;
+  width: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  letter-spacing: 3px;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.contact-section {
+  background: rgba(0, 0, 0, 0.6);
   height: 85vh;
   text-align: center;
 }
@@ -339,7 +351,7 @@ body {
 /*Front Page*/
 .hero {
   height: 85vh;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   /* Hero Text Section*/
 }
 
@@ -384,10 +396,14 @@ body {
   width: 100%;
   overflow: hidden;
   color: #ffffff;
+  letter-spacing: 3px;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
 }
 
 .reservation-wrapper .reservation-section {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   text-align: center;
   height: 85vh;
 }

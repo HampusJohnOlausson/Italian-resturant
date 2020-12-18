@@ -1,4 +1,5 @@
 .reservation-wrapper{
+    
     min-height: 100vh;
     background-image: url(/public/Images/tomato.jpg);
     background-size: cover;
@@ -6,10 +7,13 @@
     width: 100%;
     overflow: hidden;
     color: $accent;
+    letter-spacing: 3px;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
 
 
 .reservation-section{
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     text-align: center;
     height: 85vh;
     
