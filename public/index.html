@@ -26,7 +26,7 @@
     <script defer src="./js/addToCart.js" async></script>
     <script defer src="./js/hamburger.js"></script>
 </head>
-<body>
+<body data-barba="wrapper">
     <!--Wrapper-->
     <div class="wrapper">
         <!--header-->
@@ -53,7 +53,7 @@
         </header>
 
         <!--Hero-->
-        <div class="hero">
+        <div class="hero" data-barba="container" data-barba-namespace="home">
         <section class="first-section flex-column-center-align" id="heroSection" >
             <h3 class="welcome">Välkommen till</h3>
            <h1 class="hero-text">La Cucina Di Romina</h1>  
@@ -64,6 +64,9 @@
 
  
     </div>
-
+    <!--barba-js-->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!--Gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
 </body>
 </html>
