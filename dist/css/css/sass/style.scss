@@ -25,7 +25,6 @@ $black: #000000;
 @import "tablet";
 
 /*---Wrapper---*/
-
 .wrapper { 
     min-height: 100vh;
     width: 100%;
@@ -44,7 +43,7 @@ h2{
   padding: 2rem;
 } 
 
-  /* Button */
+  /*--Button--*/
   .btn {
     display: flex;
     justify-content: center;
@@ -76,7 +75,7 @@ h2{
     }
   }
 
-/*Flex classes*/
+/*--Flex classes--*/
 
 .flex-column-center-align{
   display: flex;

@@ -231,7 +231,7 @@ body {
   margin-right: 0.5rem;
 }
 
-/*----Animation hamburger when clicked-----*/
+/*--Hamburger animation---*/
 .open .line-1 {
   -webkit-transform: translateY(1.225em) rotate(135deg);
           transform: translateY(1.225em) rotate(135deg);
@@ -503,8 +503,7 @@ body {
     font-size: 2rem;
   }
   .header .nav-list.open .nav-line {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    display: none;
   }
   .header .fab {
     -webkit-transition: all .25s ease;
@@ -512,6 +511,7 @@ body {
   }
   .header .fab:hover {
     margin-top: 0rem;
+    margin-left: 1rem;
   }
 }
 
@@ -552,7 +552,7 @@ h2 {
   padding: 2rem;
 }
 
-/* Button */
+/*--Button--*/
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,7 +593,7 @@ h2 {
   color: black;
 }
 
-/*Flex classes*/
+/*--Flex classes--*/
 .flex-column-center-align {
   display: -webkit-box;
   display: -ms-flexbox;

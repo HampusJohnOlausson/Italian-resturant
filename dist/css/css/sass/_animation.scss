@@ -1,14 +1,13 @@
-
-/*----Animation hamburger when clicked-----*/
-.open .line-1 {
+/*--Hamburger animation---*/
+.open .line-1{
   transform: translateY(1.225em) rotate(135deg);
 }
-.open .line-2 {
-  opacity: 0;
-  transform: translateX(-60px);
+.open .line-2{
+   opacity: 0;
+   transform: translateX(-60px);
 }
-.open .line-3 {
-  transform: translateY(-1.25em) rotate(-135deg);
+.open .line-3{ 
+   transform: translateY(-1.25em) rotate(-135deg);
 }
 
 /* Social media icons */
