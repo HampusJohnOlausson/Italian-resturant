@@ -1,14 +1,13 @@
+/*-----------Reservation-----------*/
 .page2{
-
     background-image: url(/public/Images/tomato.jpg);
     background-size: cover;
     background-attachment: fixed;
 
-
-.reservation-section{
-    background: rgba(0, 0, 0, 0.6);
-    text-align: center;
-    height: 85vh;
+    .reservation-section{
+        background: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        height: 85vh;
     
       .reservationContainer {
           background-color: $black;
@@ -16,10 +15,11 @@
           width: 70%;
           margin: auto;
       
-  .form {
-       width: 60%;
-       margin: auto;
-       font-size: 1.2rem;
+          /*--Form--*/
+        .form {
+            width: 60%;
+            margin: auto;
+            font-size: 1.2rem;
  
            input{
             margin: 1rem;
@@ -27,9 +27,9 @@
             padding: 0.5rem;
             font-size: 1.2rem;
             outline: none;
+            }
         }
-       }
     }   
-}
+  }
 
 }

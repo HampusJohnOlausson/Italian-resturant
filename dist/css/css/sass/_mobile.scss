@@ -1,22 +1,54 @@
-/*-----Mobile-----*/
+/*-----Phone starts-----*/
+@media screen and (max-width: 640px){
+
+  /*--Reservation page--*/
+  .page2{
     
-@media screen and (max-width: 340px){
+   .reservation-section{
+    background-color: $black;
+    height: 85vh;
     
+    .reservationContainer {
+        width: 100%;
+        border-radius: 0;
+
+        /*--Form--*/
+      .form {
+          width: 80%;
+          font-size: 1.2rem;
+
+          .submit{
+            margin-top: 0.5em;
+            margin-bottom: 2rem;
+            height: 3em;
+          }
+      }
+    }   
+   }  
+  }
+
+}
+
+
+
+/*-----Smaller phone starts-----*/   
+@media screen and (max-width: 360px){
+    
+  /*--Header--*/
     .header {  
       .hamburger {
         top: 30%;
         right: -5%; 
       }
     }
-.wrapper{
+
+/*--Start Page--*/
 .page1{
 
     .hero {
       height: 85vh;
-      
         /* Hero Text Section*/
       .first-section {
-      
         .welcome {
           font-size: 1rem;
         }
@@ -26,9 +58,37 @@
         .reserv{
           width: 11rem;
         }
-      
       }
     }
-  }
 }
+  /*--Reservation page--*/
+  .page2{
+
+    .reservation-section{
+      height: 85vh;
+     .reservationContainer {
+         width: 100%;
+ 
+         /*--Form--*/
+       .form {
+           width: 80%;
+           font-size: 1rem;
+
+           input{
+            margin: 0.5rem;
+            padding: 0.3em;
+            font-size: 1em;  
+          }
+          .submit{
+            margin-top: 1em;
+            margin-bottom: 2em;
+            height: 3em;
+          }
+       }
+        
+    }   
+    }  
+}
+
+
 }

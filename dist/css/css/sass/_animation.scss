@@ -1,4 +1,4 @@
-/*--Hamburger animation---*/
+/*--Hamburger animation--*/
 .open .line-1{
   transform: translateY(1.225em) rotate(135deg);
 }
@@ -10,7 +10,7 @@
    transform: translateY(-1.25em) rotate(-135deg);
 }
 
-/* Social media icons */
+/*--Social media icons--*/
 .fab:hover {
   color: #ffbd2d;
   margin-top: -1rem;
@@ -20,7 +20,7 @@
   transition: all 0.2s linear;
 }
 
-/* Slide from left*/
+/*--Slide from left--*/
 @keyframes leftSlide {
   from {
     margin-left: -100%;
@@ -30,7 +30,7 @@
   }
 }
 
-/* Slide from Right */
+/*--Slide from Right--*/
 @keyframes rightSlide {
   from {
     margin-left: 100%;
@@ -40,7 +40,7 @@
   }
 }
 
-/* Button hover */
+/*--Button hover--*/
 .btn:before {
   background: $regular;
   content: "";
@@ -75,7 +75,6 @@
 }
 .checkout:before{
   background: #26ca70;
-
 }
 
 

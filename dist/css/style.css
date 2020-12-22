@@ -12,6 +12,7 @@ body {
 
 /* Colors */
 /*Import*/
+/*---------Header---------*/
 .header {
   background-color: black;
   height: 15vh;
@@ -72,6 +73,7 @@ body {
   cursor: pointer;
 }
 
+/*------------ Contact / Info Page ------------*/
 .page4 {
   background-image: url(/public/Images/wino.jpg);
   background-size: cover;
@@ -231,7 +233,7 @@ body {
   margin-right: 0.5rem;
 }
 
-/*--Hamburger animation---*/
+/*--Hamburger animation--*/
 .open .line-1 {
   -webkit-transform: translateY(1.225em) rotate(135deg);
           transform: translateY(1.225em) rotate(135deg);
@@ -248,7 +250,7 @@ body {
           transform: translateY(-1.25em) rotate(-135deg);
 }
 
-/* Social media icons */
+/*--Social media icons--*/
 .fab:hover {
   color: #ffbd2d;
   margin-top: -1rem;
@@ -256,7 +258,7 @@ body {
   transition: all 0.2s linear;
 }
 
-/* Slide from left*/
+/*--Slide from left--*/
 @-webkit-keyframes leftSlide {
   from {
     margin-left: -100%;
@@ -274,7 +276,7 @@ body {
   }
 }
 
-/* Slide from Right */
+/*--Slide from Right--*/
 @-webkit-keyframes rightSlide {
   from {
     margin-left: 100%;
@@ -292,7 +294,7 @@ body {
   }
 }
 
-/* Button hover */
+/*--Button hover--*/
 .btn:before {
   background: #cb3b3b;
   content: "";
@@ -337,7 +339,7 @@ body {
 }
 
 /*Pages slide*/
-/*Front Page*/
+/*-----------Start Page-----------*/
 .page1 {
   background-image: url(/public/Images/pizza.jpg);
   background-size: cover;
@@ -376,6 +378,7 @@ body {
           animation: leftSlide 1.7s ease;
 }
 
+/*-----------Reservation-----------*/
 .page2 {
   background-image: url(/public/Images/tomato.jpg);
   background-size: cover;
@@ -393,6 +396,7 @@ body {
   border-radius: 15px;
   width: 70%;
   margin: auto;
+  /*--Form--*/
 }
 
 .page2 .reservation-section .reservationContainer .form {
@@ -409,31 +413,80 @@ body {
   outline: none;
 }
 
-/*-----Mobile-----*/
-@media screen and (max-width: 340px) {
+/*-----Phone starts-----*/
+@media screen and (max-width: 640px) {
+  /*--Reservation page--*/
+  .page2 .reservation-section {
+    background-color: #000000;
+    height: 85vh;
+  }
+  .page2 .reservation-section .reservationContainer {
+    width: 100%;
+    border-radius: 0;
+    /*--Form--*/
+  }
+  .page2 .reservation-section .reservationContainer .form {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  .page2 .reservation-section .reservationContainer .form .submit {
+    margin-top: 0.5em;
+    margin-bottom: 2rem;
+    height: 3em;
+  }
+}
+
+/*-----Smaller phone starts-----*/
+@media screen and (max-width: 360px) {
+  /*--Header--*/
   .header .hamburger {
     top: 30%;
     right: -5%;
   }
-  .wrapper .page1 .hero {
+  /*--Start Page--*/
+  .page1 .hero {
     height: 85vh;
     /* Hero Text Section*/
   }
-  .wrapper .page1 .hero .first-section .welcome {
+  .page1 .hero .first-section .welcome {
     font-size: 1rem;
   }
-  .wrapper .page1 .hero .first-section .hero-text {
+  .page1 .hero .first-section .hero-text {
     font-size: 1.6rem;
   }
-  .wrapper .page1 .hero .first-section .reserv {
+  .page1 .hero .first-section .reserv {
     width: 11rem;
+  }
+  /*--Reservation page--*/
+  .page2 .reservation-section {
+    height: 85vh;
+  }
+  .page2 .reservation-section .reservationContainer {
+    width: 100%;
+    /*--Form--*/
+  }
+  .page2 .reservation-section .reservationContainer .form {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .page2 .reservation-section .reservationContainer .form input {
+    margin: 0.5rem;
+    padding: 0.3em;
+    font-size: 1em;
+  }
+  .page2 .reservation-section .reservationContainer .form .submit {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    height: 3em;
   }
 }
 
 /*-----------Tablet starts-----------*/
 @media screen and (max-width: 1050px) {
+  /*-----Header-----*/
   .header {
     position: relative;
+    /*When toggle click burger*/
   }
   .header .nav-section {
     z-index: 100;
@@ -451,11 +504,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 4.37em;
+    width: 4em;
     height: 3.75em;
     position: absolute;
     cursor: pointer;
-    right: 3%;
+    right: 2%;
     top: 40%;
     -webkit-transform: translate(-50%, -5%);
             transform: translate(-50%, -5%);
@@ -463,7 +516,7 @@ body {
   }
   .header .hamburger .line {
     width: 100%;
-    height: 0.37em;
+    height: 0.3em;
     border-radius: 1em;
     background-color: #ffffff;
     -webkit-transition: all 0.8s;
@@ -505,18 +558,18 @@ body {
   .header .nav-list.open .nav-line {
     display: none;
   }
-  .header .fab {
+  .header .nav-list.open .fab {
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
   }
-  .header .fab:hover {
+  .header .nav-list.open .fab:hover {
     margin-top: 0rem;
-    margin-left: 1rem;
   }
 }
 
-/*Smaller tablet*/
+/*--Smaller tablet--*/
 @media screen and (max-width: 770px) {
+  /*----Start Page----*/
   .page1 .hero {
     height: 85vh;
     /* Hero Text Section*/
