@@ -231,6 +231,23 @@ body {
   margin-right: 0.5rem;
 }
 
+/*----Animation hamburger when clicked-----*/
+.open .line-1 {
+  -webkit-transform: translateY(1.225em) rotate(135deg);
+          transform: translateY(1.225em) rotate(135deg);
+}
+
+.open .line-2 {
+  opacity: 0;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.open .line-3 {
+  -webkit-transform: translateY(-1.25em) rotate(-135deg);
+          transform: translateY(-1.25em) rotate(-135deg);
+}
+
 /* Social media icons */
 .fab:hover {
   color: #ffbd2d;
@@ -319,52 +336,7 @@ body {
   background: #26ca70;
 }
 
-/*----animation hamburger when clicked-----*/
-.open .line-1 {
-  -webkit-transform: translateY(1.225em) rotate(135deg);
-          transform: translateY(1.225em) rotate(135deg);
-}
-
-.open .line-2 {
-  opacity: 0;
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
-}
-
-.open .line-3 {
-  -webkit-transform: translateY(-1.25em) rotate(-135deg);
-          transform: translateY(-1.25em) rotate(-135deg);
-}
-
-.slideIn {
-  -webkit-animation: slideIn 0.5s ease forwards;
-          animation: slideIn 0.5s ease forwards;
-}
-
 /*Pages slide*/
-@-webkit-keyframes slideIn {
-  from {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    visibility: visible;
-  }
-  to {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@keyframes slideIn {
-  from {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    visibility: visible;
-  }
-  to {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-
 /*Front Page*/
 .page1 {
   background-image: url(/public/Images/pizza.jpg);
@@ -460,16 +432,16 @@ body {
 
 /*-----------Tablet starts-----------*/
 @media screen and (max-width: 1050px) {
-  .wrapper .header {
+  .header {
     position: relative;
   }
-  .wrapper .header .nav-section {
+  .header .nav-section {
     z-index: 100;
     position: fixed;
     width: 100%;
     height: 10vh;
   }
-  .wrapper .header .hamburger {
+  .header .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -489,7 +461,7 @@ body {
             transform: translate(-50%, -5%);
     z-index: 2;
   }
-  .wrapper .header .hamburger .line {
+  .header .hamburger .line {
     width: 100%;
     height: 0.37em;
     border-radius: 1em;
@@ -497,7 +469,7 @@ body {
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
   }
-  .wrapper .header .nav-list {
+  .header .nav-list {
     pointer-events: none;
     -webkit-transform: translateX(20em);
             transform: translateX(20em);
@@ -512,7 +484,7 @@ body {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  .wrapper .header .nav-list.open {
+  .header .nav-list.open {
     position: absolute;
     background: black;
     height: 100vh;
@@ -525,20 +497,20 @@ body {
             transform: translateX(0);
     opacity: 1;
   }
-  .wrapper .header .nav-list.open .nav-link a {
+  .header .nav-list.open .nav-link a {
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
     font-size: 2rem;
   }
-  .wrapper .header .nav-list.open .nav-line {
+  .header .nav-list.open .nav-line {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-  .wrapper .header .fab {
+  .header .fab {
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
   }
-  .wrapper .header .fab:hover {
+  .header .fab:hover {
     margin-top: 0rem;
   }
 }
@@ -558,6 +530,67 @@ body {
   .page1 .hero .first-section .under-text {
     display: none;
   }
+}
+
+/*---Wrapper---*/
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  letter-spacing: 3px;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+/*-h2 reusable-*/
+h2 {
+  font-family: "Yellowtail", cursive;
+  font-size: 2.5rem;
+  color: #ffbd2d;
+  padding: 2rem;
+}
+
+/* Button */
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 13rem;
+  height: 4rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1.2rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  margin: 2rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: black;
+  background-color: #ffbd2d;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  position: relative;
+  z-index: 1;
+}
+
+.btn a {
+  text-decoration: none;
+  color: black;
 }
 
 /*Flex classes*/
@@ -630,66 +663,5 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-/* Reusable classes */
-h2 {
-  font-family: "Yellowtail", cursive;
-  font-size: 2.5rem;
-  color: #ffbd2d;
-  padding: 2rem;
-}
-
-/* --Wrapper--- */
-.wrapper {
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  color: #ffffff;
-  letter-spacing: 3px;
-  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
-          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Button */
-.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  width: 13rem;
-  height: 4rem;
-  -ms-flex-item-align: center;
-      align-self: center;
-  font-size: 1.2rem;
-  border-radius: 3rem;
-  font-weight: bold;
-  margin: 2rem;
-  outline: none;
-  cursor: pointer;
-  border: none;
-  color: black;
-  background-color: #ffbd2d;
-  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
-          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.4);
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-  position: relative;
-  z-index: 1;
-}
-
-.btn a {
-  text-decoration: none;
-  color: black;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,16 @@
+
+/*----Animation hamburger when clicked-----*/
+.open .line-1 {
+  transform: translateY(1.225em) rotate(135deg);
+}
+.open .line-2 {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+.open .line-3 {
+  transform: translateY(-1.25em) rotate(-135deg);
+}
+
 /* Social media icons */
 .fab:hover {
   color: #ffbd2d;
@@ -66,30 +79,19 @@
 
 }
 
-/*----animation hamburger when clicked-----*/
-.open .line-1 {
-  transform: translateY(1.225em) rotate(135deg);
-}
-.open .line-2 {
-  opacity: 0;
-  transform: translateX(-60px);
-}
-.open .line-3 {
-  transform: translateY(-1.25em) rotate(-135deg);
-}
 
-.slideIn{
-  animation: slideIn 0.5s ease forwards;
-}
+// .slideIn{
+//   animation: slideIn 0.5s ease forwards;
+// }
 
 /*Pages slide*/
 
-@keyframes slideIn{
-  from{
-    transform: translateX(100%);
-    visibility: visible;
-  }
-  to{
-    transform: translateX(0%);
-  }
-}
+// @keyframes slideIn{
+//   from{
+//     transform: translateX(100%);
+//     visibility: visible;
+//   }
+//   to{
+//     transform: translateX(0%);
+//   }
+// }

@@ -8,9 +8,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-
 /* Colors */
-
 $primary: #ffbd2d;
 $accent: #ffffff;
 $regular: #cb3b3b;
@@ -26,46 +24,7 @@ $black: #000000;
 @import "mobile";
 @import "tablet";
 
-/*Flex classes*/
-
-.flex-column-center-align{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.flex-column-center{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.flex-column{
-  display: flex;
-  flex-direction: column;
-}
-.flex-row-center-align{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.flex-row-center-end{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-/* Reusable classes */
-
-h2{
-  font-family: "Yellowtail", cursive;
-  font-size: 2.5rem;
-  color: $primary;
-  padding: 2rem;
-} 
-
-/* --Wrapper--- */
+/*---Wrapper---*/
 
 .wrapper { 
     min-height: 100vh;
@@ -77,7 +36,13 @@ h2{
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
 }
 
-
+/*-h2 reusable-*/
+h2{
+  font-family: "Yellowtail", cursive;
+  font-size: 2.5rem;
+  color: $primary;
+  padding: 2rem;
+} 
 
   /* Button */
   .btn {
@@ -111,6 +76,35 @@ h2{
     }
   }
 
+/*Flex classes*/
+
+.flex-column-center-align{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.flex-row-center-align{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row-center-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 
 
