@@ -437,51 +437,29 @@ body {
   outline: none;
 }
 
-/*Mobile*/
-@media screen and (max-width: 630px) {
-  .hero {
-    height: 85vh;
-    /* Hero Text Section*/
-  }
-  .hero .first-section {
-    padding-top: 12rem;
-  }
-  .hero .first-section .welcome {
-    font-size: 2.2rem;
-  }
-  .hero .first-section .hero-text {
-    font-size: 2.5rem;
-  }
-}
-
+/*-----Mobile-----*/
 @media screen and (max-width: 340px) {
   .header .hamburger {
     top: 30%;
     right: -5%;
   }
-  .hero {
+  .wrapper .page1 .hero {
     height: 85vh;
     /* Hero Text Section*/
   }
-  .hero .first-section {
-    padding-top: 7rem;
+  .wrapper .page1 .hero .first-section .welcome {
+    font-size: 1rem;
   }
-  .hero .first-section .welcome {
-    font-size: 2rem;
+  .wrapper .page1 .hero .first-section .hero-text {
+    font-size: 1.6rem;
   }
-  .hero .first-section .hero-text {
-    font-size: 2.2rem;
-  }
-  .hero .first-section .reserv {
+  .wrapper .page1 .hero .first-section .reserv {
     width: 11rem;
   }
 }
 
 /*-----------Tablet starts-----------*/
 @media screen and (max-width: 1050px) {
-  .wrapper {
-    /*Front Page*/
-  }
   .wrapper .header {
     position: relative;
   }
@@ -563,17 +541,21 @@ body {
   .wrapper .header .fab:hover {
     margin-top: 0rem;
   }
-  .wrapper .first-section {
-    padding-top: 22rem;
-  }
 }
 
 /*Smaller tablet*/
 @media screen and (max-width: 770px) {
-  .first-section {
-    padding-top: 15rem;
+  .page1 .hero {
+    height: 85vh;
+    /* Hero Text Section*/
   }
-  .under-text {
+  .page1 .hero .first-section .welcome {
+    font-size: 2.5rem;
+  }
+  .page1 .hero .first-section .hero-text {
+    font-size: 2.6rem;
+  }
+  .page1 .hero .first-section .under-text {
     display: none;
   }
 }

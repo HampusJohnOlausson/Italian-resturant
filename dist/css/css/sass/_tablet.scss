@@ -2,7 +2,7 @@
 
 /*-----------Tablet starts-----------*/
 @media screen and (max-width: 1050px){
-.wrapper {
+.wrapper{
     .header {
       position: relative;
       .nav-section{
@@ -70,13 +70,6 @@
               margin-top: 0rem;
             }
       }
-        
-      
-        /*Front Page*/
-        .first-section {
-          padding-top: 22rem;
-        }
-
       }   
 
     }
@@ -84,11 +77,23 @@
     /*Smaller tablet*/
     @media screen and (max-width: 770px){
       
-      .first-section {
-        padding-top: 15rem;
+      .page1 {
+        .hero {
+          height: 85vh;
+          /* Hero Text Section*/
+          .first-section {
+              .welcome {
+                font-size: 2.5rem;
+              }
+              .hero-text {
+                font-size: 2.6rem;
+              }
+              .under-text {
+                display: none;
+              }
+            }
+        }
       }
-      .under-text {
-        display: none;
-      }
+      
     }
     
