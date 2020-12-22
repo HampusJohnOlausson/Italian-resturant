@@ -1,6 +1,10 @@
 
 /*Front Page*/
+.page1{
 
+  background-image: url(/public/Images/pizza.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 
 .hero {
       height: 85vh;
@@ -39,4 +43,4 @@
 
 }
   
-  
+}
