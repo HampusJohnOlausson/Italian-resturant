@@ -129,9 +129,9 @@ body {
 }
 
 .page3 .menu .menu-section .item {
-  margin: 6rem 2rem 2rem 2rem;
+  margin: 1rem;
   background-color: #cb3b3b;
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 
 .page3 .menu .menu-section .item img {
@@ -143,35 +143,32 @@ body {
   margin-top: -3.7rem;
 }
 
-.page3 .menu .menu-section .item h3 {
-  margin: 1rem;
-}
-
-.page3 .menu .menu-section .item .price {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.page3 .menu .menu-section .item .add-container {
-  margin: 1rem;
-}
-
-.page3 .menu .menu-section .item .add-container .add-btn {
-  margin: 0.2rem;
-  width: 12rem;
+.page3 .menu .menu-section .item .item-title {
   font-size: 1rem;
-  height: 2.5rem;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  margin: 1rem;
 }
 
-.page3 .menu .menu-section .item .add-container .add-btn .fa-utensils {
+.page3 .menu .menu-section .item .item-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffbd2d;
+}
+
+.page3 .menu .menu-section .item .item-details {
+  margin: 1rem;
+}
+
+.page3 .menu .menu-section .item .item-details .add-btn {
+  margin: 1rem;
+  width: 10rem;
+  font-size: 1rem;
+  height: 2.2rem;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.page3 .menu .menu-section .item .item-details .add-btn .fa-utensils {
   margin-right: 0.5rem;
-}
-
-.page3 .menu .menu-section .checkout-container {
-  position: fixed;
-  right: 0;
 }
 
 .page3 .menu .menu-section .checkout-container .cart-item {
