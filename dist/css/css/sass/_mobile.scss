@@ -1,11 +1,13 @@
 /*-----Phone starts-----*/
 @media screen and (max-width: 640px){
 
+
+        
+        
+   
   /*--Reservation page--*/
-  .page2{
-    
+  .page2{ 
    .reservation-section{
-    background-color: $black;
     height: 85vh;
     
     .reservationContainer {
@@ -22,46 +24,28 @@
             margin-bottom: 2rem;
             height: 3em;
           }
-      }
-    }   
-   }  
-  }
+        }
+     }   
+     }  
+   }
+
 
 }
-
-
 
 /*-----Smaller phone starts-----*/   
 @media screen and (max-width: 360px){
-    
+
   /*--Header--*/
     .header {  
+      
       .hamburger {
         top: 30%;
-        right: -5%; 
+        right: 1%; 
       }
     }
 
-/*--Start Page--*/
-.page1{
 
-    .hero {
-      height: 85vh;
-        /* Hero Text Section*/
-      .first-section {
-        .welcome {
-          font-size: 1rem;
-        }
-        .hero-text {
-          font-size: 1.6rem;
-        }
-        .reserv{
-          width: 11rem;
-        }
-      }
-    }
-}
-  /*--Reservation page--*/
+/*--Reservation page--*/
   .page2{
 
     .reservation-section{
@@ -92,3 +76,5 @@
 
 
 }
+
+

@@ -6,5 +6,4 @@ function main() {
     hamburgerAnimation();
     addToCart();
     
-    
 }
