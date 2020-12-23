@@ -4,12 +4,12 @@ function addToCart(){
     if(document.readyState == 'loading') {
         document.addEventListener('DOMContentLoaded', ready);
     } else{
-        changeQuantityOrRemove();
+        addRemoveQuantity();
     }
 }
 
 
-function changeQuantityOrRemove(){
+function addRemoveQuantity(){
 
     let removeBtn = document.getElementsByClassName('remove');
     //loop through buttons
@@ -58,6 +58,7 @@ function addToCartClicked(e){
     let price = item.getElementsByClassName('item-price')[0].innerText;
     console.log(title, price);
     addItemToCart(title,price);
+    updateCartTotal();
 }
 
 //displays item in cart
@@ -68,6 +69,7 @@ function addItemToCart(title, price){
     cartRow.innerText = title;
     let cartItems = document.getElementsByClassName('cart-items')[0];
     let cartItemNames = cartItems.getElementsByClassName('cart-item-title');
+    //loops through to see so the user does not add the same item again.
     for(let i = 0; i < cartItemNames.length; i++){
         if(cartItemNames[i].innerText == title){
             alert('Denna varan är finns redan i din varukorg. Om du vill ha mer än en av denna vara var god ändra kvanititet i kassan.');
@@ -84,6 +86,8 @@ function addItemToCart(title, price){
     </div>`
     cartRow.innerHTML = cartContent;
     cartItems.append(cartRow);
+    cartRow.getElementsByClassName('remove')[0].addEventListener('click', removeCartItem);
+    cartRow.getElementsByClassName('quantityInput')[0].addEventListener('change', quantityChanged);
 }
 
 //Updating the cart total price
