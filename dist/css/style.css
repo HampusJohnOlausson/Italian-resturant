@@ -128,13 +128,13 @@ body {
   /*----Checkout container----*/
 }
 
-.page3 .menu .menu-section .card {
+.page3 .menu .menu-section .item {
   margin: 6rem 2rem 2rem 2rem;
   background-color: #cb3b3b;
   border-radius: 20px;
 }
 
-.page3 .menu .menu-section .card img {
+.page3 .menu .menu-section .item img {
   border-radius: 50%;
   width: 7rem;
   height: 7rem;
@@ -143,20 +143,20 @@ body {
   margin-top: -3.7rem;
 }
 
-.page3 .menu .menu-section .card h3 {
+.page3 .menu .menu-section .item h3 {
   margin: 1rem;
 }
 
-.page3 .menu .menu-section .card .price {
+.page3 .menu .menu-section .item .price {
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.page3 .menu .menu-section .card .add-container {
+.page3 .menu .menu-section .item .add-container {
   margin: 1rem;
 }
 
-.page3 .menu .menu-section .card .add-container .add {
+.page3 .menu .menu-section .item .add-container .add-btn {
   margin: 0.2rem;
   width: 12rem;
   font-size: 1rem;
@@ -165,7 +165,7 @@ body {
   transition: ease .5s;
 }
 
-.page3 .menu .menu-section .card .add-container .add .fa-utensils {
+.page3 .menu .menu-section .item .add-container .add-btn .fa-utensils {
   margin-right: 0.5rem;
 }
 
@@ -322,11 +322,11 @@ body {
   color: #fff;
 }
 
-.add:hover {
+.add-btn:hover {
   color: #fff;
 }
 
-.add:before {
+.add-btn:before {
   background: #26ca70;
 }
 
