@@ -1,15 +1,16 @@
+//------------Add to cart------------
 
 function addToCart(){
-
+    // waits until the page is ready
     if(document.readyState == 'loading') {
         document.addEventListener('DOMContentLoaded', ready);
     } else{
-        addRemoveQuantity();
+        usersSelection();
     }
 }
 
-
-function addRemoveQuantity(){
+//users choice between add, remove or change quantity
+function usersSelection(){
 
     let removeBtn = document.getElementsByClassName('remove');
     //loop through buttons
@@ -30,6 +31,9 @@ function addRemoveQuantity(){
         let btn = addToCartBtn[i];
         btn.addEventListener('click', addToCartClicked)
     }
+
+    //go to checkout
+    document.getElementsByClassName('checkout-btn')[0].addEventListener('click', goToCheckout);
 }
 
 //Removes Item
@@ -56,7 +60,6 @@ function addToCartClicked(e){
     let item = btn.parentElement.parentElement;
     let title = item.getElementsByClassName('item-title')[0].innerText;
     let price = item.getElementsByClassName('item-price')[0].innerText;
-    console.log(title, price);
     addItemToCart(title,price);
     updateCartTotal();
 }
@@ -108,12 +111,15 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100;
     document.getElementsByClassName('total-price')[0].innerText = `${total} Kr`;
 }
-/**
- * Checkout Btn
- */
-// function checkoutPopUp() {
-//     let checkOutBtn = document.getElementsByClassName('checkout btn');
-//     checkOutBtn.addEventListener('click', () => {
-//         if
-//     })
-// }
+
+//checkout
+function goToCheckout(){
+    alert('Tack för ditt köp. Smaklig måltid! ')
+    //clears the cart when clicked on checkout
+    let cartItem = document.getElementsByClassName('cart-items')[0];
+    while(cartItem.hasChildNodes()) {
+        cartItem.removeChild(cartItem.firstChild);
+    }
+    updateCartTotal();
+}
+

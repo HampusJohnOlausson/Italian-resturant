@@ -221,7 +221,7 @@ body {
   color: #ffbd2d;
 }
 
-.page3 .menu .menu-section .checkout {
+.page3 .menu .menu-section .checkout-btn {
   padding: 1rem;
   font-size: 1.2rem;
   width: 17rem;
@@ -305,13 +305,13 @@ body {
   top: 0;
   bottom: 0;
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover:before {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   left: 0;
   right: 0;
   opacity: 1;
@@ -330,11 +330,11 @@ body {
   background: #26ca70;
 }
 
-.checkout:hover {
+.checkout-btn:hover {
   color: #fff;
 }
 
-.checkout:before {
+.checkout-btn:before {
   background: #26ca70;
 }
 
