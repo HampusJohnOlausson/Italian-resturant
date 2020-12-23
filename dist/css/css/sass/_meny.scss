@@ -54,10 +54,10 @@
 /*----Checkout container----*/
 
 .checkout-container{
-
+    
     .cart-item{
         font-size: 1.4rem;
-        margin: 1rem;
+        margin: 0rem;
     }
     .cart-item-title{
         font-size: 1.4rem;
@@ -65,7 +65,7 @@
     .priceCart{
         font-size: 1.4rem;
         color: $primary;
-        margin: 1rem;
+        
     }
 
     .quantityInput{
@@ -73,10 +73,10 @@
         padding: 0.5rem;
         width: 3rem;
         height: 3rem;
-        margin: 1rem;
+        margin: 0.5rem;
     }
     .remove{
-    
+        margin: 0.5rem;
         width: 10rem;
         height: 2.5rem;
         font-size: 1rem;
