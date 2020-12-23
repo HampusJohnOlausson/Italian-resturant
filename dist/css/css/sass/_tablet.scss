@@ -70,6 +70,93 @@
       }             
 } 
 
+/*------Menu Section------*/
+.page3{
+  .menu {
+      .menu-section{
+          .item{
+              width: 10rem;
+              height: 10rem;
+              margin: 2rem 1rem;
+
+              img {
+                  display: none;
+              }
+              .item-title{
+                  font-size: 1em;
+                  margin: 1rem;
+                  font-weight: 500;
+              }
+
+              .item-details{
+                  margin: 1rem;
+
+                  .add-btn{
+                      font-size: 0.8rem;
+                      width: 8rem;
+                      height: 2.2rem;
+                      .fa-utensils{
+                          margin-right: 0.3rem;
+                      }
+                  }
+          
+              }
+          }
+
+/*----Checkout container----*/
+
+  .checkout-container{
+
+      .cartItem{
+          .cart-item-price{
+              margin: 0rem 0.5rem;
+              font-size: 1.2rem;  
+          }
+      }
+  
+      .cart-item-title{
+          font-size: 1.2rem;
+      }
+      .priceCart{
+          font-size: 1.2rem; 
+      }
+
+      .quantityInput{
+          width: 3rem;
+          height: 2rem;    
+      }
+      .remove{
+          width: 8rem;
+          height: 2.2rem;
+          font-size: 0.8rem;
+      }
+      .fa-trash-alt{
+          font-size: 0.8rem; 
+      }
+  
+  .checkout-total{
+      .total-title{
+          font-size: 1.2rem;
+          margin: 0rem;
+      }
+      .total-price{
+          font-size: 1.2rem;
+      }
+  }
+      .checkout-btn{
+          padding: 0.2rem;
+          height: 2.5rem;
+          font-size: 0.8rem;
+          width: 12rem;
+       }
+      .fa-shopping-cart{
+          margin-right: 0.5rem;
+       }
+  }
+ }
+}
+}
+
 
 }
     

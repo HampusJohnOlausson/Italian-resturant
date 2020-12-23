@@ -147,14 +147,14 @@ body {
 }
 
 .page3 .menu .menu-section .item .item-title {
-  font-size: 1rem;
-  margin: 1rem;
+  font-size: 1.2rem;
+  margin: 0.4rem;
+  font-weight: 500;
 }
 
 .page3 .menu .menu-section .item .item-price {
   font-size: 1.2rem;
-  font-weight: bold;
-  color: #ffbd2d;
+  font-weight: 400;
 }
 
 .page3 .menu .menu-section .item .item-details {
@@ -175,12 +175,13 @@ body {
 }
 
 .page3 .menu .menu-section .checkout-container .cartItem .cart-item-title {
+  font-size: 1.2rem;
   margin-right: 1rem;
 }
 
 .page3 .menu .menu-section .checkout-container .cartItem .cart-item-price {
   margin: 0rem 1rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #ffbd2d;
 }
 
@@ -199,10 +200,11 @@ body {
   width: 3rem;
   height: 3rem;
   margin: 0.5rem;
+  outline: none;
 }
 
 .page3 .menu .menu-section .checkout-container .remove {
-  margin: 0.5rem;
+  margin: 1rem;
   width: 10rem;
   height: 2.5rem;
   font-size: 1rem;
@@ -216,20 +218,21 @@ body {
 }
 
 .page3 .menu .menu-section .checkout-container .checkout-total .total-title {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin: 0rem;
 }
 
 .page3 .menu .menu-section .checkout-container .checkout-total .total-price {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 1rem 2rem 1rem 1rem;
   color: #ffbd2d;
 }
 
 .page3 .menu .menu-section .checkout-container .checkout-btn {
   padding: 0.5rem;
-  font-size: 1.1rem;
-  width: 15rem;
+  height: 3.4rem;
+  font-size: 1rem;
+  width: 14rem;
   -webkit-transition: ease .3s;
   transition: ease .3s;
 }
@@ -435,6 +438,76 @@ body {
     margin-bottom: 2rem;
     height: 3em;
   }
+  /*----Menu Section----*/
+  .page3 .menu .menu-section {
+    padding-top: 0rem;
+    /*----Checkout container----*/
+  }
+  .page3 .menu .menu-section .item {
+    width: 8rem;
+    height: 8rem;
+  }
+  .page3 .menu .menu-section .item .item-title {
+    font-size: 1.2rem;
+  }
+  .page3 .menu .menu-section .item .item-price {
+    font-size: 1em;
+  }
+  .page3 .menu .menu-section .item .item-details {
+    margin: 1em;
+  }
+  .page3 .menu .menu-section .item .item-details .add-btn {
+    margin: 1rem;
+    width: 8em;
+    font-size: 0.8rem;
+    height: 2rem;
+  }
+  .page3 .menu .menu-section .item .item-details .add-btn .fa-utensils {
+    display: none;
+    margin-right: 0.5rem;
+  }
+  .page3 .menu .menu-section .checkout-container .cartItem .cart-item-title {
+    font-size: 1em;
+    margin-right: 0em;
+  }
+  .page3 .menu .menu-section .checkout-container .cartItem .cart-item-price {
+    display: none;
+  }
+  .page3 .menu .menu-section .checkout-container .cart-item-title {
+    font-size: 1.2rem;
+  }
+  .page3 .menu .menu-section .checkout-container .priceCart {
+    font-size: 1.2rem;
+    color: #ffbd2d;
+  }
+  .page3 .menu .menu-section .checkout-container .remove {
+    width: 8rem;
+    height: 2.2rem;
+    font-size: 0.8rem;
+  }
+  .page3 .menu .menu-section .checkout-container .fa-trash-alt {
+    display: none;
+  }
+  .page3 .menu .menu-section .checkout-container .checkout-total .total-title {
+    font-size: 1.2rem;
+    margin: 0rem;
+  }
+  .page3 .menu .menu-section .checkout-container .checkout-total .total-price {
+    font-size: 1.2rem;
+    margin: 0.5rem 2rem 0.5rem 1rem;
+    color: #ffbd2d;
+  }
+  .page3 .menu .menu-section .checkout-container .checkout-btn {
+    padding: 0.5rem;
+    height: 3.4rem;
+    font-size: 1rem;
+    width: 14rem;
+    -webkit-transition: ease .3s;
+    transition: ease .3s;
+  }
+  .page3 .menu .menu-section .checkout-container .fa-shopping-cart {
+    display: none;
+  }
   /*------------ Contact / Info Page ------------*/
   .page4 .contact-section {
     background-color: black;
@@ -596,6 +669,72 @@ body {
   .header .nav-list.open .fab:hover {
     margin-top: 0rem;
   }
+  /*------Menu Section------*/
+  .page3 .menu .menu-section {
+    /*----Checkout container----*/
+  }
+  .page3 .menu .menu-section .item {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem 1rem;
+  }
+  .page3 .menu .menu-section .item img {
+    display: none;
+  }
+  .page3 .menu .menu-section .item .item-title {
+    font-size: 1em;
+    margin: 1rem;
+    font-weight: 500;
+  }
+  .page3 .menu .menu-section .item .item-details {
+    margin: 1rem;
+  }
+  .page3 .menu .menu-section .item .item-details .add-btn {
+    font-size: 0.8rem;
+    width: 8rem;
+    height: 2.2rem;
+  }
+  .page3 .menu .menu-section .item .item-details .add-btn .fa-utensils {
+    margin-right: 0.3rem;
+  }
+  .page3 .menu .menu-section .checkout-container .cartItem .cart-item-price {
+    margin: 0rem 0.5rem;
+    font-size: 1.2rem;
+  }
+  .page3 .menu .menu-section .checkout-container .cart-item-title {
+    font-size: 1.2rem;
+  }
+  .page3 .menu .menu-section .checkout-container .priceCart {
+    font-size: 1.2rem;
+  }
+  .page3 .menu .menu-section .checkout-container .quantityInput {
+    width: 3rem;
+    height: 2rem;
+  }
+  .page3 .menu .menu-section .checkout-container .remove {
+    width: 8rem;
+    height: 2.2rem;
+    font-size: 0.8rem;
+  }
+  .page3 .menu .menu-section .checkout-container .fa-trash-alt {
+    font-size: 0.8rem;
+  }
+  .page3 .menu .menu-section .checkout-container .checkout-total .total-title {
+    font-size: 1.2rem;
+    margin: 0rem;
+  }
+  .page3 .menu .menu-section .checkout-container .checkout-total .total-price {
+    font-size: 1.2rem;
+  }
+  .page3 .menu .menu-section .checkout-container .checkout-btn {
+    padding: 0.2rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    width: 12rem;
+  }
+  .page3 .menu .menu-section .checkout-container .fa-shopping-cart {
+    margin-right: 0.5rem;
+  }
 }
 
 /*--Smaller tablet--*/
@@ -626,7 +765,7 @@ body {
   letter-spacing: 3px;
   -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
           box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 /*-h2 reusable-*/

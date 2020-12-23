@@ -1,8 +1,5 @@
 /*-----Phone starts-----*/
 @media screen and (max-width: 640px){
-
-
-        
           
   /*-------Reservation page-------*/
   .page2{ 
@@ -26,6 +23,98 @@
         }
     }   
    }  
+  }
+
+  /*----Menu Section----*/
+  .page3{
+        .menu {
+        .menu-section{
+            padding-top: 0rem;
+          
+            .item{
+                width: 8rem;
+                height: 8rem;
+
+                .item-title{
+                    font-size: 1.2rem;
+                }
+                .item-price{
+                    font-size: 1em;
+                }
+                .item-details{
+                    margin: 1em;
+    
+                    .add-btn{
+                        margin: 1rem;
+                        width: 8em;
+                        font-size: 0.8rem;
+                        height: 2rem;
+                        
+                        .fa-utensils{
+                          display: none;
+                            margin-right: 0.5rem;
+                        }
+                    }
+            
+                }
+            }
+
+/*----Checkout container----*/
+
+    .checkout-container{
+
+        .cartItem{
+            .cart-item-title{
+                font-size: 1em;
+                margin-right: 0em;
+            }
+            .cart-item-price{
+              display: none;
+            }
+        }
+        .cart-item-title{
+            font-size: 1.2rem;
+        }
+        .priceCart{
+            font-size: 1.2rem;
+            color: $primary;  
+        }
+
+        .remove{
+            width: 8rem;
+            height: 2.2rem;
+            font-size: 0.8rem;
+        }
+        .fa-trash-alt{
+            display: none;
+        }
+    
+    .checkout-total{
+        .total-title{
+            font-size: 1.2rem;
+            margin: 0rem;
+        }
+        .total-price{
+            font-size: 1.2rem;
+            margin: 0.5rem 2rem 0.5rem 1rem;
+            color: $primary;
+        }
+    }
+
+        .checkout-btn{
+            padding: 0.5rem;
+            height: 3.4rem;
+            font-size: 1rem;
+            width: 14rem;
+            transition: ease .3s;
+         }
+        .fa-shopping-cart{
+            display: none;
+         }
+    }
+   }
+  }
+
   }
 
   /*------------ Contact / Info Page ------------*/
