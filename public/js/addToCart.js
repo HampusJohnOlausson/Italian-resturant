@@ -82,7 +82,7 @@ function addItemToCart(title, price){
     let cartContent = `
     <div class="cartItem flex-row-center-end">
         <div class="cart-item-title">${title}</div>
-        <span class="priceCart">${price}</span>
+        <span class="cart-item-price">${price}</span>
     <div class="quantity flex-row-center-align">
         <input type="number" value="1" class="quantityInput">
         <button class="remove btn" type="button"> <i class="fas fa-trash-alt"></i> Ta bort</button>
@@ -101,7 +101,7 @@ function updateCartTotal() {
     let total = 0;
     for (let i = 0; i < cartItems.length; i++) {
         let cartItem = cartItems[i];
-        let priceElement = cartItem.getElementsByClassName('priceCart')[0];
+        let priceElement = cartItem.getElementsByClassName('cart-item-price')[0];
         let quantityElement = cartItem.getElementsByClassName('quantityInput')[0];
         let price = parseFloat(priceElement.innerText);
         let quantity = quantityElement.value;
@@ -114,7 +114,7 @@ function updateCartTotal() {
 
 //checkout
 function goToCheckout(){
-    alert('Tack för ditt köp. Smaklig måltid! ')
+    alert('Tack för ditt köp. Smaklig måltid!')
     //clears the cart when clicked on checkout
     let cartItem = document.getElementsByClassName('cart-items')[0];
     while(cartItem.hasChildNodes()) {
