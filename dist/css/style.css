@@ -15,7 +15,7 @@ body {
 /*---------Header---------*/
 .header {
   background-color: black;
-  height: 15vh;
+  height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +82,7 @@ body {
 
 .page4 .contact-section {
   background: rgba(0, 0, 0, 0.6);
-  height: 85vh;
+  height: 88vh;
   text-align: center;
 }
 
@@ -234,8 +234,8 @@ body {
 
 /*--Hamburger animation--*/
 .open .line-1 {
-  -webkit-transform: translateY(1.225em) rotate(135deg);
-          transform: translateY(1.225em) rotate(135deg);
+  -webkit-transform: translateY(0.855em) rotate(135deg);
+          transform: translateY(0.855em) rotate(135deg);
 }
 
 .open .line-2 {
@@ -245,8 +245,8 @@ body {
 }
 
 .open .line-3 {
-  -webkit-transform: translateY(-1.25em) rotate(-135deg);
-          transform: translateY(-1.25em) rotate(-135deg);
+  -webkit-transform: translateY(-0.9em) rotate(-135deg);
+          transform: translateY(-0.9em) rotate(-135deg);
 }
 
 /*--Social media icons--*/
@@ -346,7 +346,7 @@ body {
 }
 
 .page1 .hero {
-  height: 85vh;
+  height: 88vh;
   background: rgba(0, 0, 0, 0.6);
   /* Hero Text Section*/
 }
@@ -385,7 +385,7 @@ body {
 
 .page2 .reservation-section {
   text-align: center;
-  height: 85vh;
+  height: 88vh;
 }
 
 .page2 .reservation-section .reservationContainer {
@@ -411,9 +411,9 @@ body {
 
 /*-----Phone starts-----*/
 @media screen and (max-width: 640px) {
-  /*--Reservation page--*/
+  /*-------Reservation page-------*/
   .page2 .reservation-section {
-    height: 85vh;
+    height: 88vh;
   }
   .page2 .reservation-section .reservationContainer {
     width: 100%;
@@ -429,18 +429,41 @@ body {
     margin-bottom: 2rem;
     height: 3em;
   }
+  /*------------ Contact / Info Page ------------*/
+  .page4 .contact-section {
+    background-color: black;
+    height: 88vh;
+  }
+  .page4 .contact-section .info-container {
+    width: 80%;
+  }
+  .page4 .contact-section .info-container .info-title {
+    font-size: 1.6em;
+  }
+  .page4 .contact-section .info-container .info-text {
+    font-size: 1em;
+  }
+  .page4 .contact-section .fas {
+    font-size: 1em;
+    padding-top: 1em;
+  }
+  .page4 .contact-section .fa-utensils {
+    font-size: 2em;
+  }
+  .page4 .contact-section .contact-info .contact-list {
+    padding: 1rem 2rem 2rem;
+  }
+  .page4 .contact-section .contact-info .contact-list li {
+    font-size: 1em;
+    padding: 0.5em;
+  }
 }
 
 /*-----Smaller phone starts-----*/
 @media screen and (max-width: 360px) {
-  /*--Header--*/
-  .header .hamburger {
-    top: 30%;
-    right: 1%;
-  }
-  /*--Reservation page--*/
+  /*--------Reservation page--------*/
   .page2 .reservation-section {
-    height: 85vh;
+    height: 88vh;
   }
   .page2 .reservation-section .reservationContainer {
     width: 100%;
@@ -460,6 +483,27 @@ body {
     margin-bottom: 2em;
     height: 3em;
   }
+  /*------------Contact / Info Page------------*/
+  .page4 .contact-section .info-container .info-title {
+    font-size: 1.4em;
+  }
+  .page4 .contact-section .info-container .info-text {
+    font-size: 0.8em;
+  }
+  .page4 .contact-section .fas {
+    font-size: 1em;
+    padding-top: 1em;
+  }
+  .page4 .contact-section .fa-utensils {
+    display: none;
+  }
+  .page4 .contact-section .contact-info .contact-list {
+    padding: 1rem 2rem 2rem;
+  }
+  .page4 .contact-section .contact-info .contact-list li {
+    font-size: 0.8em;
+    padding: 0.5em;
+  }
 }
 
 /*-----------Tablet starts-----------*/
@@ -473,7 +517,7 @@ body {
     z-index: 100;
     position: fixed;
     width: 100%;
-    height: 10vh;
+    height: 12vh;
   }
   .header .hamburger {
     display: -webkit-box;
@@ -485,8 +529,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 4em;
-    height: 3.75em;
+    width: 3em;
+    height: 2.75em;
     position: absolute;
     cursor: pointer;
     right: 2%;
@@ -497,7 +541,7 @@ body {
   }
   .header .hamburger .line {
     width: 100%;
-    height: 0.3em;
+    height: 0.2em;
     border-radius: 1em;
     background-color: #ffffff;
     -webkit-transition: all 0.8s;
@@ -552,7 +596,7 @@ body {
 @media screen and (max-width: 770px) {
   /*----Start Page----*/
   .page1 .hero {
-    height: 85vh;
+    height: 88vh;
     /* Hero Text Section*/
   }
   .page1 .hero .first-section .welcome {

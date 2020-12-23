@@ -3,12 +3,11 @@
 
 
         
-        
-   
-  /*--Reservation page--*/
+          
+  /*-------Reservation page-------*/
   .page2{ 
    .reservation-section{
-    height: 85vh;
+    height: 88vh;
     
     .reservationContainer {
         width: 100%;
@@ -25,31 +24,54 @@
             height: 3em;
           }
         }
-     }   
-     }  
-   }
+    }   
+   }  
+  }
 
+  /*------------ Contact / Info Page ------------*/
+.page4 {  
+  .contact-section{
+    background-color: black;
+    height: 88vh;
+    .info-container {
+      width: 80%;
+      .info-title{
+        font-size: 1.6em;
+        
+      }
+      .info-text {
+        font-size: 1em;
+      }
+    }
+    .fas{
+      font-size: 1em;
+      padding-top: 1em;
+    }
+    .fa-utensils{
+      font-size: 2em;
+    }
+    .contact-info {
+      .contact-list {
+        padding: 1rem 2rem 2rem;
+        li{
+          font-size: 1em;
+          padding: 0.5em;
+        }
+      }
+    }
+  }
+}
 
 }
 
 /*-----Smaller phone starts-----*/   
 @media screen and (max-width: 360px){
 
-  /*--Header--*/
-    .header {  
-      
-      .hamburger {
-        top: 30%;
-        right: 1%; 
-      }
-    }
-
-
-/*--Reservation page--*/
+/*--------Reservation page--------*/
   .page2{
 
     .reservation-section{
-      height: 85vh;
+      height: 88vh;
      .reservationContainer {
          width: 100%;
  
@@ -68,13 +90,43 @@
             margin-bottom: 2em;
             height: 3em;
           }
-       }
-        
+       } 
     }   
    }  
-}
+  }
 
 
+ /*------------Contact / Info Page------------*/
+ .page4 {  
+  .contact-section{
+    .info-container {
+      .info-title{
+        font-size: 1.4em;
+        
+      }
+      .info-text {
+        
+        font-size: 0.8em;
+      }
+    }
+    .fas{
+      font-size: 1em;
+      padding-top: 1em;
+    }
+    .fa-utensils{
+      display: none;
+    }
+    .contact-info {
+      .contact-list {
+        padding: 1rem 2rem 2rem;
+        li{
+          font-size: 0.8em;
+          padding: 0.5em;
+        }
+      }
+    }
+  }
+ }
 }
 
 

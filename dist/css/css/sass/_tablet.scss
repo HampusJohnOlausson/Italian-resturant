@@ -9,14 +9,14 @@
     z-index: 100;
     position: fixed;
     width: 100%;
-    height: 10vh;
+    height: 12vh;
   }
       .hamburger {  
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        width: 4em;
-        height: 3.75em;
+        width: 3em;
+        height: 2.75em;
         position: absolute;
         cursor: pointer;
         right: 2%;
@@ -26,7 +26,7 @@
     
           .line{
             width: 100%;
-            height: 0.3em;
+            height: 0.2em;
             border-radius: 1em;
             background-color: $accent;
             transition: all 0.8s;
@@ -79,7 +79,7 @@
 /*----Start Page----*/
 .page1 {
     .hero {
-      height: 85vh;
+      height: 88vh;
 
       /* Hero Text Section*/
       .first-section {
