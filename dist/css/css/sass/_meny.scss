@@ -1,16 +1,15 @@
 .page3{
-
     .menu {
-
         .menu-section{
+            padding-top: 3rem;
             background-color: $black;
             height: 200vh;
             text-align: center;
 
             .item{
-                width: 15rem;
+                width: 14rem;
                 height: 12rem;
-                margin: 1rem;
+                margin: 2rem 1rem;
                 background-color: $regular;                        
                 border-radius: 1rem;
 
@@ -28,46 +27,41 @@
                 }
 
 
-            .item-price{
-                font-size: 1.2rem;
-                font-weight: bold;
-                color: $primary;
-            }
+                .item-price{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: $primary;
+                }
 
-            .item-details{
-                margin: 1rem;
+                .item-details{
+                    margin: 1rem;
     
-             .add-btn{
-                margin: 1rem;
-                width: 10rem;
-                font-size: 1rem;
-                height: 2.2rem;
-                transition: ease .3s;
+                    .add-btn{
+                        margin: 1rem;
+                        width: 10rem;
+                        font-size: 1rem;
+                        height: 2.2rem;
+                        transition: ease .3s;
                  
-                .fa-utensils{
-                    margin-right: 0.5rem;
-                 }
-            }
+                        .fa-utensils{
+                            margin-right: 0.5rem;
+                        }
+                    }
             
-        }
-
-}
+                }
+            }
 
 /*----Checkout container----*/
 
 .checkout-container{
     
-    .cart-item{
-        font-size: 1.4rem;
-        margin: 0rem;
-    }
+      
     .cart-item-title{
         font-size: 1.4rem;
     }
     .priceCart{
         font-size: 1.4rem;
-        color: $primary;
-        
+        color: $primary;  
     }
 
     .quantityInput{
@@ -83,36 +77,37 @@
         height: 2.5rem;
         font-size: 1rem;
         transition: ease .5s;
-    }
-    .fa-trash-alt{
-        margin-right: 0.5rem;
-        font-size: 1rem;
-        
-    }
+        }
+        .fa-trash-alt{
+            margin-right: 0.5rem;
+            font-size: 1rem; 
+        }
     
-    .total-title{
-        font-size: 2rem;
-        margin: 1rem;
+    .checkout-total{
+        .total-title{
+            font-size: 2rem;
+            margin: 0rem;
+        }
+        .total-price{
+            font-size: 1.6rem;
+            margin: 1rem 2rem 1rem 1rem;
+            color: $primary;
+        }
     }
-    .total-price{
-        font-size: 1.6rem;
-        margin: 1rem 2rem 1rem 1rem;
-        color: $primary;
-    }
-
-   }
 
    .checkout-btn{
-       padding: 1rem;
-       font-size: 1.2rem;
-       width: 17rem;
-       transition: ease .5s;
+       padding: 0.5rem;
+       font-size: 1.1rem;
+       width: 15rem;
+       transition: ease .3s;
    }
    .fa-shopping-cart{
         margin-right: 0.5rem;
     }
    
   }
+ }
+ 
  }
 
 }
