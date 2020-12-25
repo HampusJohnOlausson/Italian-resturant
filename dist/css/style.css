@@ -447,9 +447,19 @@ body {
     padding-top: 0rem;
     /*----Checkout container----*/
   }
+  .page3 .menu .menu-section .two-item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .page3 .menu .menu-section .item {
     width: 8rem;
-    height: 8rem;
+    height: 5rem;
+    margin: 0.5em 0.5em;
   }
   .page3 .menu .menu-section .item .item-title {
     font-size: 1.2rem;
