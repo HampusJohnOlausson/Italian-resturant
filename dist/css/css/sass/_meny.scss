@@ -1,7 +1,6 @@
 .page3{
     .menu {
         .menu-section{
-            padding-top: 3rem;
             background-color: $black;
             height: 200vh;
             text-align: center;
@@ -9,7 +8,6 @@
             .item{
                 width: 14rem;
                 height: 12rem;
-                margin: 2rem 1rem;
                 background-color: $regular;                        
                 border-radius: 1rem;
 
@@ -34,7 +32,7 @@
                 }
 
                 .item-details{
-                    margin: 1rem;
+                    margin: 0.5rem;
     
                     .add-btn{
                         margin: 1rem;
@@ -54,8 +52,14 @@
 /*----Checkout container----*/
 
     .checkout-container{
+        background-color: black;
+        height: 7rem;
+        position: fixed;
+        right: 0;
+       
 
         .cartItem{
+            
             .cart-item-title{
                 font-size: 1.2rem;
                 margin-right: 1rem;
