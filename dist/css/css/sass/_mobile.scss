@@ -1,6 +1,16 @@
 /*-----Phone starts-----*/
 @media screen and (max-width: 640px){
-          
+
+  .wrapper {
+  .header {
+    .hamburger{
+        right: -1%;
+        top: 23%;
+    }
+  }
+}
+
+
   /*-------Reservation page-------*/
   .page2{ 
    .reservation-section{
@@ -155,6 +165,7 @@
 
 /*-----Smaller phone starts-----*/   
 @media screen and (max-width: 360px){
+  
 
 /*--------Reservation page--------*/
   .page2{
