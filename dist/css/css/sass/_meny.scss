@@ -4,8 +4,10 @@
             background-color: $black;
             height: 200vh;
             text-align: center;
+            padding-top: 5rem ;
 
             .item{
+                margin: 0.5rem;
                 width: 14rem;
                 height: 12rem;
                 background-color: $regular;                        
@@ -97,21 +99,23 @@
         }
     
     .total-container{
+        width: 100%;
         background-color: black;
-        height: 7rem;
+        height: 10rem;
         position: fixed;
         right: 0;
         bottom: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        z-index: 10;
         
         .checkout-total{
         .total-title{
             font-size: 1.4rem;
-            margin: 0rem;
+            margin-top: 1rem;
         }
         .total-price{
             font-size: 1.4rem;
-            margin: 1rem 2rem 1rem 1rem;
+            margin: 2rem 2rem 1rem 1rem;
             color: $primary;
         }
         }
