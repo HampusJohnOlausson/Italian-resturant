@@ -7,7 +7,7 @@
             padding-top: 5rem ;
 
             .item{
-                margin: 0.5rem;
+                margin: 3rem 1rem;
                 width: 14rem;
                 height: 12rem;
                 background-color: $regular;                        
@@ -105,7 +105,6 @@
         position: fixed;
         right: 0;
         bottom: 0;
-        margin-bottom: 1rem;
         z-index: 10;
         
         .checkout-total{

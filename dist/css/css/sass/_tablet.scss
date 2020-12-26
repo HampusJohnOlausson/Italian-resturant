@@ -74,10 +74,11 @@
 .page3{
   .menu {
       .menu-section{
+        padding-top: 0em;
           .item{
-              width: 10rem;
-              height: 10rem;
-              margin: 2rem 1rem;
+              width: 8em;
+              height: 9em;
+              margin: 1em 0.5em;
 
               img {
                   display: none;
@@ -93,10 +94,11 @@
 
                   .add-btn{
                       font-size: 0.8rem;
-                      width: 8rem;
-                      height: 2.2rem;
+                      width: 8em;
+                      height: 2em;
+                      margin: 1em;
                       .fa-utensils{
-                          margin-right: 0.3rem;
+                          display: none;
                       }
                   }
           
@@ -145,7 +147,7 @@
   }
       .checkout-btn{
           padding: 0.2rem;
-          height: 2.5rem;
+          height: 2.5em;
           font-size: 0.8rem;
           width: 12rem;
        }

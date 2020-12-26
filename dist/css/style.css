@@ -130,7 +130,7 @@ body {
 }
 
 .page3 .menu .menu-section .item {
-  margin: 0.5rem;
+  margin: 3rem 1rem;
   width: 14rem;
   height: 12rem;
   background-color: #cb3b3b;
@@ -223,7 +223,6 @@ body {
   position: fixed;
   right: 0;
   bottom: 0;
-  margin-bottom: 1rem;
   z-index: 10;
 }
 
@@ -464,7 +463,7 @@ body {
             flex-direction: column;
   }
   .page3 .menu .menu-section .item {
-    margin: 0.5em 0em;
+    margin: 2em 1em;
   }
   .page3 .menu .menu-section .item .item-title {
     font-size: 1em;
@@ -690,12 +689,13 @@ body {
   }
   /*------Menu Section------*/
   .page3 .menu .menu-section {
+    padding-top: 0em;
     /*----Checkout container----*/
   }
   .page3 .menu .menu-section .item {
-    width: 10rem;
-    height: 10rem;
-    margin: 2rem 1rem;
+    width: 8em;
+    height: 9em;
+    margin: 1em 0.5em;
   }
   .page3 .menu .menu-section .item img {
     display: none;
@@ -710,11 +710,12 @@ body {
   }
   .page3 .menu .menu-section .item .item-details .add-btn {
     font-size: 0.8rem;
-    width: 8rem;
-    height: 2.2rem;
+    width: 8em;
+    height: 2em;
+    margin: 1em;
   }
   .page3 .menu .menu-section .item .item-details .add-btn .fa-utensils {
-    margin-right: 0.3rem;
+    display: none;
   }
   .page3 .menu .menu-section .checkout-container .cartItem .cart-item-price {
     margin: 0rem 0.5rem;
@@ -747,7 +748,7 @@ body {
   }
   .page3 .menu .menu-section .checkout-container .checkout-btn {
     padding: 0.2rem;
-    height: 2.5rem;
+    height: 2.5em;
     font-size: 0.8rem;
     width: 12rem;
   }
