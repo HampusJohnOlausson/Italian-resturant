@@ -39,45 +39,33 @@
   .page3{
         .menu {
         .menu-section{
-            padding-top: 0em;
             .two-item-container{
               flex-direction: column;
             }
-            .item{
-              margin: 2em 1em;
-               
-
+            .item{ 
                 .item-title{
                     font-size: 1em;
                 }
                 .item-price{
-                    font-size: 1em;
+                    font-size: 1.2em;
                 }
                 .item-details{
-                    margin: 0.5em;
-    
                     .add-btn{
-                        margin: 1.2em;
                         width: 8em;
                         font-size: 0.8rem;
-                        height: 2rem;
-                        
                         .fa-utensils{
                           display: none;
-                            margin-right: 0.5rem;
                         }
                     }
-            
                 }
             }
 
 /*----Checkout container----*/
 
     .checkout-container{
-
         .cartItem{
             .cart-item-title{
-                font-size: 1em;
+                font-size: 0.8em;
                 margin-right: 0em;
             }
             .cart-item-price{
@@ -85,39 +73,21 @@
             }
         }
         .cart-item-title{
-            font-size: 1.2rem;
+            font-size: 1.2em;
         }
         .priceCart{
-            font-size: 1.2rem;
-            color: $primary;  
-        }
-
-        .remove{
-            width: 8rem;
-            height: 2.2rem;
-            font-size: 0.8rem;
+            font-size: 1.2em;
         }
         .fa-trash-alt{
             display: none;
         }
     
-    .checkout-total{
-        .total-title{
-            font-size: 1.2rem;
-            margin: 0rem;
-        }
-        .total-price{
-            font-size: 1.2rem;
-            margin: 0.5rem 2rem 0.5rem 1rem;
-            color: $primary;
-        }
-    }
 
         .checkout-btn{
             padding: 0.5rem;
             height: 3.4rem;
             font-size: 1rem;
-            width: 14rem;
+            width: 11rem;
             transition: ease .3s;
          }
         .fa-shopping-cart{

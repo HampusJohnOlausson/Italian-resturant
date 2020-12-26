@@ -10,6 +10,7 @@
     position: fixed;
     width: 100%;
     height: 12vh;
+    background-color: $black;
   }
       .hamburger {  
         display: flex;
@@ -93,6 +94,7 @@
                   margin: 1rem;
 
                   .add-btn{
+                      
                       font-size: 0.8rem;
                       width: 8em;
                       height: 2em;
@@ -108,6 +110,8 @@
 /*----Checkout container----*/
 
   .checkout-container{
+
+    .total-container{
 
       .cartItem{
           .cart-item-price{
@@ -128,8 +132,8 @@
           height: 2rem;    
       }
       .remove{
-          width: 8rem;
-          height: 2.2rem;
+          width: 7em;
+          height: 2em;
           font-size: 0.8rem;
       }
       .fa-trash-alt{
@@ -139,22 +143,21 @@
   .checkout-total{
       .total-title{
           font-size: 1.2rem;
-          margin: 0rem;
       }
       .total-price{
           font-size: 1.2rem;
       }
   }
-      .checkout-btn{
-          padding: 0.2rem;
-          height: 2.5em;
-          font-size: 0.8rem;
-          width: 12rem;
-       }
-      .fa-shopping-cart{
-          margin-right: 0.5rem;
-       }
+  .checkout-btn{
+    height: 2.5em;
+    font-size: 1em;
+    width: 12em;
+ }
+.fa-shopping-cart{
+    display: none;
+ }
   }
+}
  }
 }
 }
