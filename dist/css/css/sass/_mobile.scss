@@ -36,68 +36,29 @@
   }
 
   /*----Menu Section----*/
-  .page3{
-        .menu {
+.page3{
+      .menu {
         .menu-section{
             .two-item-container{
               flex-direction: column;
             }
-            .item{ 
-                .item-title{
-                    font-size: 1em;
-                }
-                .item-price{
-                    font-size: 1.2em;
-                }
-                .item-details{
-                    .add-btn{
-                        width: 8em;
-                        font-size: 0.8rem;
-                        .fa-utensils{
-                          display: none;
-                        }
-                    }
-                }
-            }
 
 /*----Checkout container----*/
-
-    .checkout-container{
-        .cartItem{
-            .cart-item-title{
+          .checkout-container{
+            .cartItem{
+              .cart-item-title{
                 font-size: 0.8em;
                 margin-right: 0em;
+              }
+               .cart-item-price{
+                display: none;
+              }
             }
-            .cart-item-price{
-              display: none;
-            }
+            
+          }
         }
-        .cart-item-title{
-            font-size: 1.2em;
-        }
-        .priceCart{
-            font-size: 1.2em;
-        }
-        .fa-trash-alt{
-            display: none;
-        }
-    
-
-        .checkout-btn{
-            padding: 0.5rem;
-            height: 3.4rem;
-            font-size: 1rem;
-            width: 11rem;
-            transition: ease .3s;
-         }
-        .fa-shopping-cart{
-            display: none;
-         }
-    }
-   }
-  }
-
-  }
+      }
+}
 
   /*------------ Contact / Info Page ------------*/
 .page4 {  

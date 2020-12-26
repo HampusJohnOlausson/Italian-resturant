@@ -184,16 +184,16 @@ body {
   color: #ffbd2d;
 }
 
-.page3 .menu .menu-section .checkout-container .cart-item-title {
+.page3 .menu .menu-section .checkout-container .cartItem .cart-item-title {
   font-size: 1.4rem;
 }
 
-.page3 .menu .menu-section .checkout-container .priceCart {
+.page3 .menu .menu-section .checkout-container .cartItem .cart-item-price {
   font-size: 1.4rem;
   color: #ffbd2d;
 }
 
-.page3 .menu .menu-section .checkout-container .quantityInput {
+.page3 .menu .menu-section .checkout-container .cartItem .quantityInput {
   border-radius: 1rem;
   padding: 0.5rem;
   width: 3rem;
@@ -202,7 +202,7 @@ body {
   outline: none;
 }
 
-.page3 .menu .menu-section .checkout-container .remove {
+.page3 .menu .menu-section .checkout-container .cartItem .remove {
   margin: 1rem;
   width: 10rem;
   height: 2.5rem;
@@ -211,7 +211,7 @@ body {
   transition: ease .3s;
 }
 
-.page3 .menu .menu-section .checkout-container .fa-trash-alt {
+.page3 .menu .menu-section .checkout-container .cartItem .fa-trash-alt {
   margin-right: 0.5rem;
   font-size: 1rem;
 }
@@ -226,6 +226,10 @@ body {
   z-index: 10;
 }
 
+.page3 .menu .menu-section .checkout-container .total-container .checkout-total {
+  margin-right: 4rem;
+}
+
 .page3 .menu .menu-section .checkout-container .total-container .checkout-total .total-title {
   font-size: 1.4rem;
   margin-top: 1rem;
@@ -238,6 +242,7 @@ body {
 }
 
 .page3 .menu .menu-section .checkout-container .total-container .checkout-btn {
+  margin-right: 5rem;
   padding: 0.5rem;
   height: 3.4rem;
   font-size: 1rem;
@@ -461,44 +466,11 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .page3 .menu .menu-section .item .item-title {
-    font-size: 1em;
-  }
-  .page3 .menu .menu-section .item .item-price {
-    font-size: 1.2em;
-  }
-  .page3 .menu .menu-section .item .item-details .add-btn {
-    width: 8em;
-    font-size: 0.8rem;
-  }
-  .page3 .menu .menu-section .item .item-details .add-btn .fa-utensils {
-    display: none;
-  }
   .page3 .menu .menu-section .checkout-container .cartItem .cart-item-title {
     font-size: 0.8em;
     margin-right: 0em;
   }
   .page3 .menu .menu-section .checkout-container .cartItem .cart-item-price {
-    display: none;
-  }
-  .page3 .menu .menu-section .checkout-container .cart-item-title {
-    font-size: 1.2em;
-  }
-  .page3 .menu .menu-section .checkout-container .priceCart {
-    font-size: 1.2em;
-  }
-  .page3 .menu .menu-section .checkout-container .fa-trash-alt {
-    display: none;
-  }
-  .page3 .menu .menu-section .checkout-container .checkout-btn {
-    padding: 0.5rem;
-    height: 3.4rem;
-    font-size: 1rem;
-    width: 11rem;
-    -webkit-transition: ease .3s;
-    transition: ease .3s;
-  }
-  .page3 .menu .menu-section .checkout-container .fa-shopping-cart {
     display: none;
   }
   /*------------ Contact / Info Page ------------*/
@@ -682,7 +654,7 @@ body {
     font-weight: 500;
   }
   .page3 .menu .menu-section .item .item-details {
-    margin: 1rem;
+    margin: 1em;
   }
   .page3 .menu .menu-section .item .item-details .add-btn {
     font-size: 0.8rem;
@@ -694,26 +666,26 @@ body {
     display: none;
   }
   .page3 .menu .menu-section .checkout-container .total-container .cartItem .cart-item-price {
-    margin: 0rem 0.5rem;
-    font-size: 1.2rem;
+    margin: 0em 0.5em;
+    font-size: 1.2em;
   }
   .page3 .menu .menu-section .checkout-container .total-container .cart-item-title {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
-  .page3 .menu .menu-section .checkout-container .total-container .priceCart {
-    font-size: 1.2rem;
+  .page3 .menu .menu-section .checkout-container .total-container .cart-item-price {
+    font-size: 1.2em;
   }
   .page3 .menu .menu-section .checkout-container .total-container .quantityInput {
     width: 3rem;
     height: 2rem;
   }
   .page3 .menu .menu-section .checkout-container .total-container .remove {
-    width: 7em;
+    width: 6em;
     height: 2em;
     font-size: 0.8rem;
   }
   .page3 .menu .menu-section .checkout-container .total-container .fa-trash-alt {
-    font-size: 0.8rem;
+    display: none;
   }
   .page3 .menu .menu-section .checkout-container .total-container .checkout-total .total-title {
     font-size: 1.2rem;
