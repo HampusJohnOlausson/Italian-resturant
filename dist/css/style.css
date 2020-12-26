@@ -173,6 +173,16 @@ body {
   margin-right: 0.5rem;
 }
 
+.page3 .menu .menu-section .checkout-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*---Total container----*/
+}
+
 .page3 .menu .menu-section .checkout-container .cartItem .cart-item-title {
   font-size: 1.2rem;
   margin-right: 1rem;
@@ -211,12 +221,22 @@ body {
   transition: ease .3s;
 }
 
-.page3 .menu .menu-section .checkout-container .cartItem .fa-trash-alt {
+.page3 .menu .menu-section .checkout-container .cartItem .remove .fa-trash-alt {
   margin-right: 0.5rem;
   font-size: 1rem;
 }
 
 .page3 .menu .menu-section .checkout-container .total-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   background-color: black;
   height: 10rem;
@@ -227,7 +247,16 @@ body {
 }
 
 .page3 .menu .menu-section .checkout-container .total-container .checkout-total {
-  margin-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page3 .menu .menu-section .checkout-container .total-container .checkout-total .total-title {
@@ -237,12 +266,11 @@ body {
 
 .page3 .menu .menu-section .checkout-container .total-container .checkout-total .total-price {
   font-size: 1.4rem;
-  margin: 2rem 2rem 1rem 1rem;
+  margin: 2rem 0rem 1rem 1rem;
   color: #ffbd2d;
 }
 
 .page3 .menu .menu-section .checkout-container .total-container .checkout-btn {
-  margin-right: 5rem;
   padding: 0.5rem;
   height: 3.4rem;
   font-size: 1rem;
@@ -665,26 +693,29 @@ body {
   .page3 .menu .menu-section .item .item-details .add-btn .fa-utensils {
     display: none;
   }
-  .page3 .menu .menu-section .checkout-container .total-container .cartItem .cart-item-price {
+  .page3 .menu .menu-section .checkout-container {
+    /*----Total container----*/
+  }
+  .page3 .menu .menu-section .checkout-container .cartItem .cart-item-price {
     margin: 0em 0.5em;
     font-size: 1.2em;
   }
-  .page3 .menu .menu-section .checkout-container .total-container .cart-item-title {
+  .page3 .menu .menu-section .checkout-container .cartItem .cart-item-title {
+    font-size: 1em;
+  }
+  .page3 .menu .menu-section .checkout-container .cartItem .cart-item-price {
     font-size: 1.2em;
   }
-  .page3 .menu .menu-section .checkout-container .total-container .cart-item-price {
-    font-size: 1.2em;
-  }
-  .page3 .menu .menu-section .checkout-container .total-container .quantityInput {
+  .page3 .menu .menu-section .checkout-container .cartItem .quantityInput {
     width: 3rem;
     height: 2rem;
   }
-  .page3 .menu .menu-section .checkout-container .total-container .remove {
-    width: 6em;
+  .page3 .menu .menu-section .checkout-container .cartItem .remove {
+    width: 8em;
     height: 2em;
     font-size: 0.8rem;
   }
-  .page3 .menu .menu-section .checkout-container .total-container .fa-trash-alt {
+  .page3 .menu .menu-section .checkout-container .cartItem .remove .fa-trash-alt {
     display: none;
   }
   .page3 .menu .menu-section .checkout-container .total-container .checkout-total .total-title {

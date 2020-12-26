@@ -105,15 +105,13 @@
 
 /*----Checkout container----*/
         .checkout-container{
-          .total-container{
             .cartItem{
               .cart-item-price{
                 margin: 0em 0.5em;
                 font-size: 1.2em;  
               }
-            }
             .cart-item-title{
-              font-size: 1.2em;
+              font-size: 1em;
             }
             .cart-item-price{
               font-size: 1.2em; 
@@ -123,21 +121,24 @@
               height: 2rem;    
             }
             .remove{
-              width: 6em;
+              width: 8em;
               height: 2em;
               font-size: 0.8rem;
+              .fa-trash-alt{
+                display: none;
+              }
             }
-            .fa-trash-alt{
-              display: none;
-            }
-  
-            .checkout-total{
-            .total-title{
-              font-size: 1.2rem;
-            }
-            .total-price{
-              font-size: 1.2rem;
-            }
+          }
+            
+          /*----Total container----*/
+          .total-container{
+            .checkout-total{   
+              .total-title{
+                font-size: 1.2rem;
+              }
+              .total-price{
+                font-size: 1.2rem;
+              }
             }
             .checkout-btn{
               height: 2.5em;
@@ -146,7 +147,7 @@
             }
             .fa-shopping-cart{
                display: none;
-            }
+            } 
           }
         }    
       }
