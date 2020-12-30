@@ -1,28 +1,30 @@
 
 /*-----------Start Page-----------*/
 .page1{
-
-  background-image: url(/public/Images/pizza.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-
-.hero {
+  .hero {
       height: 88vh;
       background: rgba(0, 0, 0, 0.6);
 
       /* Hero Text Section*/
     .first-section {
+
+      .fa-utensils{
+        text-align: center;
+        color: $primary;
+        font-size: 4rem;
+      }
       
       .welcome {
         text-align: center;
         width: 100%;
-        color: $primary;
+        color: $accent;
         font-size: 3rem;
         font-family: "Yellowtail", cursive;
         animation: leftSlide 1s ease;
       }
   
       .hero-text {
+        color: $primary;
         text-align: center;
         width: 100%;
         font-size: 4rem;

@@ -74,12 +74,6 @@ body {
 }
 
 /*------------ Contact / Info Page ------------*/
-.page4 {
-  background-image: url(/public/Images/wino.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .page4 .contact-section {
   background: rgba(0, 0, 0, 0.6);
   height: 88vh;
@@ -129,12 +123,17 @@ body {
   /*----Checkout container----*/
 }
 
+.page3 .menu .menu-section .course-title {
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
 .page3 .menu .menu-section .item {
   margin: 3rem 1rem;
   width: 14rem;
   height: 12rem;
-  background-color: #cb3b3b;
-  border-radius: 1rem;
+  border: 2px solid #ffbd2d;
+  border-radius: 0.3rem;
 }
 
 .page3 .menu .menu-section .item img {
@@ -380,22 +379,22 @@ body {
 
 /*Pages slide*/
 /*-----------Start Page-----------*/
-.page1 {
-  background-image: url(/public/Images/pizza.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .page1 .hero {
   height: 88vh;
   background: rgba(0, 0, 0, 0.6);
   /* Hero Text Section*/
 }
 
+.page1 .hero .first-section .fa-utensils {
+  text-align: center;
+  color: #ffbd2d;
+  font-size: 4rem;
+}
+
 .page1 .hero .first-section .welcome {
   text-align: center;
   width: 100%;
-  color: #ffbd2d;
+  color: #ffffff;
   font-size: 3rem;
   font-family: "Yellowtail", cursive;
   -webkit-animation: leftSlide 1s ease;
@@ -403,6 +402,7 @@ body {
 }
 
 .page1 .hero .first-section .hero-text {
+  color: #ffbd2d;
   text-align: center;
   width: 100%;
   font-size: 4rem;
@@ -420,10 +420,6 @@ body {
 }
 
 /*-----------Reservation-----------*/
-.page2 {
-  background-color: #000000;
-}
-
 .page2 .reservation-section {
   text-align: center;
   height: 88vh;
@@ -747,6 +743,7 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
+  background-color: #000000;
   position: absolute;
   color: #ffffff;
   letter-spacing: 3px;

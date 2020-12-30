@@ -1,13 +1,9 @@
 /*------------ Contact / Info Page ------------*/
 .page4 {  
-  background-image: url(/public/Images/wino.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-
-.contact-section{
-  background: rgba(0, 0, 0, 0.6);
-  height: 88vh;
-  text-align: center;
+  .contact-section{
+    background: rgba(0, 0, 0, 0.6);
+    height: 88vh;
+    text-align: center;
   
     .info-container {
       width: 60%;
