@@ -396,6 +396,14 @@ body {
   background: #26ca70;
 }
 
+.remove:before {
+  background: #cb3b3b;
+}
+
+.remove:hover {
+  background: #cb3b3b;
+}
+
 /*-----------Start Page-----------*/
 .page1 main {
   width: 100%;
@@ -466,7 +474,7 @@ body {
 
 .page1 main .aside {
   width: 45%;
-  background-image: url(/images/parmesan.jpg);
+  background-image: url(/parmesan.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100% 100%;
@@ -751,7 +759,7 @@ body {
   .page1 main .hero {
     width: 100%;
     height: 100vh;
-    background-image: url(/images/parmesan.jpg);
+    background-image: url(/parmesan.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-size: 100% 100%;
