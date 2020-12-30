@@ -481,7 +481,7 @@ body {
 }
 
 .page1 main .hero {
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   background-color: #000000;
   width: 55%;
   /* Hero Text Section*/
@@ -543,6 +543,10 @@ body {
 }
 
 /*-----------Reservation-----------*/
+.page2 {
+  background-color: #000000;
+}
+
 .page2 .reservation-section {
   text-align: center;
   height: 88vh;
@@ -594,9 +598,6 @@ body {
   .wrapper .header .hamburger {
     left: 12%;
     top: 30%;
-  }
-  .page1 main .hero {
-    padding-top: 4rem;
   }
   .page1 main .hero .fa-utensils {
     font-size: 2em;
