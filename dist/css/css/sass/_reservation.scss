@@ -15,14 +15,23 @@
             width: 60%;
             margin: auto;
             font-size: 1.2rem;
+            color: $primary;
  
            input{
+            border: 2px solid $primary;
+            color: $accent;
+            background: transparent;
             margin: 1rem;
             border-radius: 7px;
             padding: 0.5rem;
             font-size: 1.2rem;
             outline: none;
+              
             }
+            ::placeholder{
+              color: $accent;
+            }
+              
         }
     }   
   }

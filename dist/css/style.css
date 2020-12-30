@@ -96,7 +96,7 @@ body {
   padding-top: 2rem;
 }
 
-.page4 .contact-section .fa-utensils {
+.page4 .contact-section .fa-glass-cheers {
   font-size: 2.5rem;
 }
 
@@ -436,14 +436,34 @@ body {
   width: 60%;
   margin: auto;
   font-size: 1.2rem;
+  color: #ffbd2d;
 }
 
 .page2 .reservation-section .reservationContainer .form input {
+  border: 2px solid #ffbd2d;
+  color: #ffffff;
+  background: transparent;
   margin: 1rem;
   border-radius: 7px;
   padding: 0.5rem;
   font-size: 1.2rem;
   outline: none;
+}
+
+.page2 .reservation-section .reservationContainer .form ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.page2 .reservation-section .reservationContainer .form :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.page2 .reservation-section .reservationContainer .form ::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.page2 .reservation-section .reservationContainer .form ::placeholder {
+  color: #ffffff;
 }
 
 /*-----Phone starts-----*/
