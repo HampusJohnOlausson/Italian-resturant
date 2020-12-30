@@ -9,7 +9,7 @@
     z-index: 100;
     position: fixed;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     background-color: $black;
   }
       .hamburger {  
@@ -20,8 +20,8 @@
         height: 2.75em;
         position: absolute;
         cursor: pointer;
-        left: 5%;
-        top: 15%;
+        left: 7%;
+        top: 35%;
         transform: translate(-50%, -5%);
         z-index: 2;
     
@@ -41,7 +41,6 @@
         height: 100vh;
         position: relative;
         flex-direction: column;
-        left: 0;
         transition: all .5s ease-in-out;
       }
     
@@ -70,7 +69,30 @@
           }  
       }             
 } 
+.page1{
 
+  main{
+  display: flex;
+  flex-direction: column;
+  
+  .hero{
+        width: 100%;
+        height: 100vh;
+        background-image: url(/public/images/parmesan.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 100% 100%;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+
+        .first-section{
+          background-color: transparent;
+        }
+  }
+  .aside{
+    display: none;
+  }
+}
+}
 /*------Menu Section------*/
   .page3{
         .menu {
@@ -161,7 +183,7 @@
 
 /*----Start Page----*/
 .page1 {
-  height: 88vh;
+  height: 90vh;
     .hero {
       
       /* Hero Text Section*/
