@@ -1,22 +1,16 @@
 .page3{
-
-    main{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        .menu {
-            width: 60%;
-            height: 200vh;
-            .menu-section{
-                background-color: $black;
-                height: 200vh;
-                text-align: center;
-                padding-top: 5rem;
+    .menu {
+        .menu-section{
+            background-color: $black;
+            height: 300vh;
+            text-align: center;
+            padding-top: 5rem;
 
             .course-title{
                 padding: 0.5rem;
                 font-size: 2rem;
             }
+
             .item{
                 margin: 3rem 1rem;
                 width: 14rem;
@@ -46,145 +40,86 @@
                     }
                 }
             }
-          }
-        }
 
-      
+/*----Checkout container----*/
 
-     
-
-
-
-        /*----Checkout container----*/
-
-        .checkout-container{
-            display: flex;
-            justify-content: center;
-            position: fixed;
-            height: 90vh;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            width: 40%;
-        
-            .cartItem{
-                .cart-item-title{
-                    font-size: 1.2rem;
-                    margin-right: 1rem;
-                }
-                .cart-item-price{
-                    margin: 0rem 1rem;
-                    font-size: 1.4rem;
-                    color: $primary;
-                }
-                .cart-item-title{
-                    font-size: 1.4rem;
-                }
-                .cart-item-price{
-                    font-size: 1.4rem;
-                    color: $primary;  
-                }
-                .quantityInput{
-                    border-radius: 1rem;
-                    padding: 0.5rem;
-                    width: 3rem;
-                    height: 3rem;
-                    margin: 0.5rem;
-                    outline: none;
-                }
-                .remove{
-                    margin: 1rem;
-                    width: 10rem;
-                    height: 2.5rem;
-                    font-size: 1rem;
-                    transition: ease .3s;
-                    .fa-trash-alt{
-                        margin-right: 0.5rem;
-                        font-size: 1rem; 
-                    }
-                }  
-                
-                
-        /*----Checkout container----*/
-        
-        .checkout-container{
-            display: flex;
-            justify-content: center;
-            height: 90vh;
-        
-            .cartItem{
-                .cart-item-title{
-                    font-size: 1.2rem;
-                    margin-right: 1rem;
-                }
-                .cart-item-price{
-                    margin: 0rem 1rem;
-                    font-size: 1.4rem;
-                    color: $primary;
-                }
-                .cart-item-title{
-                    font-size: 1.4rem;
-                }
-                .cart-item-price{
-                    font-size: 1.4rem;
-                    color: $primary;  
-                }
-                .quantityInput{
-                    border-radius: 1rem;
-                    padding: 0.5rem;
-                    width: 3rem;
-                    height: 3rem;
-                    margin: 0.5rem;
-                    outline: none;
-                }
-                .remove{
-                    margin: 1rem;
-                    width: 10rem;
-                    height: 2.5rem;
-                    font-size: 1rem;
-                    transition: ease .3s;
-                    .fa-trash-alt{
-                        margin-right: 0.5rem;
-                        font-size: 1rem; 
-                    }
-                }       
+    .checkout-container{
+        display: flex;
+        justify-content: center;
+        .cartItem{
+            .cart-item-title{
+                font-size: 1.2rem;
+                margin-right: 1rem;
             }
-        /*---Total container----*/
-           .total-container{   
-             width: 100%;
-             height: 10rem;
-        
-                .checkout-total{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                    .total-title{
-                        font-size: 1.4rem;
-                        margin-top: 1rem;
-                    }
-                    .total-price{
-                        font-size: 1.4rem;
-                        margin: 2rem 0rem 1rem 1rem;
-                        color: $primary;
-                    }
-                }
-        
-                .checkout-btn{
-                    padding: 0.5rem;
-                    height: 3.4rem;
-                    font-size: 1rem;
-                    width: 12rem;
-                    transition: ease .3s;
-                    .fa-shopping-cart{
-                        margin-right: 0.5rem;
-                    }
-                }
+            .cart-item-price{
+                margin: 0rem 1rem;
+                font-size: 1.4rem;
+                color: $primary;
             }
-        }
+            .cart-item-title{
+                font-size: 1.4rem;
+            }
+            .cart-item-price{
+                font-size: 1.4rem;
+                color: $primary;  
+            }
+            .quantityInput{
+                border-radius: 1rem;
+                padding: 0.5rem;
+                width: 3rem;
+                height: 3rem;
+                margin: 0.5rem;
+                outline: none;
+            }
+            .remove{
+                margin: 1rem;
+                width: 10rem;
+                height: 2.5rem;
+                font-size: 1rem;
+                transition: ease .3s;
+                .fa-trash-alt{
+                    margin-right: 0.5rem;
+                    font-size: 1rem; 
+                }
+            }       
     }
+    /*---Total container----*/
+      .total-container{   
+        width: 100%;
+        background-color: $black;
+        height: 10rem;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        
+        .checkout-total{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        .total-title{
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+        .total-price{
+            font-size: 1.4rem;
+            margin: 2rem 0rem 1rem 1rem;
+            color: $primary;
+        }
+        }
+        .checkout-btn{
+            padding: 0.5rem;
+            height: 3.4rem;
+            font-size: 1rem;
+            width: 14rem;
+            transition: ease .3s;
+         }
+        .fa-shopping-cart{
+            margin-right: 0.5rem;
+         }
+      }
+    }
+   }
   }
 
-
-
-  }
 }
