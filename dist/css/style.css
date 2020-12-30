@@ -14,8 +14,9 @@ body {
 /*Import*/
 /*---------Header---------*/
 .header {
+  width: 60%;
   background-color: #000000;
-  height: 12vh;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,9 +30,9 @@ body {
 }
 
 .header .nav-section {
-  width: 70%;
+  width: 100%;
   top: 0;
-  right: 0;
+  left: 0;
 }
 
 .header .nav-section .nav-list {
@@ -56,10 +57,13 @@ body {
   font-size: 1.5rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .header .nav-section .nav-list li a:hover {
-  color: #ffbd2d;
+  color: #000000;
+  background-color: #ffbd2d;
 }
 
 .header .nav-section .nav-list .nav-line {
@@ -67,7 +71,7 @@ body {
 }
 
 .header .nav-section .nav-list .fab {
-  font-size: 3rem;
+  font-size: 2rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
@@ -389,14 +393,26 @@ body {
   background: #26ca70;
 }
 
-/*Pages slide*/
 /*-----------Start Page-----------*/
-.page1 .hero {
-  height: 88vh;
+.page1 main {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.page1 main .hero {
+  background-color: #000000;
+  width: 60%;
   /* Hero Text Section*/
 }
 
-.page1 .hero .fa-utensils {
+.page1 main .hero .fa-utensils {
   text-align: center;
   color: #ffbd2d;
   font-size: 4rem;
@@ -405,12 +421,12 @@ body {
   margin-bottom: .2rem;
 }
 
-.page1 .hero .first-section {
+.page1 main .hero .first-section {
   z-index: 3;
   background-color: #000000;
 }
 
-.page1 .hero .first-section .welcome {
+.page1 main .hero .first-section .welcome {
   text-align: center;
   width: 100%;
   color: #ffffff;
@@ -420,7 +436,7 @@ body {
           animation: leftSlide 1s ease;
 }
 
-.page1 .hero .first-section .hero-text {
+.page1 main .hero .first-section .hero-text {
   color: #ffbd2d;
   text-align: center;
   width: 100%;
@@ -429,7 +445,7 @@ body {
           animation: rightSlide 1.2s ease;
 }
 
-.page1 .hero .first-section .under-text {
+.page1 main .hero .first-section .under-text {
   margin: 1rem 0rem;
   text-align: center;
   width: 100%;
@@ -438,9 +454,16 @@ body {
           animation: leftSlide 1.2s ease;
 }
 
-.page1 .hero .first-section .reserv-btn {
+.page1 main .hero .first-section .reserv-btn {
   -webkit-animation: slideUp .8s ease;
           animation: slideUp .8s ease;
+}
+
+.page1 main .hero .hero-2 {
+  width: 40%;
+  background-image: url(/public/images/heroImage.jpg);
+  height: 10rem;
+  background-size: cover;
 }
 
 /*-----------Reservation-----------*/
@@ -636,8 +659,8 @@ body {
     height: 2.75em;
     position: absolute;
     cursor: pointer;
-    right: 2%;
-    top: 40%;
+    left: 5%;
+    top: 15%;
     -webkit-transform: translate(-50%, -5%);
             transform: translate(-50%, -5%);
     z-index: 2;
@@ -661,7 +684,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    right: 0;
+    left: 0;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
@@ -767,8 +790,10 @@ body {
 /*--Smaller tablet--*/
 @media screen and (max-width: 770px) {
   /*----Start Page----*/
-  .page1 .hero {
+  .page1 {
     height: 88vh;
+  }
+  .page1 .hero {
     /* Hero Text Section*/
   }
   .page1 .hero .first-section .welcome {
@@ -787,13 +812,11 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: #000000;
   position: absolute;
   color: #ffffff;
   letter-spacing: 3px;
   -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
           box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 /*-h2 reusable-*/

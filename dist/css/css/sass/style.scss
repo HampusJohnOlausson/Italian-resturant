@@ -30,12 +30,11 @@ $green: #26ca70;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    background-color: $black;
     position: absolute;
     color: $accent;
     letter-spacing: 3px;
     box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.6);
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+    //text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 /*-h2 reusable-*/

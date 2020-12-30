@@ -20,8 +20,8 @@
         height: 2.75em;
         position: absolute;
         cursor: pointer;
-        right: 2%;
-        top: 40%;
+        left: 5%;
+        top: 15%;
         transform: translate(-50%, -5%);
         z-index: 2;
     
@@ -41,7 +41,7 @@
         height: 100vh;
         position: relative;
         flex-direction: column;
-        right: 0;
+        left: 0;
         transition: all .5s ease-in-out;
       }
     
@@ -161,8 +161,9 @@
 
 /*----Start Page----*/
 .page1 {
+  height: 88vh;
     .hero {
-      height: 88vh;
+      
       /* Hero Text Section*/
       .first-section {
         .welcome {

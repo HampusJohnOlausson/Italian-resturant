@@ -1,16 +1,17 @@
 /*---------Header---------*/
 .header {
+    width: 60%;
     background-color: $black;
-    height: 12vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem; 
   
     .nav-section{
-      width: 70%;
+      width: 100%;
       top: 0;
-      right: 0;
+      left: 0;
     
     .nav-list {
       position: relative;
@@ -26,16 +27,21 @@
         color: $accent;
         font-size: 1.5rem;
         transition: 0.5s;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
       }
   
       & li a:hover {
-        color: $primary;
+        color: $black;
+        background-color: $primary;
+        
       }
       .nav-line {
         font-size: 2rem;
+        
       }
       .fab {
-        font-size: 3rem;
+        font-size: 2rem;
         transition: 0.5s;
         cursor: pointer;
       }
