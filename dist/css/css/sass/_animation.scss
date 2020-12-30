@@ -12,7 +12,7 @@
 
 /*--Social media icons--*/
 .fab:hover {
-  color: #ffbd2d;
+  color: $primary;
   margin-top: -1rem;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -40,9 +40,19 @@
   }
 }
 
+/*--Slide Up--*/
+@keyframes slideUp{
+  0% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /*--Button hover--*/
 .btn:before {
-  background: $regular;
+  background: $green;
   content: "";
   position: absolute;
   border-radius: 3rem;
@@ -61,20 +71,20 @@
   z-index: -1;
 }
 .btn:hover{
-  color: #fff;
+  color: $accent;
 }
 
 .add-btn:hover{
-  color: #fff;
+  color: $accent;
 }
 .add-btn:before{
-  background: #26ca70;
+  background: $green;
 }
 .checkout-btn:hover{
-  color: #fff;
+  color: $accent;
 }
 .checkout-btn:before{
-  background: #26ca70;
+  background: $green;
 }
 
 

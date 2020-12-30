@@ -3,7 +3,7 @@
 .page1{
   .hero {
       height: 88vh;
-      background: rgba(0, 0, 0, 0.6);
+     
 
       /* Hero Text Section*/
     .first-section {
@@ -12,9 +12,11 @@
         text-align: center;
         color: $primary;
         font-size: 4rem;
+        animation: slideUp 1.8s ease;
+        margin-bottom: .2rem;
       }
       
-      .welcome {
+      .welcome { 
         text-align: center;
         width: 100%;
         color: $accent;
@@ -39,6 +41,5 @@
       }
     }
  }
-  
  
 }

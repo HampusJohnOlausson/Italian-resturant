@@ -13,6 +13,7 @@ $primary: #ffbd2d;
 $accent: #ffffff;
 $regular: #cb3b3b;
 $black: #000000;
+$green: #26ca70;
 
 /*Import*/
 @import "header";
@@ -73,7 +74,7 @@ h2{
   
     & a {
       text-decoration: none;
-      color: black;
+      color: $black;
     }
   }
 
