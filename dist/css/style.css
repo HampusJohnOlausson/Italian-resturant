@@ -77,6 +77,10 @@ body {
 }
 
 /*------------ Contact / Info Page ------------*/
+.page4 {
+  background-color: #000000;
+}
+
 .page4 .contact-section {
   height: 88vh;
   text-align: center;
@@ -402,7 +406,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 90vh;
+  height: 88vh;
   /*--image--*/
 }
 
@@ -522,8 +526,8 @@ body {
 /*-----Phone starts-----*/
 @media screen and (max-width: 640px) {
   .wrapper .header .hamburger {
-    left: 12%;
-    top: 30%;
+    right: -2%;
+    top: 20%;
   }
   .page1 main .hero .fa-utensils {
     font-size: 2em;
@@ -679,8 +683,8 @@ body {
     height: 2.75em;
     position: absolute;
     cursor: pointer;
-    left: 7%;
-    top: 35%;
+    right: 1%;
+    top: 25%;
     -webkit-transform: translate(-50%, -5%);
             transform: translate(-50%, -5%);
     z-index: 2;
