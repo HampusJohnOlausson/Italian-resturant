@@ -396,13 +396,18 @@ body {
   /* Hero Text Section*/
 }
 
-.page1 .hero .first-section .fa-utensils {
+.page1 .hero .fa-utensils {
   text-align: center;
   color: #ffbd2d;
   font-size: 4rem;
-  -webkit-animation: slideUp 1.8s ease;
-          animation: slideUp 1.8s ease;
+  -webkit-animation: slideUp 1.6s ease;
+          animation: slideUp 1.6s ease;
   margin-bottom: .2rem;
+}
+
+.page1 .hero .first-section {
+  z-index: 3;
+  background-color: #000000;
 }
 
 .page1 .hero .first-section .welcome {
@@ -425,12 +430,17 @@ body {
 }
 
 .page1 .hero .first-section .under-text {
-  margin: 1rem;
+  margin: 1rem 0rem;
   text-align: center;
   width: 100%;
   font-size: 1.3rem;
   -webkit-animation: leftSlide 1.2s ease;
           animation: leftSlide 1.2s ease;
+}
+
+.page1 .hero .first-section .reserv-btn {
+  -webkit-animation: slideUp .8s ease;
+          animation: slideUp .8s ease;
 }
 
 /*-----------Reservation-----------*/

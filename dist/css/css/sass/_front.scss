@@ -4,17 +4,17 @@
   .hero {
       height: 88vh;
      
-
-      /* Hero Text Section*/
-    .first-section {
-
       .fa-utensils{
         text-align: center;
         color: $primary;
         font-size: 4rem;
-        animation: slideUp 1.8s ease;
+        animation: slideUp 1.6s ease;
         margin-bottom: .2rem;
       }
+      /* Hero Text Section*/
+    .first-section {
+      z-index: 3;
+      background-color: $black;
       
       .welcome { 
         text-align: center;
@@ -33,11 +33,14 @@
         animation: rightSlide 1.2s ease;
       }
       .under-text {
-        margin: 1rem;
+        margin: 1rem 0rem;
         text-align: center;
         width: 100%;
         font-size: 1.3rem;
         animation: leftSlide 1.2s ease;
+      }
+      .reserv-btn{
+        animation: slideUp .8s ease;
       }
     }
  }
