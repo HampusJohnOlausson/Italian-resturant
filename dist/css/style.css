@@ -357,7 +357,7 @@ body {
   background: #26ca70;
   content: "";
   position: absolute;
-  border-radius: 3rem;
+  border-radius: 0.7rem;
   left: 50%;
   right: 50%;
   top: 0;
@@ -474,10 +474,11 @@ body {
 
 .page1 main .aside {
   width: 45%;
-  background-image: url("parmesan.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: 100% 100%;
+}
+
+.page1 main .aside .hero-image {
+  width: 100%;
+  height: 100%;
 }
 
 /*-----------Reservation-----------*/
@@ -759,14 +760,7 @@ body {
   .page1 main .hero {
     width: 100%;
     height: 100vh;
-    background-image: url("/parmesan.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
-  }
-  .page1 main .hero .first-section {
-    background-color: transparent;
   }
   .page1 main .aside {
     display: none;
@@ -852,10 +846,10 @@ body {
     /* Hero Text Section*/
   }
   .page1 .hero .first-section .welcome {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .page1 .hero .first-section .hero-text {
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
   .page1 .hero .first-section .under-text {
     display: none;
@@ -899,7 +893,7 @@ h2 {
   -ms-flex-item-align: center;
       align-self: center;
   font-size: 1.2rem;
-  border-radius: 3rem;
+  border-radius: 0.7rem;
   font-weight: bold;
   margin: 1rem;
   outline: none;
