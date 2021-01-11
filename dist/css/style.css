@@ -524,11 +524,16 @@ body {
   text-align: center;
 }
 
+.page2 .reservation-section .reservationContainer .form .label {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
 .page2 .reservation-section .reservationContainer .form input {
   border: 2px solid #ffbd2d;
   color: #ffffff;
   background: transparent;
-  margin: 1rem 0rem;
+  margin: 0.5rem 0rem;
   border-radius: 7px;
   padding: 0.5rem;
   font-size: 1.2rem;
@@ -655,7 +660,12 @@ body {
     width: 80%;
     font-size: 1rem;
   }
+  .page2 .reservation-section .reservationContainer .form .label {
+    margin: 0.3rem;
+    font-size: 1em;
+  }
   .page2 .reservation-section .reservationContainer .form .input {
+    margin: 0.2rem 0rem;
     padding: 0.5em;
     font-size: 1em;
   }
