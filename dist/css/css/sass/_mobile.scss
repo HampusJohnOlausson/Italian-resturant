@@ -49,6 +49,13 @@
           width: 80%;
           font-size: 1.2rem;
 
+          .label{
+            display: none;
+          }
+          .input{
+            margin: 1em 0rem;  
+          }
+
           .submit{
             margin-top: 0.5em;
             margin-bottom: 2rem;
@@ -144,11 +151,7 @@
            width: 80%;
            font-size: 1rem;
 
-           .label{
-            display: none;
-          }
            .input{
-            margin: 1em 0rem;
             padding: 0.5em;
             font-size: 1em;  
           }

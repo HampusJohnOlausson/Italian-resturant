@@ -588,6 +588,12 @@ body {
     width: 80%;
     font-size: 1.2rem;
   }
+  .page2 .reservation-section .reservationContainer .form .label {
+    display: none;
+  }
+  .page2 .reservation-section .reservationContainer .form .input {
+    margin: 1em 0rem;
+  }
   .page2 .reservation-section .reservationContainer .form .submit {
     margin-top: 0.5em;
     margin-bottom: 2rem;
@@ -660,11 +666,7 @@ body {
     width: 80%;
     font-size: 1rem;
   }
-  .page2 .reservation-section .reservationContainer .form .label {
-    display: none;
-  }
   .page2 .reservation-section .reservationContainer .form .input {
-    margin: 1em 0rem;
     padding: 0.5em;
     font-size: 1em;
   }
