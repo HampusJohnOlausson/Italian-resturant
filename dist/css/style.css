@@ -661,11 +661,10 @@ body {
     font-size: 1rem;
   }
   .page2 .reservation-section .reservationContainer .form .label {
-    margin: 0.3rem;
-    font-size: 1em;
+    display: none;
   }
   .page2 .reservation-section .reservationContainer .form .input {
-    margin: 0.2rem 0rem;
+    margin: 1em 0rem;
     padding: 0.5em;
     font-size: 1em;
   }
