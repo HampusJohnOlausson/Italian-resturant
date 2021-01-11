@@ -570,8 +570,8 @@ body {
     height: 2.7em;
   }
   /*-------Reservation page-------*/
-  .page2 .reservation-section {
-    height: 100vh;
+  .page2 {
+    height: 110vh;
   }
   .page2 .reservation-section .reservationContainer {
     width: 100%;
@@ -625,6 +625,9 @@ body {
     font-size: 1em;
     padding-top: 1em;
   }
+  .page4 .contact-section .fa-glass-cheers {
+    display: none;
+  }
   .page4 .contact-section .fa-utensils {
     font-size: 2em;
   }
@@ -640,6 +643,9 @@ body {
 /*-----Smaller phone starts-----*/
 @media screen and (max-width: 360px) {
   /*--------Reservation page--------*/
+  .page2 {
+    height: 120vh;
+  }
   .page2 .reservation-section .reservationContainer {
     width: 100%;
     /*--Form--*/
@@ -649,7 +655,6 @@ body {
     font-size: 1rem;
   }
   .page2 .reservation-section .reservationContainer .form input {
-    margin: 0.5rem 0rem;
     padding: 0.3em;
     font-size: 1em;
   }
