@@ -487,11 +487,11 @@ body {
 
 /*-----------Reservation-----------*/
 .page2 {
+  min-height: 100vh;
   background-color: #000000;
 }
 
 .page2 .reservation-section {
-  text-align: center;
   height: 88vh;
 }
 
@@ -509,11 +509,25 @@ body {
   color: #ffbd2d;
 }
 
+.page2 .reservation-section .reservationContainer .form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page2 .reservation-section .reservationContainer .form .reserv-h2 {
+  text-align: center;
+}
+
 .page2 .reservation-section .reservationContainer .form input {
   border: 2px solid #ffbd2d;
   color: #ffffff;
   background: transparent;
-  margin: 1rem;
+  margin: 1rem 0rem;
   border-radius: 7px;
   padding: 0.5rem;
   font-size: 1.2rem;
@@ -557,7 +571,7 @@ body {
   }
   /*-------Reservation page-------*/
   .page2 .reservation-section {
-    height: 88vh;
+    height: 100vh;
   }
   .page2 .reservation-section .reservationContainer {
     width: 100%;
@@ -575,7 +589,7 @@ body {
   }
   /*----Menu Section----*/
   .page3 .menu .menu-section {
-    height: 400vh;
+    min-height: 550vh;
     /*----Checkout container----*/
   }
   .page3 .menu .menu-section .two-item-container {
@@ -592,9 +606,11 @@ body {
     display: none;
   }
   /*------------ Contact / Info Page ------------*/
+  .page4 {
+    min-height: 100vh;
+  }
   .page4 .contact-section {
     background-color: #000000;
-    height: 88vh;
   }
   .page4 .contact-section .info-container {
     width: 80%;
@@ -624,9 +640,6 @@ body {
 /*-----Smaller phone starts-----*/
 @media screen and (max-width: 360px) {
   /*--------Reservation page--------*/
-  .page2 .reservation-section {
-    height: 88vh;
-  }
   .page2 .reservation-section .reservationContainer {
     width: 100%;
     /*--Form--*/
@@ -636,7 +649,7 @@ body {
     font-size: 1rem;
   }
   .page2 .reservation-section .reservationContainer .form input {
-    margin: 0.5rem;
+    margin: 0.5rem 0rem;
     padding: 0.3em;
     font-size: 1em;
   }
@@ -646,6 +659,9 @@ body {
     height: 3em;
   }
   /*------------Contact / Info Page------------*/
+  .page4 .contact-section {
+    min-height: 100vh;
+  }
   .page4 .contact-section .info-container .info-title {
     font-size: 1.4em;
   }

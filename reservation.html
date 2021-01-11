@@ -58,29 +58,42 @@
             
             <div class="reservationContainer flex-column">
 
-    <form action="" class="form flex-column">
+    <form action="" class="form flex-column" name="contact" method="POST" data-netlify="true">
 
-        <h2>Boka bord</h2>
-        <label for="name"></label>
-        <input id="name" type="text" placeholder="Namn...">
+        <h2 class="reserv-h2">Boka bord</h2>
 
-        <label for="phonenumber"></label>
-        <input id="phonenumber" type="text" placeholder="Telefon...">
+        <div class="form-group">
+            <label class="label" for="name">Namn:</label>
+            <input id="name" type="text" placeholder="Namn...">
+        </div>
 
-        <label for="mail"></label>
-        <input id="mail" type="text" placeholder="E-mail...">
+        <div class="form-group">
+            <label class="label" for="phonenumber">Telefonnummer:</label>
+            <input id="phonenumber" type="text" placeholder="Telefon...">
+        </div>
 
-        <label for="quantityOfPeope"></label>
-        <input id="quantityOfPeople" type="number" placeholder="Antal personer...">
+        <div class="form-group">
+            <label class="label" for="mail">E-post:</label>
+            <input id="mail" type="text" placeholder="E-mail...">
+        </div>
+        
+        <div class="form-group">
+            <label class="label" for="quantityOfPeope">Antal personer:</label>
+            <input id="quantityOfPeople" type="number" placeholder="Antal personer...">
+        </div>    
 
-        <label for="date"></label>
-        <input id="date" type="date">
+        <div class="form-group">
+            <label for="date">Datum:</label>
+            <input id="date" type="date">
+        </div>    
 
-        <label for="time"></label>
-        <input id="time" type="time">
+        <div class="form-group">
+            <label for="time">Tid:</label>
+            <input id="time" type="time">
+        </div>    
 
         <!--submit button-->
-        <a href="#" class="btn submit">Skicka</a>
+        <a href="#" type="submit" value="submit" class="btn submit">Skicka</a>
 
     </form>
 

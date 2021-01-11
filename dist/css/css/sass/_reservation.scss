@@ -1,8 +1,8 @@
 /*-----------Reservation-----------*/
 .page2{
+    min-height: 100vh;
     background-color: $black;
     .reservation-section{
-        text-align: center;
         height: 88vh;
     
       .reservationContainer {
@@ -16,12 +16,21 @@
             margin: auto;
             font-size: 1.2rem;
             color: $primary;
+
+            .form-group{
+              display: flex;
+              flex-direction: column;
+            }
+
+            .reserv-h2{
+              text-align: center;
+            }
  
            input{
             border: 2px solid $primary;
             color: $accent;
             background: transparent;
-            margin: 1rem;
+            margin: 1rem 0rem;
             border-radius: 7px;
             padding: 0.5rem;
             font-size: 1.2rem;

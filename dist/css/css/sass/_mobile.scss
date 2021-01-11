@@ -36,8 +36,9 @@
 
   /*-------Reservation page-------*/
   .page2{ 
+    
    .reservation-section{
-    height: 88vh;
+    height: 100vh;
     
     .reservationContainer {
         width: 100%;
@@ -60,9 +61,11 @@
 
   /*----Menu Section----*/
 .page3{
+  
       .menu {
         .menu-section{
-          height: 400vh;
+          min-height: 550vh;
+          
             .two-item-container{
               flex-direction: column;
             }
@@ -86,9 +89,9 @@
 
   /*------------ Contact / Info Page ------------*/
 .page4 {  
+  min-height: 100vh;
   .contact-section{
     background-color: $black;
-    height: 88vh;
     .info-container {
       width: 80%;
       .info-title{
@@ -128,7 +131,7 @@
   .page2{
 
     .reservation-section{
-      height: 88vh;
+      
      .reservationContainer {
          width: 100%;
  
@@ -138,7 +141,7 @@
            font-size: 1rem;
 
            input{
-            margin: 0.5rem;
+            margin: 0.5rem 0rem;
             padding: 0.3em;
             font-size: 1em;  
           }
@@ -156,6 +159,7 @@
  /*------------Contact / Info Page------------*/
  .page4 {  
   .contact-section{
+    min-height: 100vh;
     .info-container {
       .info-title{
         font-size: 1.4em;
