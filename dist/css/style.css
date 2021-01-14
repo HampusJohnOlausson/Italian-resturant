@@ -124,7 +124,7 @@ body {
 
 .page3 .menu .menu-section {
   background-color: #000000;
-  height: 300vh;
+  height: 600vh;
   text-align: center;
   padding-top: 5rem;
   /*----Checkout container----*/
@@ -601,7 +601,7 @@ body {
   }
   /*----Menu Section----*/
   .page3 .menu .menu-section {
-    min-height: 550vh;
+    min-height: 1000vh;
     /*----Checkout container----*/
   }
   .page3 .menu .menu-section .two-item-container {
@@ -805,6 +805,7 @@ body {
   }
   /*------Menu Section------*/
   .page3 .menu .menu-section {
+    height: 600vh;
     padding-top: 0em;
     /*----Checkout container----*/
   }
